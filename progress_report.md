@@ -12,6 +12,8 @@ loop from the very beginning of my data re-formatting to change all lines after 
 NAT4-raw.txt.
 Even though that issue is fixed, ABCE1-P1 is still taking lines that are not his. For example, lines that are for NAT8-raw.txt are listed as 
 ABCE1-P1's lines. I will look into my loop that calculates utterance numbers in the future to fix this issue.
+I also plan to add more markdown cells to explain my code. I've been using a lot of comments, but I will add Markdown cells once I have fixed the
+errors in my current code.
 
 ## 11/2/17
 As an organization member, I am not allowed to delete the new repo I created yesterday, so it is currently still on GitHub.
