@@ -4,6 +4,15 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 11/13/17
+I found the duplicate unique_speaker issue!! Simon Marnie spoke twice, but the other speakers were mislabeled true unique speakers. 
+In NAT4-raw.txt, the second half of the file is actually NAT5-raw.txt. It is a new program with new speakers, but starts over with Presenter 1, 
+Caller 1, etc. There were 6 new speakers from NAT5-raw.txt. I first adjusted my unique_speaker loop to account for this, and then I adjusted my 
+loop from the very beginning of my data re-formatting to change all lines after the new Presenter 1 to list the fileid as NAT5-raw.txt instead of 
+NAT4-raw.txt.
+Even though that issue is fixed, ABCE1-P1 is still taking lines that are not his. For example, lines that are for NAT8-raw.txt are listed as 
+ABCE1-P1's lines. I will look into my loop that calculates utterance numbers in the future to fix this issue.
+
 ## 11/2/17
 As an organization member, I am not allowed to delete the new repo I created yesterday, so it is currently still on GitHub.
 Upon attempting again to create a new repo today, I added my files after my correct .gitignore was in the repo, but it still uploaded my files. 
