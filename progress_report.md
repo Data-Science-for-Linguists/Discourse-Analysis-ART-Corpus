@@ -5,9 +5,11 @@ als333@pitt.edu
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
 ## 11/19/17
-Today I will be beginning a new analysis file. I realized that making lists of my data was not going to work, and that I need to look at the text 
-through a dictionary. This can be done by creating a dictionary from the raw text with the keys being the file names, linked to lists of the lines 
-of text.
+Today I will be beginning a new analysis file called process-art-corpus.ipynb. I realized that making lists of my data was unreliable and causing multiple 
+errors; this previous attempt relied on the erroneous assumption that I could create lists of equal lengths and add them to a data frame. 
+I need to look at the text through a dictionary. This can be done by creating a dictionary from the raw text with the keys being the file names, 
+linked to lists of the lines of text. 
+There were many errors/fluxuations in transcription, so I will have a cell that accounts for each of these differences.
 
 ## 11/13/17
 I found the duplicate unique_speaker issue!! Simon Marnie spoke twice, but the other speakers were mislabeled true unique speakers. 
