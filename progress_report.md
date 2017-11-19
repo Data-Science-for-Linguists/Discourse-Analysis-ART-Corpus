@@ -4,6 +4,11 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 11/19/17
+Today I will be beginning a new analysis file. I realized that making lists of my data was not going to work, and that I need to look at the text 
+through a dictionary. This can be done by creating a dictionary from the raw text with the keys being the file names, linked to lists of the lines 
+of text.
+
 ## 11/13/17
 I found the duplicate unique_speaker issue!! Simon Marnie spoke twice, but the other speakers were mislabeled true unique speakers. 
 In NAT4-raw.txt, the second half of the file is actually NAT5-raw.txt. It is a new program with new speakers, but starts over with Presenter 1, 
@@ -14,6 +19,9 @@ Even though that issue is fixed, ABCE1-P1 is still taking lines that are not his
 ABCE1-P1's lines. I will look into my loop that calculates utterance numbers in the future to fix this issue.
 I also plan to add more markdown cells to explain my code. I've been using a lot of comments, but I will add Markdown cells once I have fixed the
 errors in my current code.
+
+## 11/5/17
+My project repo is now called "Discourse-Analysis-ART-Corpus."
 
 ## 11/2/17
 As an organization member, I am not allowed to delete the new repo I created yesterday, so it is currently still on GitHub.
