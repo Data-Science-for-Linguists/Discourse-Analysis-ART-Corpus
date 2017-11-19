@@ -12,7 +12,12 @@ For this project, I will compare the number of turns, vocabulary size, and numbe
 I will also look at backchannels, laughter, and interruptions to see how the speaker's role and/or gender affect these aspects of conversation.
 
 ### Importance of this script:
-- My script fixes the errors in transcription of speakers' information.
+- My script fixes the following errors:
+	- changes in how speakers' information is introduced.
+		- Example format: [Presenter 1: Simon Marnie, M]
+	- formatting:
+		- NAT4-raw.txt contains NAT5-raw.txt
+		- COME6-raw.txt marked Presenter 1 as both P1 and P1b.
 - My script gives each speaker a unique identifier, so that speakers can be compared across text files.
 - My script creates data frames to compile speaker information, including thier unique identifier, filename, name, speaker type (P/C/E), gender, and number of utterances.
 	- I wiill also have a data frame for back channels.
