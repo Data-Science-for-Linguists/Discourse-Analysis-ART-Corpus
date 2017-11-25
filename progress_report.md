@@ -18,7 +18,7 @@ the speaker column in art_df, the data frame of each line of text:
 
 I then created utt_df from the dictionary, with the index being the sorted keys from utt_dict. This ensures
 that utt_df and speaker_df have the same indices. To combine my utterance data frame, utt_df, with my 
-speaker data frame, speaker_df, I referenced **Kyle Landin's project** for his use of pd.merge to create the following code:
+speaker data frame, speaker_df, I referenced [Kyle Landin's project](https://github.com/Data-Science-for-Linguists/project_KyleLandin.git) for his use of pd.merge to create the following code:
 
 *speaker_df=pd.merge(speaker_df,utt_df,right_index=True,left_index=True)*
 
