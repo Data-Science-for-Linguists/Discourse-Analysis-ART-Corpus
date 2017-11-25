@@ -11,13 +11,13 @@ Before I could do this analysis, I needed to calculate each speaker's utterances
 To do this, I created a dictionary of utterances, utt_dict, by using groupy on 
 the speaker column in art_df, the data frame of each line of text: 
 
-utt_dict=dict(art_df.groupby("Speaker").size())
+*utt_dict=dict(art_df.groupby("Speaker").size())*
 
 I then created utt_df from the dictionary, with the index being the sorted keys from utt_dict. This ensures
 that utt_df and speaker_df have the same indices. To combine my utterance data frame, utt_df, with my 
 speaker data frame, speaker_df, I referenced Kyle Landin's project for his use of pd.merge to create the following code:
 
-speaker_df=pd.merge(speaker_df,utt_df,right_index=True,left_index=True)
+*speaker_df=pd.merge(speaker_df,utt_df,right_index=True,left_index=True)*
 
 Thus, I added the column Number_of_Utterances to my speaker_df.
 
