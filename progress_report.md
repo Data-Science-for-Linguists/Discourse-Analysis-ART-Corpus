@@ -6,9 +6,12 @@ als333@pitt.edu
 
 ## 11/25/17
 ### Number of Utterances for Presenters, Callers, and Experts:
-For my first analysis, I first looked at the number of utterances per speaker.
+
+*Note: The script described below is also part of process-art-corpus.ipynb*
+
+For my first analysis, I looked at the number of utterances per speaker.
 Before I could do this analysis, I needed to calculate each speaker's utterances.
-To do this, I created a dictionary of utterances, utt_dict, by using groupy on 
+To do this, I created a dictionary of utterances, utt_dict, by using *.groupby* on 
 the speaker column in art_df, the data frame of each line of text: 
 
 *utt_dict=dict(art_df.groupby("Speaker").size())*
@@ -19,7 +22,7 @@ speaker data frame, speaker_df, I referenced Kyle Landin's project for his use o
 
 *speaker_df=pd.merge(speaker_df,utt_df,right_index=True,left_index=True)*
 
-Thus, I added the column Number_of_Utterances to my speaker_df and could begin an analysis
+Thus, I added the column *Number_of_Utterances* to my speaker_df and could begin an analysis
 using speaker_df.
 I used *.loc* to split speaker_df into 3 separate data frames by role: P_df (the Presenter data frame),
 C_df (the Caller data frame), and E_df (the Expert data frame).
@@ -43,9 +46,8 @@ Experts:
 - std: 86.82
 
 
-
-
 ## 11/22/17
+### How I created process-art-corpus.ipynb:
 The script process-art-corpus.ipynb is now working and does all that reformatting-data.ipynb was attempting to do. 
 First I used glob to get all of the filenames. I then created a dictionary of the text for each filename.
 Next, I modified the dictionary by splitting NAT4-raw.txt into NAT4-raw.txt and NAT5-raw.txt. (NAT4-raw.txt was 
