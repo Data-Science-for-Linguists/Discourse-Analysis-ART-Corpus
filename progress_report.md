@@ -4,11 +4,55 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 11/25/17
+The script process-art-corpus.ipynb is now working and does all that reformatting-data.ipynb was attempting to do. 
+First I used glob to get all of the filenames. I then created a dictionary of the text for each filename.
+Next, I modified the dictionary by splitting NAT4-raw.txt into NAT4-raw.txt and NAT5-raw.txt. (NAT4-raw.txt was 
+mistakingly created to contain 2 separate transcriptions, resulting in duplicate unique speaker identities.)
+
+Next, I began working on splitting the texts by line. However, due to many errors in the transcription, I needed
+to fix the errors before I could accurately split the lines. I created a cell to fix all errors, adding
+errors to the cell as I found them.  I found all lines that did not contain ']', which indicates the end of a 
+speaker's line of text, and printed those lines. The cell that fixes errors is placed before the loop that I used to
+find many of the errors.
+
+After fixing the errors, I created the function 'get_speaker' to create unique speaker ids.
+With the unique speaker ids, I was then able to create a speaker dictionary, speaker_dict. For speaker_dict,
+the keys were the unique speaker IDs, and the values included segment (ex: ABCE1, ABCE2, etc..), role (P/C/E), 
+gender (M/F), and name (ex: Simon Marnie). Later in my script, I added number of utterances to this data frame.
+From speaker_dict I created the data frame speaker_df for visualization.
+
+Next, I split the texts by line. I created the list art_list which contains 
+the unique speaker ID of the line (ex: ABCE1-P1), the utterance number of the file, the segment (ex: ABCE1),
+and the line of text. I created this list in order to create the data frame art_df for visualization.
+However, I needed to transform the list into a numpy array (art_array) before creating the data frame.
+I used the unique speaker ID and utterance number of the file as a double index, so that 
+each line of text had a unique index.
+
+For my first analysis, I first looked at the number of utterances per speaker.
+Before I could do this analysis, I needed to calculate each speaker's utterances.
+To do this, I created a dictionary of utterances, utt_dict, by using groupy on 
+the speaker column in art_df, the data frame of each line of text: 
+
+utt_dict=dict(art_df.groupby("Speaker").size())
+
+I then created utt_df from the dictionary, with the index being the sorted keys from utt_dict. This ensures
+that utt_df and speaker_df have the same indices. To combine my utterance data frame, utt_df, with my 
+speaker data frame, speaker_df, I referenced Kyle Landin's project for his use of pd.merge to create the following code:
+
+speaker_df=pd.merge(speaker_df,utt_df,right_index=True,left_index=True)
+
+Thus, I added the column Number_of_Utterances to my speaker_df.
+
+
+
+
+
 ## 11/19/17
-Today I will be beginning a new analysis file called process-art-corpus.ipynb. I realized that making lists of my data was unreliable and causing multiple 
+Today I will begin working on a new analysis file called process-art-corpus.ipynb. I realized that making lists of my data was unreliable and causing multiple 
 errors; this previous attempt relied on the erroneous assumption that I could create lists of equal lengths and add them to a data frame. 
 I need to look at the text through a dictionary. This can be done by creating a dictionary from the raw text with the keys being the file names, 
-linked to lists of the lines of text. 
+linked to the text of the individual file. 
 There were many errors/fluxuations in transcription, so I will have a cell that accounts for each of these differences.
 
 ## 11/13/17
