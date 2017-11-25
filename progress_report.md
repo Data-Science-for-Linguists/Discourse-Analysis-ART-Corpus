@@ -5,7 +5,7 @@ als333@pitt.edu
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
 ## 11/25/17
-### First Analysis:
+### Number of Utterances for Presenters, Callers, and Experts:
 For my first analysis, I first looked at the number of utterances per speaker.
 Before I could do this analysis, I needed to calculate each speaker's utterances.
 To do this, I created a dictionary of utterances, utt_dict, by using groupy on 
