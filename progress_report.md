@@ -19,7 +19,30 @@ speaker data frame, speaker_df, I referenced Kyle Landin's project for his use o
 
 *speaker_df=pd.merge(speaker_df,utt_df,right_index=True,left_index=True)*
 
-Thus, I added the column Number_of_Utterances to my speaker_df.
+Thus, I added the column Number_of_Utterances to my speaker_df and could begin an analysis
+using speaker_df.
+I used *.loc* to split speaker_df into 3 separate data frames by role: P_df (the Presenter data frame),
+C_df (the Caller data frame), and E_df (the Expert data frame).
+
+Using *.info*, I discovered that there were 12 Presenters, 134 Callers, and 16 Experts.
+I then used the *.describe()* method to compile information about each of the above data frames:
+
+Presenters: 
+- 12 people
+- average of 122.5 turns per person
+- std: 129.38
+
+Callers: 
+- 134 people
+- average of 11.23 turns per person
+- std: 7.97
+
+Experts:
+- 16 people
+- average of 91.5 turns per person
+- std: 86.82
+
+
 
 
 ## 11/22/17
