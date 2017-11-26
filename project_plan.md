@@ -32,10 +32,9 @@ I would like to look at the following:
 
 ## Analysis:
 (divided by gender and then also PCE)
-	- number of turns 
+	- number of utterances (turns) 
 	- number of sentences and words
 	- vocabulary size: avg word length
-	- number of interruptions
 	- number of backchannels or signs of paying attention
 		- "Yeah" 
 		- "Uh hu" 
@@ -48,21 +47,20 @@ I would like to look at the following:
 		- hypothesis: Presenter
 	- who uses the most advanced vocabulary? 
 		- hypothesis: Expert
-	- Who is interrupted the most?
-		- hypothesis: females
 	- Who is the funniest?
 		- hypothesis: Presenter
  
 ### Methods:
-	- create 2 pandas data frame
+	- create 3 pandas data frame
 		- one with the texts
 		- one with the speaker information
+		- one with backchannels
 	- reference the speaker information dataframe when analayzing the text by gender or role
 	- nltk.word_tokenize and nltk.sent_tokenize
 	- regular expressions to extract information from the text, like speaker number and backchannels
 	
 ## Presentation:
 	- DataFrames:
-		- speaker information, organized by filename-speaker_role/speaker_number
+		- speaker information, organized by filename-speaker_role+speaker_number
 		- texts, organized by speaker and utterance number within each file
 		- graphs to display the results of my analysis

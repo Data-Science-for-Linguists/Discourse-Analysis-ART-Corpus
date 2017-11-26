@@ -12,6 +12,7 @@ This data is closed and I am not allowed to be relicense the data or distribute 
 
 My .gitignore was set up incorrectly, so my data was in my original repo. Therefore, I began this second repo.
 
-Even though the data cannot be relicensed, I can license my script. This script is helpful because it fixes errors in transcription.
+Even though the data cannot be relicensed, I *can* license my script. This script is helpful because it fixes errors in the transcription.
 My script ensures that each speaker's information (given during their first utterance), is in the same format. 
 Also, it gives each speaker a unique speaker identity so that speakers can be compared across text files.
+The data frames are nice visually and give the corpus a usable format for analysis.
