@@ -11,7 +11,7 @@ They also include back channels and laughter, indicated by <> and spelling corre
 For this project, I will compare the number of turns, vocabulary size, and number of sentences and words across speaker roles and gender.
 I will also look at backchannels to see how the speaker's role and/or gender affect this aspect of conversation.
 
-Please visit my [visitors' log] (https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_Alicia.md)
+Please visit my [visitor's log](https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_Alicia.md)
 to see others' comments on my project.
 
 ### Importance of this script:
