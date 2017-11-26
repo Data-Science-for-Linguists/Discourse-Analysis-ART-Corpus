@@ -5,6 +5,14 @@ als333@pitt.edu
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
 ## 11/25/17
+### Thinking About Licenses:
+I am able to license my code but not any of the data. I would like my code to be open source. It is very helpful for other people who 
+decide to analyze the Australian Radio Talkback Corpus, because it fixes transcription errors and organizes the data by line and by speaker.
+In considering licenses, I have come across the MIT License and the Mozilla Public License 2.0 (MPL-2.0). I believe the MIT License is potentially 
+too vague, and that I will prefer the MPL-2.0, but I will continue reading about the licenses to come to a final, informed decision.
+
+
+## 11/25/17
 ### Number of Utterances for Presenters, Callers, and Experts:
 
 *Note: The script described below is also part of process-art-corpus.ipynb*
