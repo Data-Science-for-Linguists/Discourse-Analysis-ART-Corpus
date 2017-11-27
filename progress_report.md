@@ -4,6 +4,14 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 11/26/17
+### MIT License:
+I chose the MIT License, because it makes my code very open and accessible for future discourse analyses.
+
+### Back Channels:
+I also began working with the back channels in < >. I am attempting to locate all back channels using regular expressions.
+I also need to create a list of the speaker, which can be the same as the line's speaker or another person in the conversation.
+
 ## 11/25/17
 ### Thinking About Licenses:
 I am able to license my code but not any of the data. I would like my code to be open source. It is very helpful for other people who 
