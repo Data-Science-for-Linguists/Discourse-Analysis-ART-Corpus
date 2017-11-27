@@ -10,9 +10,5 @@ Each person is allowed to download one version of the corpus, and can use it for
 However, the data is owned by Macquarie University and is only allowed to be used for research or study purposes. 
 This data is closed and I am not allowed to be relicense the data or distribute it online.
 
-My .gitignore was set up incorrectly, so my data was in my original repo. Therefore, I began this second repo.
-
-Even though the data cannot be relicensed, I *can* license my script. This script is helpful because it fixes errors in the transcription.
-My script ensures that each speaker's information (given during their first utterance), is in the same format. 
-Also, it gives each speaker a unique speaker identity so that speakers can be compared across text files.
-The data frames are nice visually and give the corpus a usable format for analysis.
+Even though the data cannot be relicensed, I *can* license my script. I have opted for the MIT License, an open source license that allows others to use, copy, modify, merge, publish, distribute, 
+sublicense, and/or sell copies my code.
