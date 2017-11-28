@@ -8,6 +8,12 @@ als333@pitt.edu
 The data frame art_df of each line of text now includes word tokens, number of words, average word length, sentences, and number of sentences. 
 I added a speaker's role column, *role*, to art_df so that the lines could be grouped by role for my analysis.
 
+I analyzed average word length and average sentence length. I found that average word length is not indicative of role, but that sentence length is.
+Experts have the longest sentences, and Callers have the shortest sentences.
+
+I also created data frames for males and females, and discovered that there are 100 females and 60 males. Therefore, I will continue with a gender analysis.
+
+
 ## 11/26/17
 ### MIT License:
 I chose the MIT License, because it makes my code very open and accessible for future discourse analyses.

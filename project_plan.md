@@ -16,8 +16,9 @@ Australian Radio Talkback Corpus: https://www.ausnc.org.au/corpora/art
 					- expert
 					- caller
 			- laughter <>
+			- overlapping speach (back channels) <>
+			- commas <,>
 			- spelling corrections {}
-			- overlapping speach <>
 			- program advertisements, breaks, and music {}
 	- closed data - cannot create a new license or distribute the data
  
@@ -26,7 +27,6 @@ I would like to look at the following:
 	- vocabulary size by speaker role and gender
 	- number of turns by speaker role and gender
 	- back channels
-	- topic boundaries?
 	- supervised machine learning?
 		- can the computer guess if a sentence was uttered by a presenter, caller, or expert?
 
