@@ -4,6 +4,10 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 11/27/17
+The data frame art_df of each line of text now includes word tokens, number of words, average word length, sentences, and number of sentences. 
+I added a speaker's role column, *role*, to art_df so that the lines could be grouped by role for my analysis.
+
 ## 11/26/17
 ### MIT License:
 I chose the MIT License, because it makes my code very open and accessible for future discourse analyses.
