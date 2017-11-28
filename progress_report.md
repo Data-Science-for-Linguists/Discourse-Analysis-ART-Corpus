@@ -11,8 +11,11 @@ I added a speaker's role column, *role*, to art_df so that the lines could be gr
 I analyzed average word length and average sentence length. I found that average word length is not indicative of role, but that sentence length is.
 Experts have the longest sentences, and Callers have the shortest sentences.
 
-I also created data frames for males and females, and discovered that there are 100 females and 60 males. Therefore, I will continue with a gender analysis.
-
+I also created data frames for males and females, and discovered that there are 100 females and 60 males.
+There are twice as many Female Callers vs Male Callers, but twice as many Male Experts and Presenters vs. Female Experts and Presenters.
+This leads me to believe that a gender analysis on word length and sentence length would be too affected by the role of the speakers and 
+that I cannot compare males and females in this way. However, seeing that the professionals on the show are mostly male and the callers mostly 
+female leads to a conversation about gender equality.
 
 ## 11/26/17
 ### MIT License:

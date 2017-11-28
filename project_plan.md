@@ -24,8 +24,8 @@ Australian Radio Talkback Corpus: https://www.ausnc.org.au/corpora/art
  
 ## Project Goals:	
 I would like to look at the following:
-	- vocabulary size by speaker role and gender
-	- number of turns by speaker role and gender
+	- vocabulary size by speaker role and gender *(if genders are distributed evenly across roles)*
+	- number of turns by speaker role and gender *(if genders are distributed evenly across roles)*
 	- back channels
 	- supervised machine learning?
 		- can the computer guess if a sentence was uttered by a presenter, caller, or expert?
@@ -34,7 +34,9 @@ I would like to look at the following:
 (divided by gender and then also PCE)
 	- number of utterances (turns) 
 	- number of sentences and words
-	- vocabulary size: avg word length
+	- vocabulary size
+		- avg word length
+		- TTR
 	- number of backchannels or signs of paying attention
 		- "Yeah" 
 		- "Uh hu" 
