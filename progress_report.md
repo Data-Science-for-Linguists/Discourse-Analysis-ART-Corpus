@@ -4,7 +4,7 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
-##11/28/17
+## 11/28/17
 ### Gender:
 I also created data frames for males and females, and discovered that there are 100 females and 60 males.
 There are twice as many Female Callers vs Male Callers, but twice as many Male Experts and Presenters vs. Female Experts and Presenters.
