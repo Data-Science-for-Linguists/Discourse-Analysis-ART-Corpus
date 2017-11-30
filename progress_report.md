@@ -4,6 +4,10 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 11/30/17
+### Graphs
+I am now adding graphs the analyses I have done so far for visualization.
+
 ## 11/28/17
 ### Gender:
 I also created data frames for males and females, and discovered that there are 100 females and 60 males.
