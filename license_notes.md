@@ -1,9 +1,15 @@
 Alicia Sigmon
+
 als333@pitt.edu
+
 10/27/2017
+
 Updated: 11/19/2017
 
-To access the Australian Radio Talkback Corpus from the Australian National Corpus, I was required to sign a [terms of use page:](https://www.ausnc.org.au/about-1/terms-of-use)
+# License Notes:
+
+To access the Australian Radio Talkback Corpus from the Australian National Corpus, I was required to sign a 
+[terms of use](https://www.ausnc.org.au/about-1/terms-of-use) page.
 
 Each person is allowed to download one version of the corpus, and can use it for research or study purposes. 
 However, the data is owned by Macquarie University and is only allowed to be used for research or study purposes. 
