@@ -1,4 +1,8 @@
-### Alicia Sigmon, als333@pitt.edu, 11/02/2017
+Alicia Sigmon
+
+als333@pitt.edu
+
+11/02/2017
 
 # Discourse Analysis of the Australian Radio Talkback 
 

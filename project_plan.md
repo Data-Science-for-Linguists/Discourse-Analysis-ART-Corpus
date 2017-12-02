@@ -1,5 +1,10 @@
-Alicia Sigmon; als333@pitt.edu; 10/01/2017
-Project Plan:
+Alicia Sigmon
+
+als333@pitt.edu
+
+10/01/2017
+
+## Project Plan:
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
