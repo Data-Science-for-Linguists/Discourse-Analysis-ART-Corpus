@@ -4,10 +4,11 @@ als333@pitt.edu
 
 10/01/2017
 
-# Discourse Analysis of the Australian Radio Talkback Corpus Plan:
+# Plan for Discourse Analysis:
 
-## Data
-[Australian Radio Talkback Corpus:](https://www.ausnc.org.au/corpora/art)
+## Data:
+
+### [Australian Radio Talkback Corpus:](https://www.ausnc.org.au/corpora/art)
 
 	- 27 transcribed recordings of samples of national, regional and commercial Australian talkback radio from 2004 to 2006.
 		- text: does not contain speaker information
