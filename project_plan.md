@@ -10,17 +10,12 @@ Australian Radio Talkback Corpus: https://www.ausnc.org.au/corpora/art
 		- text: does not contain speaker information
 		- raw
 			- Speaker Information [Type+Number: Name, Gender]: 
-				- Speaker Type
-					- Presenter
-					- Expert
-					- Caller
+				- Speaker Type (Presenter, Caller, Expert)
 				- Speaker Number
 					- order in which speakers appear in the file
-						- the first presenter in a file is Presenter 1, the second presenter is Presenter 2, etc..
+					- the first presenter in a file is Presenter 1, the second presenter is Presenter 2, etc..
 				- Name
-					- ex: Simon Marnie
-				- Gender
-					- M / F
+				- Gender (M/F)
 			- laughter <>
 			- overlapping speach (back channels) <>
 			- commas <,>
