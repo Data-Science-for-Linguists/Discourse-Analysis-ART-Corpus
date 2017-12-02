@@ -4,9 +4,7 @@ als333@pitt.edu
 
 10/01/2017
 
-## Project Plan:
-
-# Discourse Analysis of the Australian Radio Talkback Corpus
+# Discourse Analysis of the Australian Radio Talkback Corpus Plan:
 
 ## Data
 [Australian Radio Talkback Corpus:](https://www.ausnc.org.au/corpora/art)
