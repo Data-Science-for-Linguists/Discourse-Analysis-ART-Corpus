@@ -35,5 +35,5 @@ to see others' comments on my project.
 		- contains speaker information, including thier unique identifier, filename, name, speaker type (P/C/E), gender, and number of utterances.
 	- art_df
 		- contains the unique speaker ID, utterance number within the file, the filename, and the line of text
-	- bk_chnl_df
+	- bk_df
 		- contains lines with back channels
