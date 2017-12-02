@@ -9,13 +9,17 @@ Australian Radio Talkback Corpus: https://www.ausnc.org.au/corpora/art
 	- 27 transcribed recordings of samples of national, regional and commercial Australian talkback radio from 2004 to 2006.
 		- text: does not contain speaker information
 		- raw
-			- speaker information []: 
-				- name
-				- gender
+			- speaker information [Position+Number: Name, Gender]: 
 				- position
 					- presenter
 					- expert
 					- caller
+				- number
+					- order in which speakers appear in the file
+					- presenters, callers, and experts each get their own series of numbers
+						- ex: Presenter 1, Expert 1, Presenter 2, Caller 1, etc...
+				- name
+				- gender
 			- laughter <>
 			- overlapping speach (back channels) <>
 			- commas <,>
