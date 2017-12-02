@@ -24,7 +24,9 @@ Australian Radio Talkback Corpus: https://www.ausnc.org.au/corpora/art
 	- closed data - cannot create a new license or distribute the data
  
 ## Project Goals:	
+
 I would like to look at the following:
+
 	- vocabulary size by speaker role and gender *(if genders are distributed evenly across roles)*
 	- number of turns by speaker role and gender *(if genders are distributed evenly across roles)*
 	- back channels
@@ -32,6 +34,7 @@ I would like to look at the following:
 		- can the computer guess if a sentence was uttered by a presenter, caller, or expert?
 
 ## Analysis:
+
 (divided by gender and then also PCE)
 	- number of utterances (turns) 
 	- number of sentences and words
@@ -44,6 +47,7 @@ I would like to look at the following:
 		- laughter
 
 ### Questions and Hypotheses:
+
 	- who takes most number of turns? 
 		- hypothesis: Presenter
 	- who talks the most?	
@@ -54,6 +58,7 @@ I would like to look at the following:
 		- hypothesis: Presenter
  
 ### Methods:
+
 	- create 3 pandas data frame
 		- one with the texts
 		- one with the speaker information
@@ -63,6 +68,7 @@ I would like to look at the following:
 	- regular expressions to extract information from the text, like speaker number and backchannels
 	
 ## Presentation:
+
 	- DataFrames:
 		- speaker information, organized by filename-speaker_role+speaker_number
 		- texts, organized by speaker and utterance number within each file
