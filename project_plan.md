@@ -35,7 +35,7 @@ I would like to look at the following:
 
 ## Analysis:
 
-(divided by gender and then also PCE)
+These analyses will be divided by gender and then also speaker type (P, C, or E)
 
 	- number of utterances (turns) 
 	- number of sentences and words
