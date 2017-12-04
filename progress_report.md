@@ -4,6 +4,27 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 12/03/17
+### Back Channel Analysis:
+I have begun my Back Channel Analysis. Callers utter the most back channels, and Experts have the most back 
+channels uttered while they are speaking. I was surprised to note that Presenters utter the least number of back channels.
+I would expect them to utter more because they are around the entire show. However, because there are so many callers all 
+coming into the show at a new point, it also makes sense that they utter many back channels.
+
+To know what these mean, I believe I need to normalize these raw scores in some way. My first attempt was to compare 
+the number of back channels of each speaker type to the number of utterances for each speaker type. 
+
+Because each speaker type has about the same number of total turns (~1500), I believe the raw count is acceptable for an analysis.
+
+I had previously missed this in my analysis when looking at number of average turns per speaker type. **Across the corpus, 
+the three speaker types have about the same number of total turns. So even though there are more callers speaking fewer lines 
+and fewer presenters speaking more lines, the corpus is equally represented in regards to the number of turns by speaker type.**
+
+## 12/01/17
+### Back Channel Data Frame:
+I have successfully built my back channel data frame, which is called bk_df! I had to split back channels that were uttered by 
+2 people at once into separate back channels. These double-speaker back channels were almost always indicating laughter.
+
 ## 11/30/17
 ### Graphs
 I am now adding graphs the analyses I have done so far for visualization.
