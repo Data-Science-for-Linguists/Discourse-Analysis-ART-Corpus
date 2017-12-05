@@ -7,8 +7,17 @@ als333@pitt.edu
 ## 12/04/17
 ### Presentation:
 My Presentation is about ready, including a lot of Gender Analyses. I plan to keep my analyses in this new sheet, and to have data compilation
-in my process-art-corpus.ipynb, because new script, currently called Presentation.ipynb, has an organized analysis, and it will 
-be easier to navigate. I plan to rename the file to analysis.ipynb.
+in my process-art-corpus.ipynb, because new script, analysis.ipynb, has an organized analysis, and it will 
+be easier to navigate.
+
+Removed from my presentation and replaced with bullets:
+
+Across the corpus, the three speaker types have about the same number of total turns. 
+Individual Presenters have on average the most number of turns, while Callers have the fewest.  
+So even though there are more callers speaking fewer lines and fewer presenters speaking more lines, 
+the corpus is equally represented in regards to the number of turns by speaker type.
+
+Experts have the longest sentences.
 
 ## 12/04/17
 ### Preparing for the Presentation:
