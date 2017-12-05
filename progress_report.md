@@ -18,11 +18,13 @@ als333@pitt.edu
 - compare lines with back channels and lines without
 	- need both to see what differences there are between sentences that include back channels and sentences that don't.
 	- **Prediction:** maybe longer lines have back channels and short ones don't
-- Look into Language Log: research on interruption times of men vs women for tomorrow!! 
+- **More Gender Analysis:** 
+	- Look into Language Log: research on interruption times of men vs women
+	- Compare back channels of Presenters by gender
 
 ### Preparing for the Presentation:
 I am adding gender to art_df and bk_df so that I can see how gender affects back channels. I would like to have some of this 
-for my analysis in the presentation tomorrow. 
+for my analysis in the presentation tomorrow. I would like to compare back channels of Presenters by gender.
 
 I discovered a connection today between average sentence length and number of back channels: Experts have the longest sentences,
 and the most back channels are uttered while they are speaking. This leads me to believe that longer speech results in more back channels.
