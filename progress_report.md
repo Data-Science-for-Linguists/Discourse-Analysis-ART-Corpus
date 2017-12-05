@@ -5,6 +5,12 @@ als333@pitt.edu
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
 ## 12/04/17
+### Presentation:
+My Presentation is about ready, including a lot of Gender Analyses. I plan to keep my analyses in this new sheet, and to have data compilation
+in my process-art-corpus.ipynb, because new script, currently called Presentation.ipynb, has an organized analysis, and it will 
+be easier to navigate. I plan to rename the file to analysis.ipynb.
+
+## 12/04/17
 ### Preparing for the Presentation:
 I am adding gender to art_df and bk_df so that I can see how gender affects back channels. I would like to have some of this 
 for my analysis in the presentation tomorrow. I would like to compare back channels of Presenters by gender.
