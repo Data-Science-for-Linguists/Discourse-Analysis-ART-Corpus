@@ -4,6 +4,29 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 12/04/17
+### Further Analysis Plans:
+
+- Where do back channels usually go? 
+	- How far into the utterance? 
+	- after what POS? 
+		- stanford parser 
+		- lexical items 
+			- add columns with preceding and following words
+			- put tokenized sentences from art_df or maybe raw texts into standford parser 
+			- bigrams before and after what grammatical environment?
+- compare lines with back channels and lines without
+	- need both to see what differences there are between sentences that include back channels and sentences that don't.
+	- **Prediction:** maybe longer lines have back channels and short ones don't
+- Look into Language Log: research on interruption times of men vs women for tomorrow!! 
+
+### Preparing for the Presentation:
+I am adding gender to art_df and bk_df so that I can see how gender affects back channels. I would like to have some of this 
+for my analysis in the presentation tomorrow. 
+
+I discovered a connection today between average sentence length and number of back channels: Experts have the longest sentences,
+and the most back channels are uttered while they are speaking. This leads me to believe that longer speech results in more back channels.
+
 ## 12/03/17
 ### Back Channel Analysis:
 I have begun my Back Channel Analysis. Callers utter the most back channels, and Experts have the most back 
