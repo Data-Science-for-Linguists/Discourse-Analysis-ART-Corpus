@@ -5,6 +5,16 @@ als333@pitt.edu
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
 ## 12/04/17
+### Preparing for the Presentation:
+I am adding gender to art_df and bk_df so that I can see how gender affects back channels. I would like to have some of this 
+for my analysis in the presentation tomorrow. I would like to compare back channels of Presenters by gender.
+
+I discovered a connection today between average sentence length and number of back channels: Experts have the longest sentences,
+and the most back channels are uttered while they are speaking. This leads me to believe that longer speech results in more back channels.
+
+I also discovered an error in my code, so some of my back channels were incorrect or missing. The error is now fixed, and my analysis
+was unaffected.
+
 ### Further Analysis Plans:
 
 - Where do back channels usually go? 
@@ -21,13 +31,6 @@ als333@pitt.edu
 - **More Gender Analysis:** 
 	- Look into Language Log: research on interruption times of men vs women
 	- Compare back channels of Presenters by gender
-
-### Preparing for the Presentation:
-I am adding gender to art_df and bk_df so that I can see how gender affects back channels. I would like to have some of this 
-for my analysis in the presentation tomorrow. I would like to compare back channels of Presenters by gender.
-
-I discovered a connection today between average sentence length and number of back channels: Experts have the longest sentences,
-and the most back channels are uttered while they are speaking. This leads me to believe that longer speech results in more back channels.
 
 ## 12/03/17
 ### Back Channel Analysis:
