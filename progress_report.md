@@ -4,6 +4,14 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 12/07/17
+I discovered that I was only looking at the first 10 files when creating art_list. I solved this issue but had to fix many 
+transcription errors before my code would fully run again. I also discovered more transcription errors 
+that I have fixed and a line that was inaudible. This line resulted in a "division by 0" error while counting average word
+length, but I solved this issue by making that cell a word length of 1 and a sentence length of 1. 
+
+I will be re-analyzing the data to see how my conclusions have changed. 
+
 ## 12/04/17
 ### Presentation:
 My Presentation is about ready, including a lot of Gender Analyses. I plan to keep my analyses in this new sheet, and to have data compilation
