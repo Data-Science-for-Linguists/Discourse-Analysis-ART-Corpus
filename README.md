@@ -45,6 +45,17 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 - [process-art-corpus.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.ipynb): Creating data frames for the Australian Radio Talkback Corpus.
 - [progress_report.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/progress_report.md): Progress reports from throughout the course of my project.
 - [project_plan.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md): The plan for the Discourse Analysis.
+- [images](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/images): A folder of all plots used for analysis.
+	- [back_channels_line_speaker_types.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_line_speaker_types.png): A plot of the number of back channels uttered while presenters, callers, and experts were talking.
+	- [back_channel_speaker_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_speaker_genders.png): A ploto of the number of back channels uttered by males and females.
+	- [back_channel_speaker_types.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_speaker_types.png): A plot of the number of back channels spoken presenters, callers, and experts.
+	- [caller_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/caller_genders.png): A plot of Caller males and females.
+	- [expert_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/expert_genders.png): A plot of Expert males and females.
+	- [gender_totals.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/gender_totals.png): A plot of all males and females in the corpus.
+	- [presenter_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/presenter_genders.png): A plot of Presenter males and females.
+	- [role_totals.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/role_totals.png): A plot of all speakers per speaker type.
+	- [top_20_back_channels](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/top_20_back_channels.png): A plot of the top 20 most common back channels in the corpus.
+
 - [old_work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/old_work): A folder of Jupyter Notebook files and csv files that were discarded from this project. Originally I looked at tweets, the Australian Radio Talkback Corpus, and BNC Baby:
 	- [Australia_Tweets.csv](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/Australia_Tweets.csv): Example Tweets
 	- [reformatting_raw_files.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/reformatting_raw_files.ipynb): My first attempt at creating Data Frames for the Australian Radio Talkback Corpus for the Discourse Analysis.
