@@ -36,7 +36,18 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 		- contains speaker, speaker type, speaker gender, the lines with back channels, the line speaker, the segment utterance number, 
 		the filename, the line speaker type, and the line speaker gender
 		
-## Project Directory
+## Project Directoryd
+- .gitignore
+- README.md
+- LICENSE.md
+- analysis.ipynb
+- license_notes.md
+- process-art-corpus.ipynb
+- progress_repoty.md
+- project_plan.md
+- [old_work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/old_work)
+
+
 
 
 Please visit my [visitor's log](https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_Alicia.md)
