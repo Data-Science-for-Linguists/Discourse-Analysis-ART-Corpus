@@ -4,6 +4,15 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 12/10/17
+Today I removed the analysis from process-art-corpus.ipynb, so now process-art-corpus.ipynb creates data frames and the analysis
+can be found in analysis.ipynb. I also did a Caller Gender Analysis instead of a Presenter Gender Analysis because the number of 
+Males and Females is more equally matched for Callers. 
+
+Finally, I added a Table of Contents to process-art-corpus.ipynb.
+
+Next time I work on this project, I will futher work on analysis.ipynb, add a table of contents, and begin final_report.md.
+
 ## 12/07/17
 I discovered that I was only looking at the first 10 files when creating art_list. I solved this issue but had to fix many 
 transcription errors before my code would fully run again. I also discovered more transcription errors 
