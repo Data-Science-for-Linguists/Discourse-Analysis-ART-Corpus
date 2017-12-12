@@ -6,8 +6,7 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback 
 
-The Australian Radio Talkback Corpus is owned by Macquarie University and can be downloaded at this website: 
-https://www.ausnc.org.au/corpora/art
+The Australian Radio Talkback Corpus is owned by Macquarie University and can be downloaded [here](https://www.ausnc.org.au/corpora/art).
 
 ## Project Summary: 
 
