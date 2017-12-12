@@ -37,19 +37,20 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 		the filename, the line speaker type, and the line speaker gender
 		
 ## Project Directoryd
-- [.gitignore](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/.gitignore)
-- [README.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/README.md)
-- [LICENSE.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/LICENSE.md)
-- [analysis.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.ipynb)
-- [license_notes.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/license_notes.md)
-- [process-art-corpus.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.ipynb)
-- [progress_report.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/progress_report.md)
-- [project_plan.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md)
-- [old_work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/old_work)
-	- [Australia_Tweets.csv](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/Australia_Tweets.csv)
-	- [reformatting_raw_files.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/reformatting_raw_files.ipynb)
-	- [twitter.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/twitter.ipynb)
-	- [working_on_data.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/working_on_data.ipynb)
+- [.gitignore](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/.gitignore): A file that ignores the folder data_files, which contains the Australian Radio Talkback Corpus files and csv files for my data frames.
+- [README.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/README.md): A summary of the project, and a directory of all files.
+- [LICENSE.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/LICENSE.md): MIT License for my project.
+- [analysis.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.ipynb): The analysis of my data frames.
+- [license_notes.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/license_notes.md): How I chose which license to use on my code.
+- [process-art-corpus.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.ipynb): A Jupyter Notebook file that creates data frames.
+- [progress_report.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/progress_report.md): Progress Reports for my project.
+- [project_plan.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md): The plan for the Discourse Analysis.
+- [old_work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/old_work): A folder of Jupyter Notebook files that were discarded from this project. 
+	- Originally I looked at tweets, the Australian Radio Talkback Corpus, and BNC Baby:
+	- [Australia_Tweets.csv](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/Australia_Tweets.csv): Example Tweets
+	- [reformatting_raw_files.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/reformatting_raw_files.ipynb): My first attempt at creating Data Frames for the Australian Radio Talkback Corpus for the Discourse Analysis.
+	- [twitter.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/twitter.ipynb): Finding Tweets
+	- [working_on_data.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/working_on_data.ipynb): Originally looking at BNC Baby and the Australian Radio Talkback Corpus.
 	
 
 
