@@ -5,7 +5,7 @@ als333@pitt.edu
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
 ## 12/10/17
-*As of today, my repo is public, and my original repo has been removed.*
+*As of today, my repo is **public,** and my original repo has been **removed.***
 
 Today I removed the analysis from process-art-corpus.ipynb, so now process-art-corpus.ipynb creates data frames and the analysis
 can be found in analysis.ipynb. I also did a Caller Gender Analysis instead of a Presenter Gender Analysis because the number of 
