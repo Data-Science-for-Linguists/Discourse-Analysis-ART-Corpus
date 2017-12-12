@@ -9,18 +9,14 @@ als333@pitt.edu
 The Australian Radio Talkback Corpus is owned by Macquarie University and can be downloaded at this website: 
 https://www.ausnc.org.au/corpora/art
 
-## Summary: 
+## Project Summary: 
 
-I will do a discourse analysis of the raw text files in the Australian Radio Talkback Corpus.
+This project is a discourse analysis of the raw text files in the Australian Radio Talkback Corpus.
 These files include speaker information within [], such as the speaker's role (presenter, caller, or expert), their name, and their gender.
 They also include back channels and laughter, indicated by <> and spelling corrections and program breaks, indicated by {}.
 
-For this project, I will compare the number of turns, vocabulary size, and number of sentences and words across speaker roles. I will
-also look at the distribution of gender across roles to see if a similar analysis can be done based on gender.
-I will also look at backchannels to see how the speaker's role and/or gender affect this aspect of conversation.
-
-Please visit my [visitor's log](https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_Alicia.md)
-to see others' comments on my project.
+For this project, I compared did analyses by speaker type and by gender. I looked at the number of turns, number of sentences and words, 
+and sentence and word lengths. I also looked at backchannels to see how the speaker's role and gender affect this aspect of conversation.
 
 ### Importance of this script:
 - My script fixes the following errors:
@@ -34,6 +30,14 @@ to see others' comments on my project.
 	- speaker_df
 		- contains speaker information, including thier unique identifier, filename, name, speaker type (P/C/E), gender, and number of utterances.
 	- art_df
-		- contains the unique speaker ID, utterance number within the file, the filename, and the line of text
+		- contains the unique speaker ID, utterance number within the file, the filename, speaker type, speaker gender, the line of text, word tokens,
+		number of words, average word length, sentences, and number of sentences
 	- bk_df
-		- contains lines with back channels
+		- contains speaker, speaker type, speaker gender, the lines with back channels, the line speaker, the segment utterance number, 
+		the filename, the line speaker type, and the line speaker gender
+		
+## Project Directory
+
+
+Please visit my [visitor's log](https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_Alicia.md)
+to see others' comments on my project.
