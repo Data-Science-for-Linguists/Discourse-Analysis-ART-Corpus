@@ -47,8 +47,8 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 - [project_plan.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md): The plan for the Discourse Analysis.
 - [images](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/images): A folder of all plots used for analysis.
 	- [back_channels_line_speaker_types.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_line_speaker_types.png): A plot of the number of back channels uttered while presenters, callers, and experts were talking.
-	- [back_channel_speaker_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_speaker_genders.png): A ploto of the number of back channels uttered by males and females.
-	- [back_channel_speaker_types.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_speaker_types.png): A plot of the number of back channels spoken presenters, callers, and experts.
+	- [back_channel_speaker_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_speaker_genders.png): A plot of the number of back channels uttered by males and females.
+	- [back_channel_speaker_types.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/back_channel_speaker_types.png): A plot of the number of back channels spoken Presenters, Callers, and Experts.
 	- [caller_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/caller_genders.png): A plot of Caller males and females.
 	- [expert_genders.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/expert_genders.png): A plot of Expert males and females.
 	- [gender_totals.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/gender_totals.png): A plot of all males and females in the corpus.
