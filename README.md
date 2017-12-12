@@ -45,12 +45,11 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 - [process-art-corpus.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.ipynb): A Jupyter Notebook file that creates data frames.
 - [progress_report.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/progress_report.md): Progress reports for my project.
 - [project_plan.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md): The plan for the Discourse Analysis.
-- [old_work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/old_work): A folder of Jupyter Notebook files that were discarded from this project. 
-	- Originally I looked at tweets, the Australian Radio Talkback Corpus, and BNC Baby:
+- [old_work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/old_work): A folder of Jupyter Notebook files that were discarded from this project. Originally I looked at tweets, the Australian Radio Talkback Corpus, and BNC Baby:
 	- [Australia_Tweets.csv](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/Australia_Tweets.csv): Example Tweets
 	- [reformatting_raw_files.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/reformatting_raw_files.ipynb): My first attempt at creating Data Frames for the Australian Radio Talkback Corpus for the Discourse Analysis.
 	- [twitter.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/twitter.ipynb): Finding Tweets
-	- [working_on_data.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/working_on_data.ipynb): Originally looking at BNC Baby and the Australian Radio Talkback Corpus.
+	- [working_on_data.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/working_on_data.ipynb): My first attempt at looking at BNC Baby and the Australian Radio Talkback Corpus.
 	
 
 Please visit my [visitor's log](https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_Alicia.md)
