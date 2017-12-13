@@ -66,7 +66,7 @@ some of these "back channels" are really interruptions and should be analyzed se
 curly brackets and angle brackets, please 
 visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section. 
 
-### Discourse Analyses
+### Discourse Analysis
 I analyzed aspects of speech like sentence and word length, number of turns, and average number of turns to get an idea of how much the speakers were talking. 
 For my main discourse analysis I decided to focus on back channels. Who is uttering back channels, and when are they uttering them? Part of each speaker's identity 
 is their role in the talkback radio show and their gender. How do these factors affect the conversation? 
