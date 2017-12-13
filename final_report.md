@@ -101,4 +101,4 @@ visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-A
 ## Future Work
 
 1. It would be good to keep curly bracket information so that turns can be analyzed for topic boundaries.
-2. Separate overlapping speech into back channels, laughter, inaudible, and interruptions.
+2. Overlapping speech in angle brackets should be sepearted into back channels, laughter, inaudible, and interruptions for analyses.
