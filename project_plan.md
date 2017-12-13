@@ -34,6 +34,9 @@ I would like to look at the following:
 	- word adn sentence length by speaker role and gender *(if genders are distributed evenly across roles)*
 	- number of turns by speaker role and gender *(if genders are distributed evenly across roles)*
 	- back channels
+		- "Yeah
+		- "Uh hu"
+		- laughter
 
 ## Analysis:
 
@@ -44,10 +47,8 @@ These analyses will be divided by gender and speaker type
 	- number of sentences and words
 	- avg word length
 	- avg sentence length
-	- number of backchannels
-		- "Yeah" 
-		- "Uh hu" 
-		- laughter
+	- distrubtion of backchannels
+		- speaker 
 	- most common back channels
 
 ### Questions and Hypotheses:
@@ -58,10 +59,12 @@ These analyses will be divided by gender and speaker type
 		- hypothesis: Presenter
 	- who uses the most advanced vocabulary? 
 		- hypothesis: Expert
+	- are men or women more likely to utter back channels while someone of the same gender is speaking?
+		- hypotheses: women will utter more back channels while men are talking, and men will utter more back channels while men are talking.
  
 ### Methods:
 
-	- create 3 pandas data frame
+	- create 3 pandas data frames
 		- one with the texts
 		- one with the speaker information
 		- one with backchannels
