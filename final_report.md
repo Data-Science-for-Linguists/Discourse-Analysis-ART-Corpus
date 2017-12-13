@@ -8,17 +8,17 @@ als333@pitt.edu
 
 ### Table of Contents
 
-- [Overview of the Discourse Analysis Project](#Overview-of-the-Discourse-Analysis-Project) 
-	- [Choosing a Topic and Finding Data](#Choosing-a-Topic-and-Finding-Data)
-		- [The Australian Radio Talkback Corpus](#The-Australian-Radio-Talkback-Corpus)
-	- [Discourse Analysis](#Discourse-Analysis)
-	- [Presentation](#Presentation)
-		- [Data Frames](#Data-Frames)
-		- [Bar Graphs](#Bar-Graphs)
-- [Choosing a License](#Choosing-a-License)
-	- [The MIT License](#The-MIT-License)
-	- [Why an Open License?](#Why-an-Open-License?)
-- [Format of the Australian Radio Talkback Corpus Raw Files](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files)
+- [1. Overview of the Discourse Analysis Project](#1.-Overview-of-the-Discourse-Analysis-Project) 
+	- [1.1 Choosing a Topic and Finding Data](#1.1-Choosing-a-Topic-and-Finding-Data)
+	- [1.2 The Australian Radio Talkback Corpus](#1.2-The-Australian-Radio-Talkback-Corpus)
+		- [1.2.1 Format of the Australian Radio Talkback Corpus Raw Files](#1.2.1-Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files)
+	- [1.3 Discourse Analysis](#1.3-Discourse-Analysis)
+	- [1.4 Presentation](#1.4-Presentation)
+		- [1.4.1 Data Frames](#1.4.1-Data-Frames)
+		- [1.4.2 Bar Graphs](#1.4.2-Bar-Graphs)
+- [2. Choosing a License](#2.-Choosing-a-License)
+	- [2.1 The MIT License](#2.1-The-MIT-License)
+	- [2.2 Why an Open License?](#2.2-Why-an-Open-License?)
 - [Data Formatting Errors](#Data-Formatting-Errors)
 - [Reformatting Data](#Reformatting-Data)
 	- [Method 1 (Lists)](#Method-1-(Lists))
@@ -30,12 +30,12 @@ als333@pitt.edu
 - [Caller Back Channel Analysis](#Caller-Back-Channel-Analysis)
 - [Future Work](#Future-Work)
 
-## Overview of the Discourse Analysis Project
+## 1. Overview of the Discourse Analysis Project
 
 Please visit my [Project Plan](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md) 
 to see a bulleted version of my plan.
 
-### Choosing a Topic and Finding Data
+### 1.1 Choosing a Topic and Finding Data
 
 When I originally began this project, my goal was to compare Dialects of English. One of the first data sources that I found was the Australian Radio
 Talkback Corpus, which is still used for this project. I also looked at BNC Baby and used the Twitter IPA to scrape tweets from Australia. The work for this
@@ -48,7 +48,7 @@ are in the file working_on_data.ipynb.
 This file was abandoned part-way through because I realized that I needed to try a new topic and new methods. I then chose to do a Discourse Analysis based off of the 
 Australian Radio Talkback Corpus, because it gave speaker information and had a user-friendly format, or so it seemed.
 
-#### The Australian Radio Talkback Corpus
+### 1.2 The Australian Radio Talkback Corpus
 The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. I will 
 discuss licensing later in this report, but you may click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
 to move to that section of the report to learn more about the license for the corpus and how I chose the license for my code.
@@ -56,8 +56,13 @@ to move to that section of the report to learn more about the license for the co
 The corpus contains 27 raw and text files of transcribed recordings of national, regional, and commercial Australian
 Talkback Radio. For this project, I will be using the *raw files,* because the text files do not contain speaker information. 
 
-The first instance of a Speaker in the Corpus is labeled as follows: [SpeakerType+Number: Name, Gender]. For a text
-example, please click [here](https://render.githubusercontent.com/view/ipynb?commit=d7e2875149d7364aab232bff885c8bdfb2e9c10a&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f643765323837353134396437333634616162323332626666383835633862646662326539633130612f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts) 
+
+#### 1.2.1 Format of the Australian Radio Talkback Corpus Raw Files
+
+The first instance of a Speaker in the Corpus is labeled as follows: [SpeakerType+Number: Name, Gender]. 
+Each following instance of a speaker has an abbreviated label within a file, which includes their speaker type and number. Presenters are labeled as *P,* Callers
+as *C,* and Experts as *E.* For a text example, please click 
+[here](https://render.githubusercontent.com/view/ipynb?commit=d7e2875149d7364aab232bff885c8bdfb2e9c10a&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f643765323837353134396437333634616162323332626666383835633862646662326539633130612f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts) 
 to visit my code. 
 
 Also contained in the raw text files are spelling corrections, program advertisements, breaks, and music, indicated by curly brackets { }, and 
@@ -68,14 +73,14 @@ some of these "back channels" are really interruptions and should be analyzed se
 curly brackets and angle brackets, please 
 visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section. 
 
-### Discourse Analysis
+### 1.3 Discourse Analysis
 I analyzed aspects of speech like sentence and word length, number of turns, and average number of turns to get an idea of how much the speakers were talking. 
 For my main discourse analysis I decided to focus on back channels. Who is uttering back channels, and when are they uttering them? Part of each speaker's identity 
 is their role in the talkback radio show and their gender. How do these factors affect the conversation? 
 
-### Presentation
+### 1.4 Presentation
 
-#### Data Frames
+#### 1.4.1 Data Frames
 In order to be able to do an analysis, I organized the data into 3 main pandas data frames. 
 - speaker_df: a data frame of all unique speakers in the corpus
 - art_df: a data frame of all lines of text in the corpus
@@ -84,11 +89,11 @@ In order to be able to do an analysis, I organized the data into 3 main pandas d
 Click [here](https://render.githubusercontent.com/view/ipynb?commit=755bd39beb57f0266c9ad528edaa35107ef6f481&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f373535626433396265623537663032363663396164353238656461613335313037656636663438312f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#Data-Frames-Summary) 
 to see the completed data frames.
 
-#### Bar Graphs
+#### 1.4.2 Bar Graphs
 I used bar graphs to create visualizations of speaker distributions across speaker types and speaker genders. I also created bar graphs to show the most common back channels, 
 and how back channels differed between men and women. These graphs can be found in the Analysis portions of my report.
 
-## Choosing a License
+## 1.5 Choosing a License
 The Australian Radio Talkback Corpus is a relatively closed corpus with a [limited license](https://www.ausnc.org.au/about-1/terms-of-use), 
 and I am using the corpus under the Fair Dealings Policy, which is Section 3.3. Users are allowed to download one copy of the corpus, but are not allowed to re-license the data.
 My *data_files* folder is then hidden from GitHub because I am not allowed to redistribute the data. However, if you would like to download the corpus for yourself, you
@@ -99,18 +104,13 @@ data itself.
 
 To read more about the process of choosing a license, please visit my [License Notes](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/license_notes.md).
 
-### The MIT License
+### 1.5.1 The MIT License
 The [MIT License](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/LICENSE.md) is an open license 
 that will allow others to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies my code.
 
-### Why an Open License?
+### 1.5.2 Why an Open License?
 My code is useful because it fixes many errors in transcription and puts the corpus into a useable format for analysis. Thus, I chose the MIT License because 
 it is open source so that others can expand upon my research to further analyze discourse.
-
-
-
-## Format of the Australian Radio Talkback Corpus Raw Files
-
 
 ## Data Formatting Errors
 In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
@@ -118,8 +118,8 @@ However, I discovered that the standard method of introducing speakers varied, a
 [Data Cleaning cell](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Data-Cleaning) 
 where I added each new transcription error and fixed them in my dictionary of raw texts. This allowed me to append the corrected lines to my lists for the data frames.
 
-
 ## Reformatting Data
+As previously discussed in the [Section 1.2.1](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files), 
 
 ### Method 1 (Lists)
 When I first began working with the Australian Radio Talkback Corpus, my methods were flawed. I began with a list of all lines of text, which I called [ART_lines](http://localhost:8888/notebooks/previous_code/reformatting_raw_files.ipynb#Creating-lists-for-data),
