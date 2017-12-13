@@ -212,18 +212,24 @@ The index *NAT4-raw.txt* in the dictionary of raw texts contains the first segem
 
 To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-many-Speakers-are-there-for-each-Role?).
 ![png](images/role_totals.png)
+
 There are 31 Presenters, 362 Callers, and 37 Experts in the Australian Radio Talkback Corpus. 
 
 To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-many-Males-vs.-Females?).
 ![png](images/gender_totals.png)
+
 There are 218 men and 212 women in the Australian Radio Talkback Corpus.
+
 
 To see the source of the following graphs, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-are-Males-and-Females-distributed-across-Roles?).
 ![png](images/presenter_genders.png)
+
 There are 21 male presenters and 10 female presenters.
 ![png](images/caller_genders.png)
+
 There are 171 male callers and 191 female callers.
 ![png](images/expert_genders.png)
+
 There are 26 male experts and 11 female experts.
 
 ## Speaker Type Analysis
