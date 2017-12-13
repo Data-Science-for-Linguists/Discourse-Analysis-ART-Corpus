@@ -4,6 +4,11 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 12/12/17
+I have created the headings for final_report.md, so I will be writing the overall report tonight and tomorrow.
+I have also been working on organazing [process-art-corpus.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.ipynb)
+and [analysis.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.ipynb) and adding the Table of Contents to both files.
+
 ## 12/10/17
 *As of today, my repo is **public,** and my original repo has been **removed.***
 
