@@ -37,7 +37,7 @@ als333@pitt.edu
 
 ### Method 1 (Lists)
 
-### Method 2: Dictionary
+### Method 2\: Dictionary
 
 ## Data Formatting Errors
 
