@@ -46,16 +46,21 @@ This file was abandoned part-way through because I realized that I needed to try
 Australian Radio Talkback Corpus, because it gave speaker information and had a user-friendly format, or so it seemed.
 
 #### The Australian Radio Talkback Corpus
-The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. *I will 
+The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. I will 
 discuss licensing later in this report, but you may click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
-to move to that section of the report to learn more about the license for the corpus and how I chose the license for my code.*
+to move to that section of the report to learn more about the license for the corpus and how I chose the license for my code.
  
 The corpus contains 27 raw and text files of transcribed recordings of national, regional, and commercial Australian
-Talkback Radio. For this project, I will be using the *raw files,* because the texet files do not contain speaker information. 
+Talkback Radio. For this project, I will be using the *raw files,* because the text files do not contain speaker information. 
 
 The first instance of a Speaker in the Corpus is labeled as follows: [SpeakerType+Number: Name, Gender]. For a text
 example, please click [here](https://render.githubusercontent.com/view/ipynb?commit=d7e2875149d7364aab232bff885c8bdfb2e9c10a&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f643765323837353134396437333634616162323332626666383835633862646662326539633130612f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts) 
-to visit my code.
+to visit my code. 
+
+Also contained in the raw text files are spelling corrections, program advertisements, breaks, and music, indicated by { }, and 
+laughter, pauses, and overlapping speech, indicated by < >. 
+For the purpose of this project, I ignored the items within curly brackets { }. For recommendations on future use with items in the curly brackets, please 
+visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section.
 
 Also contained within 
 
