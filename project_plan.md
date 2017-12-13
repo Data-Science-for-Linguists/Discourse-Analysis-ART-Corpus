@@ -31,25 +31,24 @@ als333@pitt.edu
 
 I would like to look at the following:
 
-	- vocabulary size by speaker role and gender *(if genders are distributed evenly across roles)*
+	- word adn sentence length by speaker role and gender *(if genders are distributed evenly across roles)*
 	- number of turns by speaker role and gender *(if genders are distributed evenly across roles)*
 	- back channels
-	- supervised machine learning?
-		- can the computer guess if a sentence was uttered by a presenter, caller, or expert?
 
 ## Analysis:
 
-These analyses will be divided by gender and then also speaker type (P, C, or E)
+These analyses will be divided by gender and speaker type
 
 	- number of utterances (turns) 
+	- average number of utterances (turns)
 	- number of sentences and words
-	- vocabulary size
-		- avg word length
-		- TTR
-	- number of backchannels or signs of paying attention
+	- avg word length
+	- avg sentence length
+	- number of backchannels
 		- "Yeah" 
 		- "Uh hu" 
 		- laughter
+	- most common back channels
 
 ### Questions and Hypotheses:
 
@@ -59,8 +58,6 @@ These analyses will be divided by gender and then also speaker type (P, C, or E)
 		- hypothesis: Presenter
 	- who uses the most advanced vocabulary? 
 		- hypothesis: Expert
-	- Who is the funniest?
-		- hypothesis: Presenter
  
 ### Methods:
 
@@ -68,7 +65,6 @@ These analyses will be divided by gender and then also speaker type (P, C, or E)
 		- one with the texts
 		- one with the speaker information
 		- one with backchannels
-	- reference the speaker information dataframe when analayzing the text by gender or role
 	- nltk.word_tokenize and nltk.sent_tokenize
 	- regular expressions to extract information from the text, like speaker number and backchannels
 	
@@ -78,3 +74,4 @@ These analyses will be divided by gender and then also speaker type (P, C, or E)
 		- speaker information, organized by filename-speaker_role+speaker_number
 		- texts, organized by speaker and utterance number within each file
 		- graphs to display the results of my analysis
+	- Bar Graphs
