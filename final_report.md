@@ -166,7 +166,7 @@ This data frame is indexed by unique speaker ID and includes the following infor
 The purpose of this data frame is to have all information about unique speakers in one location, and to be able to compare the total number of utterances per speaker.
 
 #### 3.3.2 Text Data Frame
-This data frame is indexed by unique speaker ID and the utterance number of the file, and includes the following information:
+This data frame is multi-indexed by unique speaker ID and the utterance number of the file, and includes the following information:
 - unique speaker ID
 - utterance number within the file
 - filename
@@ -184,15 +184,15 @@ The purpose of this data frame is to be able to look at word, sentence, and utte
 #### 3.3.3 Back Channel Data Frame
 This data frame is not re-indexed and includes the following information about the back channel, the back channel speaker, and the line of text that the back
 channel comes from: 
-	- back channel speaker
-	- back channel speaker type
-	- back channel speaker gender
-	- back channel
-	- line speaker
-	- segment utterance number
-	- filename
-	- line speaker type
-	- line speaker gender
+- back channel speaker
+- back channel speaker type
+- back channel speaker gender
+- back channel
+- line speaker
+- segment utterance number
+- filename
+- line speaker type
+- line speaker gender
 
 The purpose of this data frame is to be able to look at information about the corpus's back channels to see who is uttering them, who has back channels uttered while they are talking, the most common back channels, etc.
 
