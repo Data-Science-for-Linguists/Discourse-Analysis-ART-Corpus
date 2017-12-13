@@ -266,6 +266,7 @@ This means that while Experts are not taking as many turns, they are having mono
 
 ![png](images/top_20_back_channels.png)
 ![png](images/back_channel_speaker_genders.png)
+![png](images/back_channel_line_speaker_genders.png)
 ![png](images/back_channel_speaker_types.png)
 ![png](images/back_channel_line_speaker_types.png)
 
