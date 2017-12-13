@@ -12,7 +12,7 @@ als333@pitt.edu
 	- [Data](#Data)
 		- [Choosing a Topic and Finding Data](#Choosing-a-Topic-and-Finding-Data)
 		- [The Australian Radio Talkback Corpus](#The-Australian-Radio-Talkback-Corpus)
-	- [Discourse Analyses](#Discourse-Analyses)
+	- [Discourse Analysis](#Discourse-Analysis)
 	- [Presentation](#Presentation)
 - [Choosing a License](#Choosing-a-License)
 - [The MIT License](#The-MIT-License)
