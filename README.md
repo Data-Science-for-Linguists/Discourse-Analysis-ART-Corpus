@@ -32,7 +32,7 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 		- contains the unique speaker ID, utterance number within the file, the filename, speaker type, speaker gender, the line of text, word tokens,
 		number of words, average word length, sentences, and number of sentences
 	- bk_df
-		- contains speaker, speaker type, speaker gender, the lines with back channels, the line speaker, the segment utterance number, 
+		- contains speaker, speaker type, speaker gender, back channels, the line speaker, the segment utterance number, 
 		the filename, the line speaker type, and the line speaker gender
 		
 ## Project Directory
