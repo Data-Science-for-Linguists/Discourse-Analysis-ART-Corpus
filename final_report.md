@@ -57,12 +57,13 @@ The first instance of a Speaker in the Corpus is labeled as follows: [SpeakerTyp
 example, please click [here](https://render.githubusercontent.com/view/ipynb?commit=d7e2875149d7364aab232bff885c8bdfb2e9c10a&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f643765323837353134396437333634616162323332626666383835633862646662326539633130612f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts) 
 to visit my code. 
 
-Also contained in the raw text files are spelling corrections, program advertisements, breaks, and music, indicated by { }, and 
-laughter, pauses, and overlapping speech, indicated by < >. 
-For the purpose of this project, I ignored the items within curly brackets { }. For recommendations on future use with items in the curly brackets, please 
-visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section.
-
-Also contained within 
+Also contained in the raw text files are spelling corrections, program advertisements, breaks, and music, indicated by curly brackets { }, and 
+laughter, pauses, inaudible speech, and overlapping speech, indicated by angle brackets < >. 
+For the purpose of this project, I ignored the items within curly brackets. I then looked at
+items within angle brackets that were uttered by speakers other than the speaker of the line. I considered all overlapping speech to be a backchannel, though 
+some of these "back channels" are really interruptions and should be analyzed separately. For recommendations on future research with information in the 
+curly brackets and angle brackets, please 
+visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section. 
 
 ### Discourse Analyses
 
@@ -98,3 +99,6 @@ Also contained within
 ## Caller Back Channel Analysis
 
 ## Future Work
+
+1. It would be good to keep curly bracket information so that turns can be analyzed for topic boundaries.
+2. Separate overlapping speech into back channels, laughter, inaudible, and interruptions.
