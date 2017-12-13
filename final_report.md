@@ -14,17 +14,21 @@ als333@pitt.edu
 		- [1.2.1 Format of the Australian Radio Talkback Corpus Raw Files](#1.2.1-Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files)
 	- [1.3 Discourse Analysis](#1.3-Discourse-Analysis)
 	- [1.4 Presentation](#1.4-Presentation)
-		- [1.4.1 Data Frames](#1.4.1-Data-Frames)
+		- [1.4.1 Data Frames Overview](#1.4.1-Data-Frames-Overview)
 		- [1.4.2 Bar Graphs](#1.4.2-Bar-Graphs)
 - [2. Choosing a License](#2.-Choosing-a-License)
 	- [2.1 The MIT License](#2.1-The-MIT-License)
 	- [2.2 Why an Open License?](#2.2-Why-an-Open-License?)
 - [3. Reformatting Data](#3.-Reformatting-Data)
-	- [3.1 Method 1 (Lists)](#3.1-Method-1-(Lists))
-	- [3.2 Method 2 (Dictionary)](#3.2-Method-2-(Dictionary))
-	- [3.3 Unique Speaker IDs](#3.3-Unique-Speaker-IDs)
+	- [3.1 Reading in the Texts](#Reading-in-the-Texts)
+		- [3.1.1 Method 1 (Lists)](#3.1-Method-1-(Lists))
+		- [3.1.2 Method 2 (Dictionary)](#3.2-Method-2-(Dictionary))
+	- [3.2 Unique Speaker IDs](#3.2-Unique-Speaker-IDs)
+	- [3.3 Data Frames](#3.3-Data-Frames)
+		- [3.3.1 Speaker Data Frame](#Speaker-Data-Frame)
+		- [3.3.2 Text Data Frame](#Text-Data-Frame)
+		- [3.3.3 Back Channel Data Frame](#Back-Channel-Data-Frame)
 - [4. Data Formatting Errors](#4.-Data-Formatting-Errors)
-
 - [Distribution of Speakers by Type and Gender](#Distribution-of-Speakers-by-Type-and-Gender)
 - [Speaker Type Analysis](#Speaker-Type-Analysis) 
 - [Gender Analysis](#Gender-Analysis)
@@ -85,7 +89,7 @@ is their role in the talkback radio show and their gender. How do these factors 
 
 ### 1.4 Presentation
 
-#### 1.4.1 Data Frames
+#### 1.4.1 Data Frames Overview
 In order to be able to do an analysis, I organized the data into 3 main pandas data frames. 
 - speaker_df: a data frame of all unique speakers in the corpus
 - art_df: a data frame of all lines of text in the corpus
@@ -93,6 +97,8 @@ In order to be able to do an analysis, I organized the data into 3 main pandas d
 
 Click [here](https://render.githubusercontent.com/view/ipynb?commit=755bd39beb57f0266c9ad528edaa35107ef6f481&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f373535626433396265623537663032363663396164353238656461613335313037656636663438312f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#Data-Frames-Summary) 
 to see the completed data frames.
+
+Click [here]() to read in more detail about the data frames.
 
 #### 1.4.2 Bar Graphs
 I used bar graphs to create visualizations of speaker distributions across speaker types and speaker genders. I also created bar graphs to show the most common back channels, 
@@ -120,11 +126,11 @@ Thus, I chose the MIT License because it is open source so that others can expan
 ## 3. Reformatting Data
 My goal in using data frames was to make the speaker information and lines of text accessable, and to be able to compare the speakers across files. 
 To get the data into data frames, I had to figure out the most effective way to retrieve the data. 
+
+### 3.1 Reading in the Texts
 First I tried using *lists,* and then I tried a *dictionary,* which was much more effective. 
 
-After this, I needed to give each speaker a unique ID so that no two speakers were labled the same way.
-
-### 3.1 Method 1 (Lists)
+#### 3.1.1 Method 1 (Lists)
 When I first began working with the Australian Radio Talkback Corpus, my methods were flawed. I began with a list of all lines of text, which I called [ART_lines](http://localhost:8888/notebooks/previous_code/reformatting_raw_files.ipynb#Creating-lists-for-data),
 where I append each line of data directly from the files. In the following cells, I created for loops that found gender, speaker, speaker type, utterance number, 
 and filename for each line and appended those values to new lists.
@@ -133,18 +139,23 @@ While the lists were equal lengths, the rows did not line up across lists, and m
 had to modify each list individually to correct the issues. I then decided that a dictionary would be a 
 more effective, efficient, and reliable method for storing my data.
 
-### 3.2 Method 2 (Dictionary)
+#### 3.1.2 Method 2 (Dictionary)
 My second attempt involved first appending all the texts into a dictionary, which I called [rawtext_dict](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts), 
 where the keys were the filenames and the values were the texts. This allowed me to fix transcription errors in the texts themselves instead of working in lists
 of fragmented data.
 
-### 3.3 Unique Speaker IDs
+### 3.2 Unique Speaker IDs
 As previously discussed in the [Section 1.2.1](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files), each speaker is given a unique ID for within their file.
 However, these identifiers do not allow for cross-file analyses. 
 For example, Presenter 1 [P1] in ABCE1-raw.txt is Simon Marnie, but Presenter 1 [P1] in COME1-raw.txt is Luke Bona. My code creates a
 [Unique Speaker ID ](https://render.githubusercontent.com/view/ipynb?commit=1e1745a4d0843db171a796d80b11785629c48e1e&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f316531373435613464303834336462313731613739366438306231313738353632396334386531652f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Creating-Unique-Speaker-Ids)
 for each speaker in the corpus, corresponding to their speaker type and their file number. 
 This transforms the previous two Presenter 1s from [P1] to [ABCE1-P1] and [COME1-P1].
+
+### 3.3 Data Frames
+#### 3.3.1 Speaker Data Frame
+#### 3.3.2 Text Data Frame
+#### 3.3.3 Back Channel Data Frame
 
 ## 4. Data Formatting Errors
 In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
