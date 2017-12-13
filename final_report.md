@@ -33,9 +33,11 @@ als333@pitt.edu
 	- [5.1 Speakers per Role](#5.1-Speakers-per-Role)
 	- [5.2 Speakers per Gender](#5.2-Speakers-per-Gender)
 	- [5.3 Males and Females per Role](#5.3-Males-and-Females-per-Role)
-- [Speaker Type Analysis](#Speaker-Type-Analysis) 
-- [Gender Analysis](#Gender-Analysis)
-- [Back Channel Distribution by Speaker Type and Gender](#Back-Channel-Distribution-by-Speaker-Type-and-Gender)
+- [6. Speaker Type Analysis](#6.-Speaker-Type-Analysis) 
+- [7. Gender Analysis](#7.-Gender-Analysis)
+- [8. Back Channels](#8.-Back-Channels)
+    - [8.1 Back Channel Distribution by Speaker Type](#8.1-Back-Channel-Distribution-by-Speaker-Type)
+    - [8.2 Back Channel Distribution by Gender](#8.2-Back-Channel-Distribution-by-Gender)
 - [Caller Back Channel Analysis](#Caller-Back-Channel-Analysis)
 - [Future Work](#Future-Work)
 
@@ -249,7 +251,7 @@ Presenters, who are hired by the show, and Experts, who are professionals talkin
 males as females. Callers on the other hand are more evenly distributed with slightly more females. 
 Thus it seems that men are in more positions of power in the Australian Radio Talkback Corpus. 
 
-## Speaker Type Analysis
+## 6. Speaker Type Analysis
 
 When I did my [speaker type analysis](http://localhost:8888/notebooks/analysis.ipynb#Comparison-by-Speaker-Type), I found that Presenters overall had more turns and sentences than Callers and Experts, with Experts having the least number of total turns and sentences. Word length was insignificant, with each speaker having between 3 and 4 characters per word. This calculation includes punctuation, and I expect their average would be higher but still relatively equal. 
 
@@ -258,17 +260,21 @@ This means that while Experts are not taking as many turns, they are having mono
 
 **Average number of turns** appeared to be significant as well. On average, Presenters took 114 turns, Experts took 64 turns, and Callers only took about 9 turns. In talk shows, Presenters lead the conversation and introduce new members to the conversation, so it makes sense that they would have more turns than the other speaker types. Also, because there are many callers coming and going throughout the radio show, they would not have many turns.
 
-## Gender Analysis 
+## 7. Gender Analysis 
 
 *include Languague Log Article*
 
-## Back Channel Distribution by Speaker Types and Gender
-
+## 8. Back Channels
 ![png](images/top_20_back_channels.png)
-![png](images/back_channel_speaker_genders.png)
-![png](images/back_channel_line_speaker_genders.png)
+
+### 8.1 Back Channel Distribution by Speaker Types
 ![png](images/back_channel_speaker_types.png)
 ![png](images/back_channel_line_speaker_types.png)
+
+
+### 8.2 Back Channel Distribution by Gender
+![png](images/back_channel_speaker_genders.png)
+![png](images/back_channel_line_speaker_genders.png)
 
 
 
