@@ -7,9 +7,13 @@ als333@pitt.edu
 # Final Report
 
 ### Table of Contents
-- [Choosing a Topic and Finding Data](#Choosing-a-Topic-and-Finding-Data)
-- [The Australian Radio Talkback Corpus](#The-Australian-Radio-Talkback-Corpus)
-- [Discourse Analyses](#Discourse-Analyses)
+
+- [Overall Description of the Discourse Analysis Project](#Overall-Description-of-the-Discourse-Analysis-Project) 
+	- [Data](#Data)
+		- [Choosing a Topic and Finding Data](#Choosing-a-Topic-and-Finding-Data)
+		- [The Australian Radio Talkback Corpus](#The-Australian-Radio-Talkback-Corpus)
+	- [Discourse Analyses](#Discourse-Analyses)
+	- [Presentation](#Presentation)
 - [Choosing a License](#Choosing-a-License)
 - [The MIT License](#The-MIT-License)
 - [Project Plan](#Project-Plan)
@@ -25,11 +29,16 @@ als333@pitt.edu
 - [Caller Back Channel Analysis](#Caller-Back-Channel-Analysis)
 - [Future Work](#Future-Work)
 
-## Choosing a Topic and Finding Data
+## Overall Description of the Discourse Analysis Project
 
-## The Australian Radio Talkback Corpus
+### Data
+#### Choosing a Topic and Finding Data
+#### The Australian Radio Talkback Corpus
 
-## Discourse Analyses
+### Discourse Analyses
+
+### Presentation
+
 
 ## Choosing a License
 
