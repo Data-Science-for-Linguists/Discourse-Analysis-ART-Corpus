@@ -29,7 +29,10 @@ als333@pitt.edu
 		- [3.3.2 Text Data Frame](#3.3.2-Text-Data-Frame)
 		- [3.3.3 Back Channel Data Frame](#3.3.3-Back-Channel-Data-Frame)
 - [4. Data Formatting Errors](#4.-Data-Formatting-Errors)
-- [Distribution of Speakers by Type and Gender](#Distribution-of-Speakers-by-Type-and-Gender)
+- [5. Distribution of Speakers by Type and Gender](#Distribution-of-Speakers-by-Type-and-Gender)
+	- [5.1 Speakers per Role](#5.1-Speakers-per-Role)
+	- [5.2 Speakers per Gender](#5.2-Speakers-per-Gender)
+	- [5.3 Males and Females per Role](#5.3-Males-and-Females-per-Role)
 - [Speaker Type Analysis](#Speaker-Type-Analysis) 
 - [Gender Analysis](#Gender-Analysis)
 - [Back Channel Distribution by Speaker Type and Gender](#Back-Channel-Distribution-by-Speaker-Type-and-Gender)
@@ -208,19 +211,21 @@ The index *NAT4-raw.txt* in the dictionary of raw texts contains the first segem
 
 
 
-## Distribution of Speakers by Type and Gender
+## 5. Distribution of Speakers by Type and Gender
 
+### 5.1 Speakers per Role
 To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-many-Speakers-are-there-for-each-Role?).
 ![png](images/role_totals.png)
 
 There are 31 Presenters, 362 Callers, and 37 Experts in the Australian Radio Talkback Corpus. 
 
+### 5.2 Speakers per Gender
 To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-many-Males-vs.-Females?).
 ![png](images/gender_totals.png)
 
 There are 218 men and 212 women in the Australian Radio Talkback Corpus.
 
-
+### 5.3 Males and Females per Role
 To see the source of the following graphs, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-are-Males-and-Females-distributed-across-Roles?).
 ![png](images/presenter_genders.png)
 
