@@ -9,13 +9,15 @@ als333@pitt.edu
 ### Table of Contents
 
 - [Overview of the Discourse Analysis Project](#Overview-of-the-Discourse-Analysis-Project) 
-	- [Data](#Data)
-		- [Choosing a Topic and Finding Data](#Choosing-a-Topic-and-Finding-Data)
+	- [Choosing a Topic and Finding Data](#Choosing-a-Topic-and-Finding-Data)
 		- [The Australian Radio Talkback Corpus](#The-Australian-Radio-Talkback-Corpus)
 	- [Discourse Analysis](#Discourse-Analysis)
 	- [Presentation](#Presentation)
+		- [Data Frames](#Data-Frames)
+		- [Bar Graphs](#Bar-Graphs)
 - [Choosing a License](#Choosing-a-License)
-- [The MIT License](#The-MIT-License)
+	- [The MIT License](#The-MIT-License)
+	- [Why an Open License?](#Why-an-Open-License?)
 - [Project Plan](#Project-Plan)
 - [Format of the Australian Radio Talkback Corpus Raw Files](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files)
 - [Reformatting Data](#Reformatting-Data)
@@ -31,8 +33,7 @@ als333@pitt.edu
 
 ## Overview of the Discourse Analysis Project
 
-### Data
-#### Choosing a Topic and Finding Data
+### Choosing a Topic and Finding Data
 
 When I originally began this project, my goal was to compare Dialects of English. One of the first data sources that I found was the Australian Radio
 Talkback Corpus, which is still used for this project. I also looked at BNC Baby and used the Twitter IPA to scrape tweets from Australia. The work for this
@@ -40,7 +41,7 @@ orignal idea can be found in the folder [previous_code](https://github.com/Data-
 The code for how I found tweets is in [twitter.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/previous_code/twitter.ipynb)
 and my [BNC Baby code](https://render.githubusercontent.com/view/ipynb?commit=6f7f8ef7ec89b5503b8588046a299712bc38dcec&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f366637663865663765633839623535303362383538383034366132393937313262633338646365632f70726576696f75735f636f64652f776f726b696e675f6f6e5f646174612e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=previous_code%2Fworking_on_data.ipynb&repository_id=109528849&repository_type=Repository#BNC) 
 and [Australian Radio Talkback Corpus code](https://render.githubusercontent.com/view/ipynb?commit=6f7f8ef7ec89b5503b8588046a299712bc38dcec&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f366637663865663765633839623535303362383538383034366132393937313262633338646365632f70726576696f75735f636f64652f776f726b696e675f6f6e5f646174612e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=previous_code%2Fworking_on_data.ipynb&repository_id=109528849&repository_type=Repository#Australian-Radio-Talkback)
-are in the file working_on_data.ipynb. 
+are in the file working_on_data.ipynb.
 
 This file was abandoned part-way through because I realized that I needed to try a new topic and new methods. I then chose to do a Discourse Analysis based off of the 
 Australian Radio Talkback Corpus, because it gave speaker information and had a user-friendly format, or so it seemed.
@@ -66,17 +67,48 @@ curly brackets and angle brackets, please
 visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section. 
 
 ### Discourse Analyses
+I analyzed aspects of speech like sentence and word length, number of turns, and average number of turns to get an idea of how much the speakers were talking. 
+For my main discourse analysis I decided to focus on back channels. Who is uttering back channels, and when are they uttering them? Part of each speaker's identity 
+is their role in the talkback radio show and their gender. How do these factors affect the conversation? 
 
 ### Presentation
 
+#### Data Frames
+In order to be able to do an analysis, I organized the data into 3 main pandas data frames. 
+- speaker_df: a data frame of all unique speakers in the corpus
+- art_df: a data frame of all lines of text in the corpus
+- bk_df: a data frame of all back channels in the corpus
+
+Click [here](https://render.githubusercontent.com/view/ipynb?commit=755bd39beb57f0266c9ad528edaa35107ef6f481&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f373535626433396265623537663032363663396164353238656461613335313037656636663438312f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#Data-Frames-Summary) 
+to see the completed data frames.
+
+#### Bar Graphs
+I used bar graphs to create visualizations of speaker distributions across speaker types and speaker genders. I also created bar graphs to show the most common back channels, 
+and how back channels differed between men and women. These graphs can be found in the Analysis portions of my report.
 
 ## Choosing a License
+The Australian Radio Talkback Corpus is a relatively closed corpus with a [limited license](https://www.ausnc.org.au/about-1/terms-of-use), 
+and I am using the corpus under the Fair Dealings Policy, which is Section 3.3. Users are allowed to download one copy of the corpus, but are not allowed to re-license the data.
+My data_files folder is then hidden from GitHub because I am not allowed to redistribute the data. However, if you would like to download the corpus for yourself, you
+may do so at the [Australian National Corpus website](https://www.ausnc.org.au/corpora/art). 
+
+At first, I thought I would be unable to license my code due to the strict regulations, but I am able to license my code as long as I am not re-licensing the 
+data itself.
+
+To read more about the process of choosing a license, please visit my [License Notes](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/license_notes.md).
 
 ### The MIT License
+I chose [the MIT License](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/LICENSE.md) because it is an open license 
+that will allow others to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies my code.
+
+### Why an Open License?
+My code is useful because it fixes many errors in transcription and puts the corpus into a useable format for analysis. Thus, this code is open source so that 
+others can expand upon my research to further analyze discourse.
 
 ## Project Plan
 
 ## Format of the Australian Radio Talkback Corpus Raw Files
+
 
 ## Reformatting Data
 
