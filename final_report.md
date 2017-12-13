@@ -8,7 +8,7 @@ als333@pitt.edu
 
 ### Table of Contents
 
-- [Overall Description of the Discourse Analysis Project](#Overall-Description-of-the-Discourse-Analysis-Project) 
+- [Overview of the Discourse Analysis Project](#Overview-of-the-Discourse-Analysis-Project) 
 	- [Data](#Data)
 		- [Choosing a Topic and Finding Data](#Choosing-a-Topic-and-Finding-Data)
 		- [The Australian Radio Talkback Corpus](#The-Australian-Radio-Talkback-Corpus)
@@ -29,7 +29,7 @@ als333@pitt.edu
 - [Caller Back Channel Analysis](#Caller-Back-Channel-Analysis)
 - [Future Work](#Future-Work)
 
-## Overall Description of the Discourse Analysis Project
+## Overview of the Discourse Analysis Project
 
 ### Data
 #### Choosing a Topic and Finding Data
