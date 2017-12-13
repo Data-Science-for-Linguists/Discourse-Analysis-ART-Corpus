@@ -15,7 +15,7 @@ als333@pitt.edu
 - [Project Plan](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files)
 - [Reformatting Data](#Reformatting-Data)
 	- [Method 1 (Lists)](#Method-1-(Lists))
-	- [Method 2: Dictionary](#Method-2:-Dictionary)
+	- [Method 2\: Dictionary](#Method-2\:-Dictionary)
 - [Data Formatting Errors](#Data-Formatting-Errors)
 - [Speaker Information Summary](#Speaker-Information-Summary)
 
