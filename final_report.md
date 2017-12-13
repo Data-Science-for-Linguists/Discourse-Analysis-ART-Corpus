@@ -109,14 +109,28 @@ it is open source so that others can expand upon my research to further analyze 
 
 ## Format of the Australian Radio Talkback Corpus Raw Files
 
-
 ## Reformatting Data
 
 ### Method 1 (Lists)
+When I first began working with the Australian Radio Talkback Corpus, my methods were flawed. I began with a list of all lines of text, which I called [ART_lines](http://localhost:8888/notebooks/previous_code/reformatting_raw_files.ipynb#Creating-lists-for-data),
+where I append each line of data directly from the files. In the following cells, I created for loops that found gender, speaker, speaker type, utterance number, 
+and filename for each line and appended those values to new lists.
+
+While the lists were equal lengths, the rows did not line up across lists, and my data format was unreliable. I also found many transcription errors and 
+had to modify each list individually to correct the issues. I then decided that a dictionary would be a 
+more effective, efficient, and reliable method for storing my data.
 
 ### Method 2 (Dictionary)
+My second attempt involved first appending all the texts into a dictionary, which I called [rawtext_dict](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts), 
+where the keys were the filenames and the values were the texts. This allowed me to fix transcription errors in the texts themselves instead of working in lists
+of fragmented data.
 
 ## Data Formatting Errors
+In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
+However, I discovered that the standard method of introducing speakers varied, and speakers were sometimes even mislabeled in later turns. I created a single 
+[Data Cleaning cell](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Data-Cleaning) 
+where I added each new transcription error and fixed them in my dictionary of raw texts. This allowed me to append the corrected lines to my lists for the data frames.
+
 
 ## Distribution of Speakers by Type and Gender
 
