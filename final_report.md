@@ -263,3 +263,5 @@ Thus it seems that men are in more positions of power in the Australian Radio Ta
 
 1. It would be good to keep curly bracket information so that turns can be analyzed for topic boundaries.
 2. Overlapping speech in angle brackets should be sepearted into back channels, laughter, inaudible, and interruptions for analyses.
+3. Are certain words, phrases, or parts of speech indicative of back channels occuring?
+    - To do this, there would need to be columns for n-grams (I recommend unigrams and bigrams) before and after the back channel as well as POS Tags (as with the Stanford Parser). These could give valuable information for knowing what causes a back channel.
