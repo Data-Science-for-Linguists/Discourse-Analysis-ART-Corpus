@@ -155,7 +155,7 @@ This transforms the previous two Presenter 1s from [P1] to [ABCE1-P1] and [COME1
 ### 3.3 Data Frames
 
 #### 3.3.1 Speaker Data Frame
-This data frame is indexed by unique speaker ID and includes the following information:
+This data frame is organized by unique speaker ID and includes the following information:
 - unique speaker ID
 - filename
 - name
@@ -166,7 +166,7 @@ This data frame is indexed by unique speaker ID and includes the following infor
 The purpose of this data frame is to have all information about unique speakers in one location, and to be able to compare the total number of utterances per speaker.
 
 #### 3.3.2 Text Data Frame
-This data frame is multi-indexed by unique speaker ID and the utterance number of the file, and includes the following information:
+This data frame is organized by unique speaker ID and the utterance number of the file, and includes the following information:
 - unique speaker ID
 - utterance number within the file
 - filename
@@ -182,12 +182,11 @@ This data frame is multi-indexed by unique speaker ID and the utterance number o
 The purpose of this data frame is to be able to look at word, sentence, and utterance information for speakers by speaker type and gender.
 
 #### 3.3.3 Back Channel Data Frame
-This data frame is not re-indexed and includes the following information about the back channel, the back channel speaker, and the line of text that the back
-channel comes from: 
-- back channel speaker
-- back channel speaker type
-- back channel speaker gender
-- back channel
+This data frame is organized by unique speaker 
+- speaker
+- speaker type
+- speaker gender
+- back channels
 - line speaker
 - segment utterance number
 - filename
@@ -210,6 +209,8 @@ The index *NAT4-raw.txt* in the dictionary of raw texts contains the first segem
 
 
 ## Distribution of Speakers by Type and Gender
+
+![png](image_files/role_totals.png)
 
 ## Speaker Type Analysis
 
