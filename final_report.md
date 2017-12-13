@@ -183,8 +183,15 @@ The purpose of this data frame is to be able to look at word, sentence, and utte
 
 #### 3.3.3 Back Channel Data Frame
 This data frame is organized by unique speaker 
-		- contains speaker, speaker type, speaker gender, the lines with back channels, the line speaker, the segment utterance number, 
-		the filename, the line speaker type, and the line speaker gender
+- speaker
+- speaker type
+- speaker gender
+- back channels
+- line speaker
+- segment utterance number
+- filename
+- line speaker type
+- line speaker gender
 
 The purpose of this data frame is to be able to look at information about the corpus's back channels to see who is uttering them, who has back channels uttered while they are talking, the most common back channels, etc.
 
