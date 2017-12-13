@@ -218,6 +218,7 @@ To see the source of the following graph, please visit [my code](https://render.
 ![png](images/role_totals.png)
 
 There are 31 Presenters, 362 Callers, and 37 Experts in the Australian Radio Talkback Corpus. 
+
 Most files have 1-2 Presenters and Experts, with many people calling in throughout the show.
 
 
