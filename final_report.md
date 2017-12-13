@@ -18,12 +18,11 @@ als333@pitt.edu
 - [Choosing a License](#Choosing-a-License)
 	- [The MIT License](#The-MIT-License)
 	- [Why an Open License?](#Why-an-Open-License?)
-- [Project Plan](#Project-Plan)
 - [Format of the Australian Radio Talkback Corpus Raw Files](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files)
+- [Data Formatting Errors](#Data-Formatting-Errors)
 - [Reformatting Data](#Reformatting-Data)
 	- [Method 1 (Lists)](#Method-1-(Lists))
 	- [Method 2 (Dictionary)](#Method-2-(Dictionary))
-- [Data Formatting Errors](#Data-Formatting-Errors)
 - [Distribution of Speakers by Type and Gender](#Distribution-of-Speakers-by-Type-and-Gender)
 - [Speaker Type Analysis](#Speaker-Type-Analysis) 
 - [Gender Analysis](#Gender-Analysis)
@@ -32,6 +31,9 @@ als333@pitt.edu
 - [Future Work](#Future-Work)
 
 ## Overview of the Discourse Analysis Project
+
+Please visit my [Project Plan](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md) 
+to see a bulleted version of my plan.
 
 ### Choosing a Topic and Finding Data
 
@@ -105,9 +107,17 @@ that will allow others to use, copy, modify, merge, publish, distribute, sublice
 My code is useful because it fixes many errors in transcription and puts the corpus into a useable format for analysis. Thus, I chose the MIT License because 
 it is open source so that others can expand upon my research to further analyze discourse.
 
-## Project Plan
+
 
 ## Format of the Australian Radio Talkback Corpus Raw Files
+
+
+## Data Formatting Errors
+In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
+However, I discovered that the standard method of introducing speakers varied, and speakers were sometimes even mislabeled in later turns. I created a single 
+[Data Cleaning cell](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Data-Cleaning) 
+where I added each new transcription error and fixed them in my dictionary of raw texts. This allowed me to append the corrected lines to my lists for the data frames.
+
 
 ## Reformatting Data
 
@@ -124,12 +134,6 @@ more effective, efficient, and reliable method for storing my data.
 My second attempt involved first appending all the texts into a dictionary, which I called [rawtext_dict](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts), 
 where the keys were the filenames and the values were the texts. This allowed me to fix transcription errors in the texts themselves instead of working in lists
 of fragmented data.
-
-## Data Formatting Errors
-In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
-However, I discovered that the standard method of introducing speakers varied, and speakers were sometimes even mislabeled in later turns. I created a single 
-[Data Cleaning cell](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Data-Cleaning) 
-where I added each new transcription error and fixed them in my dictionary of raw texts. This allowed me to append the corrected lines to my lists for the data frames.
 
 
 ## Distribution of Speakers by Type and Gender
