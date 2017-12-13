@@ -89,7 +89,7 @@ and how back channels differed between men and women. These graphs can be found 
 ## Choosing a License
 The Australian Radio Talkback Corpus is a relatively closed corpus with a [limited license](https://www.ausnc.org.au/about-1/terms-of-use), 
 and I am using the corpus under the Fair Dealings Policy, which is Section 3.3. Users are allowed to download one copy of the corpus, but are not allowed to re-license the data.
-My data_files folder is then hidden from GitHub because I am not allowed to redistribute the data. However, if you would like to download the corpus for yourself, you
+My *data_files* folder is then hidden from GitHub because I am not allowed to redistribute the data. However, if you would like to download the corpus for yourself, you
 may do so at the [Australian National Corpus website](https://www.ausnc.org.au/corpora/art). 
 
 At first, I thought I would be unable to license my code due to the strict regulations, but I am able to license my code as long as I am not re-licensing the 
@@ -98,12 +98,12 @@ data itself.
 To read more about the process of choosing a license, please visit my [License Notes](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/license_notes.md).
 
 ### The MIT License
-I chose [the MIT License](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/LICENSE.md) because it is an open license 
+The [MIT License](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/LICENSE.md) is an open license 
 that will allow others to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies my code.
 
 ### Why an Open License?
-My code is useful because it fixes many errors in transcription and puts the corpus into a useable format for analysis. Thus, this code is open source so that 
-others can expand upon my research to further analyze discourse.
+My code is useful because it fixes many errors in transcription and puts the corpus into a useable format for analysis. Thus, I chose the MIT License because 
+it is open source so that others can expand upon my research to further analyze discourse.
 
 ## Project Plan
 
