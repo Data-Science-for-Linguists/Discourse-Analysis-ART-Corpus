@@ -46,9 +46,9 @@ This file was abandoned part-way through because I realized that I needed to try
 Australian Radio Talkback Corpus, because it gave speaker information and had a user-friendly format, or so it seemed.
 
 #### The Australian Radio Talkback Corpus
-The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. *I will discussPlease
-licensing in this report, but please click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
-to learn more about the license for the corpus and how I chose the license for my code.*
+The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. *I will 
+discuss licensing later in this report, but you may click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
+to move to that section of the report to learn more about the license for the corpus and how I chose the license for my code.*
  
 The corpus contains 27 raw and text files of transcribed recordings of national, regional, and commercial Australian
 Talkback Radio. For this project, I will be using the *raw files,* because the texet files do not contain speaker information. 
