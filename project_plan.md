@@ -21,7 +21,7 @@ als333@pitt.edu
 				- Name
 				- Gender (M/F)
 			- laughter <>
-			- overlapping speach (back channels) <>
+			- overlapping speech (back channels) <>
 			- commas <,>
 			- spelling corrections {}
 			- program advertisements, breaks, and music {}
@@ -31,7 +31,7 @@ als333@pitt.edu
 
 I would like to look at the following:
 
-	- word adn sentence length by speaker role and gender *(if genders are distributed evenly across roles)*
+	- word and sentence length by speaker role and gender *(if genders are distributed evenly across roles)*
 	- number of turns by speaker role and gender *(if genders are distributed evenly across roles)*
 	- back channels
 		- "Yeah
