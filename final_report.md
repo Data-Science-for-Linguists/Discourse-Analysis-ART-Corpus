@@ -236,12 +236,18 @@ To see the source of the following graphs, please visit [my code](https://render
 ![png](images/presenter_genders.png)
 
 There are 21 male presenters and 10 female presenters.
+
 ![png](images/caller_genders.png)
 
 There are 171 male callers and 191 female callers.
+
 ![png](images/expert_genders.png)
 
 There are 26 male experts and 11 female experts.
+
+Presenters, who are hired by the show, and Experts, who are professionals talking about their work, include about twice as many
+males as females. Callers on the other hand are more evenly distributed with slightly more females. 
+Thus it seems that men are in more positions of power in the Australian Radio Talkback Corpus. 
 
 ## Speaker Type Analysis
 
