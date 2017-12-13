@@ -56,7 +56,7 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 	- [role_totals.png](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/role_totals.png): A plot of all speakers per speaker type.
 	- [top_20_back_channels](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/images/top_20_back_channels.png): A plot of the top 20 most common back channels in the corpus.
 
-- [old_work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/old_work): A folder of Jupyter Notebook files and csv files that were discarded from this project. Originally I looked at tweets, the Australian Radio Talkback Corpus, and BNC Baby:
+- [previous_code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/previous_code): A folder of Jupyter Notebook files and csv files that were discarded from this project. Originally I looked at tweets, the Australian Radio Talkback Corpus, and BNC Baby:
 	- [Australia_Tweets.csv](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/Australia_Tweets.csv): Example Tweets
 	- [reformatting_raw_files.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/reformatting_raw_files.ipynb): My first attempt at creating Data Frames for the Australian Radio Talkback Corpus for the Discourse Analysis.
 	- [twitter.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/old_work/twitter.ipynb): Finding Tweets
