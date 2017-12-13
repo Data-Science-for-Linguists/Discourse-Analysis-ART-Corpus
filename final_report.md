@@ -19,10 +19,10 @@ als333@pitt.edu
 - [2. Choosing a License](#2.-Choosing-a-License)
 	- [2.1 The MIT License](#2.1-The-MIT-License)
 	- [2.2 Why an Open License?](#2.2-Why-an-Open-License?)
-- [Data Formatting Errors](#Data-Formatting-Errors)
-- [Reformatting Data](#Reformatting-Data)
-	- [Method 1 (Lists)](#Method-1-(Lists))
-	- [Method 2 (Dictionary)](#Method-2-(Dictionary))
+- [3. Data Formatting Errors](#3.-Data-Formatting-Errors)
+- [4. Reformatting Data](#4.-Reformatting-Data)
+	- [4.1 Method 1 (Lists)](#4.1-Method-1-(Lists))
+	- [4.2 Method 2 (Dictionary)](#4.2-Method-2-(Dictionary))
 - [Distribution of Speakers by Type and Gender](#Distribution-of-Speakers-by-Type-and-Gender)
 - [Speaker Type Analysis](#Speaker-Type-Analysis) 
 - [Gender Analysis](#Gender-Analysis)
@@ -51,7 +51,7 @@ Australian Radio Talkback Corpus, because it gave speaker information and had a 
 ### 1.2 The Australian Radio Talkback Corpus
 The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. I will 
 discuss licensing later in this report, but you may click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
-to move to that section of the report to learn more about the license for the corpus and how I chose the license for my code.
+to move to Section 1.5 of the report to learn more about the license for the corpus and how I chose the license for my code.
  
 The corpus contains 27 raw and text files of transcribed recordings of national, regional, and commercial Australian
 Talkback Radio. For this project, I will be using the *raw files,* because the text files do not contain speaker information. 
@@ -112,16 +112,21 @@ that will allow others to use, copy, modify, merge, publish, distribute, sublice
 My code is useful because it fixes many errors in transcription and puts the corpus into a useable format for analysis. Thus, I chose the MIT License because 
 it is open source so that others can expand upon my research to further analyze discourse.
 
-## Data Formatting Errors
+## 3. Data Formatting Errors
 In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
-However, I discovered that the standard method of introducing speakers varied, and speakers were sometimes even mislabeled in later turns. I created a single 
+However, I discovered that the standard method of introducing speakers varied, and speakers were sometimes even mislabeled in later turns. Similarly, sometimes 
+information was in the incorrect type of bracket. I created a single 
 [Data Cleaning cell](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Data-Cleaning) 
-where I added each new transcription error and fixed them in my dictionary of raw texts. This allowed me to append the corrected lines to my lists for the data frames.
+where I added each new transcription error and fixed them in my dictionary of raw texts. 
+This allowed me to append the corrected lines to my lists for the data frames.
 
-## Reformatting Data
+NAT4-raw.txt specifically contained 2 files, which [I separated into NAT4-raw.txt and NAT5-raw.txt.](https://render.githubusercontent.com/view/ipynb?commit=1e1745a4d0843db171a796d80b11785629c48e1e&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f316531373435613464303834336462313731613739366438306231313738353632396334386531652f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Splitting-NAT4-raw.txt-into-2-files) 
+The index *NAT4-raw.txt* in the dictionary of raw texts contains the first segement from the original NAT4-raw.txt, and the second segement is under the new key *NAT5-raw.txt.*
+
+## 4. Reformatting Data
 As previously discussed in the [Section 1.2.1](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files), 
 
-### Method 1 (Lists)
+### 4.1 Method 1 (Lists)
 When I first began working with the Australian Radio Talkback Corpus, my methods were flawed. I began with a list of all lines of text, which I called [ART_lines](http://localhost:8888/notebooks/previous_code/reformatting_raw_files.ipynb#Creating-lists-for-data),
 where I append each line of data directly from the files. In the following cells, I created for loops that found gender, speaker, speaker type, utterance number, 
 and filename for each line and appended those values to new lists.
@@ -130,7 +135,7 @@ While the lists were equal lengths, the rows did not line up across lists, and m
 had to modify each list individually to correct the issues. I then decided that a dictionary would be a 
 more effective, efficient, and reliable method for storing my data.
 
-### Method 2 (Dictionary)
+### 4.2 Method 2 (Dictionary)
 My second attempt involved first appending all the texts into a dictionary, which I called [rawtext_dict](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts), 
 where the keys were the filenames and the values were the texts. This allowed me to fix transcription errors in the texts themselves instead of working in lists
 of fragmented data.
