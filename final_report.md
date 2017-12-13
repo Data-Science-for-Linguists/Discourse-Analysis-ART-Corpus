@@ -251,11 +251,25 @@ Thus it seems that men are in more positions of power in the Australian Radio Ta
 
 ## Speaker Type Analysis
 
+When I did my [speaker type analysis](http://localhost:8888/notebooks/analysis.ipynb#Comparison-by-Speaker-Type), I found that Presenters overall had more turns and sentences than Callers and Experts, with Experts having the least number of total turns and sentences. Word length was insignificant, with each speaker having between 3 and 4 characters per word. This calculation includes punctuation, and I expect their average would be higher but still relatively equal. 
+
+The findings for total number of words differ from the above findings, with Experts leading, followed by Presenters and then Callers. With the most words and the least number of sentences, **Experts had the longest sentences.** Presenters have on average about 17 words per sentence, and Callers have about 18 words per sentence, while Experts have an average of about 23 words per sentence. 
+This means that while Experts are not taking as many turns, they are having monologues throughout the corpus and expounding on their topics with longer sentences.
+
+**Average number of turns** appeared to be significant as well. On average, Presenters took 114 turns, Experts took 64 turns, and Callers only took about 9 turns. In talk shows, Presenters lead the conversation and introduce new members to the conversation, so it makes sense that they would have more turns than the other speaker types. Also, because there are many callers coming and going throughout the radio show, they would not have many turns.
+
 ## Gender Analysis 
 
 *include Languague Log Article*
 
 ## Back Channel Distribution by Speaker Types and Gender
+
+![png](images/top_20_back_channels.png)
+![png](images/back_channel_speaker_genders.png)
+![png](images/back_channel_speaker_types.png)
+![png](images/back_channel_line_speaker_types.png)
+
+
 
 ## Caller Back Channel Analysis
 
