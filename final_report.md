@@ -210,7 +210,7 @@ The index *NAT4-raw.txt* in the dictionary of raw texts contains the first segem
 
 ## Distribution of Speakers by Type and Gender
 
-![png](image_files/role_totals.png)
+![png](images/role_totals.png)
 
 ## Speaker Type Analysis
 
