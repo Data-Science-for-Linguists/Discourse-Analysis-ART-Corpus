@@ -98,7 +98,7 @@ In order to be able to do an analysis, I organized the data into 3 main pandas d
 Click [here](https://render.githubusercontent.com/view/ipynb?commit=755bd39beb57f0266c9ad528edaa35107ef6f481&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f373535626433396265623537663032363663396164353238656461613335313037656636663438312f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#Data-Frames-Summary) 
 to see the completed data frames.
 
-Click [here]() to read in more detail about the data frames.
+More information about the data frames' contents, organization, and purpose can be found in [Section 3.3](#Data-Frames).
 
 #### 1.4.2 Bar Graphs
 I used bar graphs to create visualizations of speaker distributions across speaker types and speaker genders. I also created bar graphs to show the most common back channels, 
@@ -153,9 +153,36 @@ for each speaker in the corpus, corresponding to their speaker type and their fi
 This transforms the previous two Presenter 1s from [P1] to [ABCE1-P1] and [COME1-P1].
 
 ### 3.3 Data Frames
+
 #### 3.3.1 Speaker Data Frame
+This data frame is organized by unique speaker ID and includes the following information:
+- unique speaker ID
+- filename
+- name
+- speaker type (P/C/E)
+- gender (M/F)
+- number of utterances
+
 #### 3.3.2 Text Data Frame
+This data frame is organized by unique speaker ID and the utterance number of the file, and includes the following information:
+- unique speaker ID
+- utterance number within the file
+- filename
+- speaker type (P/C/E)
+- speaker gender (M/F)
+- the line of text
+- word tokens
+- number of words
+- average word length
+- sentences
+- number of sentences
+
 #### 3.3.3 Back Channel Data Frame
+This data frame is organized by unique speaker 
+		- contains speaker, speaker type, speaker gender, the lines with back channels, the line speaker, the segment utterance number, 
+		the filename, the line speaker type, and the line speaker gender
+
+
 
 ## 4. Data Formatting Errors
 In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
