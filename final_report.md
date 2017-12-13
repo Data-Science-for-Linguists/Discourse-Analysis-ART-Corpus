@@ -155,7 +155,7 @@ This transforms the previous two Presenter 1s from [P1] to [ABCE1-P1] and [COME1
 ### 3.3 Data Frames
 
 #### 3.3.1 Speaker Data Frame
-This data frame is indexed by unique speaker ID and includes the following information:
+This data frame is organized by unique speaker ID and includes the following information:
 - unique speaker ID
 - filename
 - name
@@ -163,8 +163,10 @@ This data frame is indexed by unique speaker ID and includes the following infor
 - gender (M/F)
 - number of utterances
 
+The purpose of this data frame is to have all information about unique speakers in one location, and to be able to compare the total number of utterances per speaker.
+
 #### 3.3.2 Text Data Frame
-This data frame is indexed by unique speaker ID and the utterance number of the file, and includes the following information:
+This data frame is organized by unique speaker ID and the utterance number of the file, and includes the following information:
 - unique speaker ID
 - utterance number within the file
 - filename
@@ -177,21 +179,14 @@ This data frame is indexed by unique speaker ID and the utterance number of the 
 - sentences
 - number of sentences
 
+The purpose of this data frame is to be able to look at word, sentence, and utterance information for speakers by speaker type and gender.
+
 #### 3.3.3 Back Channel Data Frame
-This data frame is not re-indexed and includes the following information:
-- information about the back channel and it's speaker
-	- unique speaker ID
-	- speaker type (P/C/E)
-	- speaker gender (M/F)
-	- back channels
-- information about the line speaker and the file
-	- line speaker
-	- segment utterance number
-	- filename
-	- line speaker type
-	- line speaker gender
+This data frame is organized by unique speaker 
+		- contains speaker, speaker type, speaker gender, the lines with back channels, the line speaker, the segment utterance number, 
+		the filename, the line speaker type, and the line speaker gender
 
-
+The purpose of this data frame is to be able to look at information about the corpus's back channels to see who is uttering them, who has back channels uttered while they are talking, the most common back channels, etc.
 
 ## 4. Data Formatting Errors
 In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
