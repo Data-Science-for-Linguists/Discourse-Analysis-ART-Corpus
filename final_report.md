@@ -229,7 +229,7 @@ To see the source of the following graph, please visit [my code](https://render.
 There are 218 men and 212 women in the Australian Radio Talkback Corpus.
 
 There are about equal numbers of males and females in the corpus, but how are males and females 
-distributed across speaker 
+distributed across speaker type?
 
 ### 5.3 Males and Females per Role
 To see the source of the following graphs, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-are-Males-and-Females-distributed-across-Roles?).
