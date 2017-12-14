@@ -61,8 +61,10 @@ and my [BNC Baby code](https://github.com/Data-Science-for-Linguists/Discourse-A
 and [Australian Radio Talkback Corpus code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/previous_code/working_on_data.md#australian-radio-talkback)
 are in the file working_on_data.md.
 
-The file working_on_data.md was abandoned part-way through because I realized that I needed to try a new topic and new methods. I then chose to do a Discourse Analysis based off of the 
-Australian Radio Talkback Corpus, because it gave speaker information and had a user-friendly format, or so it seemed.
+The file working_on_data.md was abandoned part-way through because I realized that I needed to try a new topic and new methods. When I went back recently to 
+try and make the code more legible, it broke in an early cell, so I have left the code as it was on the day that I decided to pursue a new project plan.
+ I then chose to do a Discourse Analysis based off of the 
+Australian Radio Talkback Corpus, because it gave speaker information and it seemed to have a user-friendly format.
 
 ### 1.2 The Australian Radio Talkback Corpus
 The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. I will 
