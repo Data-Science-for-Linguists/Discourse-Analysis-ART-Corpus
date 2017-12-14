@@ -6,7 +6,8 @@ als333@pitt.edu
 
 ## 12/13/17 
 Today I created markdown versions of all of my code files. I also wrote my [Final Report](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md).
-This file contains all of my analyses and summarizes the process of my project. 
+This file contains all of my analyses and summarizes the process of my project. The project is essentially completed. I am struggling to get the TOC links 
+to function properly, so I will revisit the project tomorrow to make my last report.
 
 ## 12/12/17
 I have created the headings for [final_report.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md), 
