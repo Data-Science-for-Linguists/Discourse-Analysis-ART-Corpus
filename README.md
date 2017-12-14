@@ -48,7 +48,6 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 - [progress_report.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/progress_report.md): Progress reports from throughout the course of my project.
 - [project_plan.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md): The plan for the Discourse Analysis.
 - [images](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/images): A folder of all plots used for analysis.
-	- [analysis_markdown](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/images/analysis_markdown): A folder of the same graphs used in analysis.ipynb, but created in the conversion of analysis.ipynb into analysis.md.
 - [previous_code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/previous_code): A folder of Jupyter Notebook and markdown files, and a csv file, that were discarded from this project.
 
 
