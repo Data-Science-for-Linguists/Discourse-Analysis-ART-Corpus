@@ -35,15 +35,16 @@ als333@pitt.edu
 	- [5.3 Males and Females per Role](#5.3-Males-and-Females-per-Role)
 - [6. Speaker Type Analysis](#6.-Speaker-Type-Analysis) 
 - [7. Gender Analysis](#7.-Gender-Analysis)
-    - [7.1 Gender in the Australian Radio Talkback Corpus](#7.3-Gender-in-the-Australian-Radio-Talkback-Corpus)
-    - [7.2 Kieran Snyder, "Men Interrupt More Than Women"](#7.1-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women")
-    - [7.3 Interruptions vs. Back Channels](#7.2-Interruptions-vs.-Back-Channels])
+    - [7.1 Gender in the Australian Radio Talkback Corpus](#7.1-Gender-in-the-Australian-Radio-Talkback-Corpus)
+    - [7.2 Kieran Snyder, "Men Interrupt More Than Women"](#7.2-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women")
+    - [7.3 Interruptions vs. Back Channels](#7.3-Interruptions-vs.-Back-Channels])
 - [8. Back Channels](#8.-Back-Channels)
     - [8.1 Back Channel Distribution by Speaker Type](#8.1-Back-Channel-Distribution-by-Speaker-Type)
     - [8.2 Back Channel Distribution by Gender](#8.2-Back-Channel-Distribution-by-Gender)
         - [8.2.1 How Gender Affects Back Channel Production](#8.2.1-How-Gender-Affects-Back-Channel-Production)
-- [Caller Back Channel Analysis](#Caller-Back-Channel-Analysis)
-- [Future Work](#Future-Work)
+- [9. Caller Back Channel Analysis](#9.-Caller-Back-Channel-Analysis)
+    [9.1 Gender Analysis Conclusion](#9.1-Gender-Analysis-Conclusion)
+- [10. Future Work](#10.-Future-Work)
 
 ## 1. Overview of the Discourse Analysis Project
 
@@ -364,9 +365,15 @@ To see the source of the following graphs, please visit [my code]().
 ![png](images/male_caller_back_channel_line_speaker_genders.png)
 ![png](images/female_caller_back_channel_line_speaker_genders.png)
 
-Overall, Females are more likely to collaborate with other females, and males are more likely to collaborate with other males.
+Comparing these graphs, I noted that female callers uttered more back channels than male callers. Also, males are more likely to utter back channels when other males are speaking, while females are more likely to utter back channels when other females are speaking.
 
-## Future Work
+### 9.1 Gender Analysis Conclusions
+
+Overall, Females collaborate more than males, and females are more likely to collaborate with other females, while males are more likely to collaborate with other males. 
+
+This is adds to [Snyder's research](#7.2-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women") on interruption by showing how males and females collaborate in a conversation. **While men interrupt people in general more than women do, women collaborate more than men.**
+
+## 10. Future Work
 
 This code is only beginning and could use expansion. Some recommendations I have are as follows:
 
