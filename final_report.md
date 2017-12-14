@@ -56,12 +56,12 @@ to see a bulleted version of my plan.
 When I originally began this project, my goal was to compare Dialects of English. One of the first data sources that I found was the Australian Radio
 Talkback Corpus, which is still used for this project. I also looked at BNC Baby and used the Twitter IPA to scrape tweets from Australia. The work for this
 orignal idea can be found in the folder [previous_code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/previous_code).
-The code for how I found tweets is in [twitter.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/previous_code/twitter.ipynb)
-and my [BNC Baby code](https://render.githubusercontent.com/view/ipynb?commit=6f7f8ef7ec89b5503b8588046a299712bc38dcec&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f366637663865663765633839623535303362383538383034366132393937313262633338646365632f70726576696f75735f636f64652f776f726b696e675f6f6e5f646174612e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=previous_code%2Fworking_on_data.ipynb&repository_id=109528849&repository_type=Repository#BNC) 
-and [Australian Radio Talkback Corpus code](https://render.githubusercontent.com/view/ipynb?commit=6f7f8ef7ec89b5503b8588046a299712bc38dcec&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f366637663865663765633839623535303362383538383034366132393937313262633338646365632f70726576696f75735f636f64652f776f726b696e675f6f6e5f646174612e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=previous_code%2Fworking_on_data.ipynb&repository_id=109528849&repository_type=Repository#Australian-Radio-Talkback)
-are in the file working_on_data.ipynb.
+The code for how I found tweets is in [twitter.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/previous_code/twitter.md)
+and my [BNC Baby code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/previous_code/working_on_data.md#bnc) 
+and [Australian Radio Talkback Corpus code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/previous_code/working_on_data.md#australian-radio-talkback)
+are in the file working_on_data.md.
 
-This file was abandoned part-way through because I realized that I needed to try a new topic and new methods. I then chose to do a Discourse Analysis based off of the 
+The file working_on_data.md was abandoned part-way through because I realized that I needed to try a new topic and new methods. I then chose to do a Discourse Analysis based off of the 
 Australian Radio Talkback Corpus, because it gave speaker information and had a user-friendly format, or so it seemed.
 
 ### 1.2 The Australian Radio Talkback Corpus
