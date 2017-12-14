@@ -81,7 +81,7 @@ as *C,* and Experts as *E.* For example, in ABCE1-raw.txt, the first speaker is 
 he is referred to as [P1]. This method is used in all files.
 
 To see this example from the full text, please click 
-[here](https://render.githubusercontent.com/view/ipynb?commit=d7e2875149d7364aab232bff885c8bdfb2e9c10a&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f643765323837353134396437333634616162323332626666383835633862646662326539633130612f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts) 
+[here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.md#getting-the-texts) 
 to visit my code. 
 
 Also contained in the raw text files are spelling corrections, program advertisements, breaks, and music, indicated by curly brackets { }, and 
@@ -105,7 +105,7 @@ In order to be able to do an analysis, I organized the data into 3 main pandas d
 - art_df: a data frame of all lines of text in the corpus
 - bk_df: a data frame of all back channels in the corpus
 
-Click [here](https://render.githubusercontent.com/view/ipynb?commit=755bd39beb57f0266c9ad528edaa35107ef6f481&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f373535626433396265623537663032363663396164353238656461613335313037656636663438312f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#Data-Frames-Summary) 
+Click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#data-frames-summary) 
 to see the completed data frames.
 
 More information about the data frames' contents, organization, and purpose can be found in [Section 3.3](#Data-Frames).
@@ -141,7 +141,7 @@ To get the data into data frames, I had to figure out the most effective way to 
 First I tried using *lists,* and then I tried a *dictionary,* which was much more effective. 
 
 #### 3.1.1 Method 1 (Lists)
-When I first began working with the Australian Radio Talkback Corpus, my methods were flawed. I began with a list of all lines of text, which I called [ART_lines](http://localhost:8888/notebooks/previous_code/reformatting_raw_files.ipynb#Creating-lists-for-data),
+When I first began working with the Australian Radio Talkback Corpus, my methods were flawed. I began with a list of all lines of text, which I called [ART_lines](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/previous_code/reformatting_raw_files.md#creating-lists-for-data),
 where I append each line of data directly from the files. In the following cells, I created for loops that found gender, speaker, speaker type, utterance number, 
 and filename for each line and appended those values to new lists.
 
@@ -150,7 +150,7 @@ had to modify each list individually to correct the issues. I then decided that 
 more effective, efficient, and reliable method for storing my data.
 
 #### 3.1.2 Method 2 (Dictionary)
-My second attempt involved first appending all the texts into a dictionary, which I called [rawtext_dict](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Getting-the-Texts), 
+My second attempt involved first appending all the texts into a dictionary, which I called [rawtext_dict](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.md#getting-the-texts), 
 where the keys were the filenames and the values were the texts. This allowed me to fix transcription errors in the texts themselves instead of working in lists
 of fragmented data.
 
@@ -158,7 +158,7 @@ of fragmented data.
 As previously discussed in the [Section 1.2.1](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files), each speaker is given a unique ID for within their file.
 However, these identifiers do not allow for cross-file analyses. 
 For example, Presenter 1 [P1] in ABCE1-raw.txt is Simon Marnie, but Presenter 1 [P1] in COME1-raw.txt is Luke Bona. My code creates a
-[Unique Speaker ID ](https://render.githubusercontent.com/view/ipynb?commit=1e1745a4d0843db171a796d80b11785629c48e1e&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f316531373435613464303834336462313731613739366438306231313738353632396334386531652f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Creating-Unique-Speaker-Ids)
+[Unique Speaker ID ](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.md#creating-unique-speaker-ids)
 for each speaker in the corpus, corresponding to their speaker type and their file number. 
 This transforms the previous two Presenter 1s from [P1] to [ABCE1-P1] and [COME1-P1].
 
@@ -209,11 +209,11 @@ The purpose of this data frame is to be able to look at information about the co
 In transcriptions there is always room for human error. In this corpus, I originally thought that the data would not be difficult to transform into data frames.
 However, I discovered that the standard method of introducing speakers varied, and speakers were sometimes even mislabeled in later turns. Similarly, sometimes 
 information was in the incorrect type of bracket. I created a single 
-[Data Cleaning cell](https://render.githubusercontent.com/view/ipynb?commit=552c6aba66aee9b5949eb72b98891cbe82573aa5&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f353532633661626136366165653962353934396562373262393838393163626538323537336161352f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Data-Cleaning) 
+[Data Cleaning cell](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.md#data-cleaning)
 where I added each new transcription error and fixed them in my dictionary of raw texts. 
 This allowed me to append the corrected lines to my lists for the data frames.
 
-NAT4-raw.txt specifically contained 2 files, which I separated into [NAT4-raw.txt and NAT5-raw.txt.](https://render.githubusercontent.com/view/ipynb?commit=1e1745a4d0843db171a796d80b11785629c48e1e&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f316531373435613464303834336462313731613739366438306231313738353632396334386531652f70726f636573732d6172742d636f727075732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=process-art-corpus.ipynb&repository_id=109528849&repository_type=Repository#Splitting-NAT4-raw.txt-into-2-files) 
+NAT4-raw.txt specifically contained 2 files, which I separated into [NAT4-raw.txt and NAT5-raw.txt.](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.md#splitting-nat4-rawtxt-into-2-files). 
 The index *NAT4-raw.txt* in the dictionary of raw texts contains the first segement from the original NAT4-raw.txt, and the second segement is under the new key *NAT5-raw.txt.*
 
 
@@ -221,7 +221,9 @@ The index *NAT4-raw.txt* in the dictionary of raw texts contains the first segem
 ## 5. Distribution of Speakers by Type and Gender
 
 ### 5.1 Speakers per Role
-To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-many-Speakers-are-there-for-each-Role?).
+
+To see the source of the following graph, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#distribution-of-speakers).
+
 ![png](images/role_totals.png)
 
 There are 31 Presenters, 362 Callers, and 37 Experts in the Australian Radio Talkback Corpus. 
@@ -230,7 +232,9 @@ Most files have 1-2 Presenters and Experts, with many people calling in througho
 
 
 ### 5.2 Speakers per Gender
-To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-many-Males-vs.-Females?).
+
+To see the source of the following graph, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#how-many-males-vs-females).
+
 ![png](images/gender_totals.png)
 
 There are 218 men and 212 women in the Australian Radio Talkback Corpus.
@@ -239,7 +243,9 @@ There are about equal numbers of males and females in the corpus, but how are ma
 distributed across speaker type?
 
 ### 5.3 Males and Females per Role
-To see the source of the following graphs, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=41704b35f912338cacf68fce5f69cc54c5974b95&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f343137303462333566393132333338636163663638666365356636396363353463353937346239352f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#How-are-Males-and-Females-distributed-across-Roles?).
+
+To see the source of the following graphs, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#how-are-males-and-females-distributed-across-roles).
+
 ![png](images/presenter_genders.png)
 
 There are 21 male presenters and 10 female presenters.
@@ -257,14 +263,17 @@ There are 26 male experts and 11 female experts.
 Presenters, who are hired by the show, and Experts, who are professionals talking about their work, include about twice as many
 males as females. Callers on the other hand are more evenly distributed with slightly more females. 
 
-I specifically delved into [Presenters](http://localhost:8888/notebooks/analysis.ipynb#Presenter-Distribution), because they are the people hired by the program. Of the 21 unique male IDs, only 15 are truly distinct people. However, of the 10 females unique IDs, there are no duplicate speakers. Thus, **more males were hired, and only males spoke in more than one show.** 
+I specifically delved into [Presenters](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#presenter-gender-analysis),
+ because they are the people hired by the program. Of the 21 unique male IDs, only 15 are truly distinct people. However, of the 10 females unique IDs, there are no duplicate speakers. Thus, **more males were hired, and only males spoke in more than one show.** 
 
 Thus it seems that **men are in more positions of power** in the Australian Radio Talkback Corpus. 
 
 
 ## 6. Speaker Type Analysis
 
-When I did my [speaker type analysis](http://localhost:8888/notebooks/analysis.ipynb#Comparison-by-Speaker-Type), I found that Presenters overall had more turns and sentences than Callers and Experts, with Experts having the least number of total turns and sentences. Word length was insignificant, with each speaker having between 3 and 4 characters per word. This calculation includes punctuation, and I expect their average would be higher but still relatively equal. 
+When I did my [speaker type analysis](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#comparison-by-speaker-type), 
+I found that Presenters overall had more turns and sentences than Callers and Experts, with Experts having the least number of total turns and sentences. 
+Word length was insignificant, with each speaker having between 3 and 4 characters per word. This calculation includes punctuation, and I expect their average would be higher but still relatively equal. 
 
 The findings for total number of words differ from the above findings, with Experts leading, followed by Presenters and then Callers. With the most words and the least number of sentences, **Experts had the longest sentences.** Presenters have on average about 17 words per sentence, and Callers have about 18 words per sentence, while Experts have an average of about 23 words per sentence. 
 This means that while Experts are not taking as many turns, they are having monologues throughout the corpus and expounding on their topics with longer sentences.
@@ -274,7 +283,7 @@ This means that while Experts are not taking as many turns, they are having mono
 ## 7. Gender Analysis 
 
 ### 7.1 Gender in the Australian Radio Talkback Corpus
-When I did my [gender analysis](http://localhost:8888/notebooks/analysis.ipynb#Comparison-by-Gender), I found that men spoke more (in terms of turns, sentences, sentence length, etc.) than women. Men in the Australian Radio Talkback Corpus then spoke more overall than females.
+When I did my [gender analysis](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#comparison-by-gender), I found that men spoke more (in terms of turns, sentences, sentence length, etc.) than women. Men in the Australian Radio Talkback Corpus then spoke more overall than females.
 
 I expect this is because of the unequal distribution of genders across roles; Presenters and Experts are predominantly Presenters and Experts, and there are about 20 more female Callers than male Callers. Thus, men in the corpus are in the position to talk more than females because of their speaker role.
 
@@ -295,7 +304,7 @@ As I move forward with the [back channel analysis by gender](#8.2-Back-Channel-D
 
 ## 8. Back Channels
 
-To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=1ae1b04ad53d43bcfd3401b88e901b25a53066b2&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f316165316230346164353364343362636664333430316238386539303162323561353330363662322f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#What-are-the-Back-Channels?-Which-ones-are-most-common?).
+To see the source of the following graph, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#back-channels).
 ![png](images/top_20_back_channels.png)
 
 Unfortunately, a lot of the back channels were inaudible, with 303 being inaudible. I do not expect that having the inaudible utterances would impact the results greatly. However, the top back channels (mm, yeah, laughter, yes, right, etc..) make sense as they are one syllable, common phrases to not agreement, and laughter is a common in conversations. 
@@ -304,7 +313,7 @@ Laughter is marked as plural and singlular because when 2 speakers laughed at th
 
 ### 8.1 Back Channel Distribution by Speaker Types
 
-To see the source of the following graph, please visit [my code]().
+To see the source of the following graph, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#what-speaker-type-has-the-most-back-channels).
 ![png](images/back_channel_speaker_types.png)
 
 Experts have the fewest number of turns and sentences, and their biggest purpose is to explain a complicated topic. This means that the other speakers will be uttering more back channels for the complicated topics.
@@ -313,7 +322,7 @@ As previously stated, Callers and Presenters' number of back channels is about e
 I believe Callers utter a lot of back channels, because there are many Callers with few lines each, so they're constantly hearing new information upon being introduced to the show.
 Differently, Presenters stay throughout the entire show, so they have plenty of opportunities to utter back channels while their guests are speaking.
 
-To see the source of the following graph, please visit [my code]().
+To see the source of the following graph, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#what-speaker-type-has-the-most-number-of-back-channels-uttered-during-their-lines).
 ![png](images/back_channel_line_speaker_types.png)
 
 Presenter Lines have the most number of Back Channels, closely followed by Expert Lines. There are over 1000 fewer Caller lines containing back channels. 
@@ -327,7 +336,7 @@ I believe Experts and Presenters have more back channels uttered while they are 
 
 ### 8.2 Back Channel Distribution by Gender
 
-To see the source of the following graphs, please visit [my code]().
+To see the source of the following graphs, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#what-gender-utters-the-most-back-channels).
 ![png](images/back_channel_speaker_genders.png)
 
 ![png](images/back_channel_line_speaker_genders.png)
@@ -338,7 +347,7 @@ Overall, men produced more back channels and more back channels were produced wh
 
 #### 8.2.1 How Gender Affects Back Channel Production
 
-To see the source of the following graphs, please visit [my code]().
+To see the source of the following graphs, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#are-men-more-likely-to-utter-back-channels-when-a-women-or-man-is-speaking-how-about-the-other-way-around).
 
 ![png](images/male_back_channel_line_speaker_genders.png)
 ![png](images/female_back_channel_line_speaker_genders.png)
@@ -347,7 +356,7 @@ To see the source of the following graphs, please visit [my code]().
 
 **Are men and women producing different back channels?**
 
-To see the source of the following graphs, please visit [my code]().
+To see the source of the following graphs, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#how-do-male-and-female-most-common-back-channels-compare).
 
 ![png](images/top_10_male_back_channels.png)
 ![png](images/top_10_female_back_channels.png)
@@ -360,7 +369,7 @@ The top back channels for each gender appear to be about the same.
 
 I decided to look specifically at Callers by Gender for a Back Channel Analysis, because Callers have about equal numbers of males and females.
 
-To see the source of the following graphs, please visit [my code]().
+To see the source of the following graphs, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#caller-gender-back-channel-analysis).
 
 ![png](images/male_caller_back_channel_line_speaker_genders.png)
 ![png](images/female_caller_back_channel_line_speaker_genders.png)
