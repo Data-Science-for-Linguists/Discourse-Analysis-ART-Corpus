@@ -35,7 +35,9 @@ als333@pitt.edu
 	- [5.3 Males and Females per Role](#5.3-Males-and-Females-per-Role)
 - [6. Speaker Type Analysis](#6.-Speaker-Type-Analysis) 
 - [7. Gender Analysis](#7.-Gender-Analysis)
-    - [7.1 Kieran Snyder, "Men Interrupt More Than Women"](#7.1-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women")
+    - [7.1 Gender in the Australian Radio Talkback Corpus](#7.3-Gender-in-the-Australian-Radio-Talkback-Corpus)
+    - [7.2 Kieran Snyder, "Men Interrupt More Than Women"](#7.1-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women")
+    - [7.3 Interruptions vs. Back Channels](#7.2-Interruptions-vs.-Back-Channels])
 - [8. Back Channels](#8.-Back-Channels)
     - [8.1 Back Channel Distribution by Speaker Type](#8.1-Back-Channel-Distribution-by-Speaker-Type)
     - [8.2 Back Channel Distribution by Gender](#8.2-Back-Channel-Distribution-by-Gender)
@@ -270,7 +272,12 @@ This means that while Experts are not taking as many turns, they are having mono
 
 ## 7. Gender Analysis 
 
-### 7.1 Kieran Snyder, "Men Interrupt More Than Women"
+### 7.1 Gender in the Australian Radio Talkback Corpus
+When I did my [gender analysis](http://localhost:8888/notebooks/analysis.ipynb#Comparison-by-Gender), I found that men spoke more (in terms of turns, sentences, sentence length, etc.) than women. Men in the Australian Radio Talkback Corpus then spoke more overall than females.
+
+I expect this is because of the unequal distribution of genders across roles; Presenters and Experts are predominantly Presenters and Experts, and there are about 20 more female Callers than male Callers. Thus, men in the corpus are in the position to talk more than females because of their speaker role.
+
+### 7.2 Kieran Snyder, "Men Interrupt More Than Women"
 As part of my Gender Analysis, I read the following Language Log article by Kieran Snyder called [*Men Interrupt More Than Women*](http://languagelog.ldc.upenn.edu/nll/?p=13422). 
 Snyder conducted an informal study where she listened to 15 hours worth of conversations of 4-15 people. She found that more people meant more interruptions, until the amount plateaued. 
 
@@ -279,7 +286,10 @@ Here findings for gender are as follows:
 - men are about 3 times more likely to interrupt women over men
 - women interrupt each other but not men
 
-This 
+### 7.3 Interruptions vs. Back Channels 
+Snyder's work is similar to mine in that she is analyzing discourse, but where she is focusing on dominance with interruptions, I am focuing on collaboration with back channels. 
+
+As I move forward the [back channel analysis by gender](#8.2-Back-Channel-Distribution-by-Gender), I expect women to collaborate about equally with men and women, and for men to be more collaborative with other men.
 
 
 ## 8. Back Channels
