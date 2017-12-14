@@ -15,7 +15,7 @@ This file creates data frames for speakers, lines of text, and back channels. Se
 - [Getting the Texts](#Getting-the-Texts)
     - [Original Speaker Data Format in the Raw Text Files](#Original-Speaker-Data-Format-in-the-Raw-Text-Files)
     - [Splitting NAT4-raw.txt into 2 files](#Splitting-NAT4-raw.txt-into-2-files)
-    - [Trial Run: Splitting Texts by Lines](#Trial-Run:-Splitting-Texts-by-Lines)
+    - [Trial Run Splitting Texts by Lines](#Trial-Run-Splitting-Texts-by-Lines)
 - [Data Cleaning](#Data-Cleaning)
 - [Speaker Information](#Speaker-Information)
     - [Creating Unique Speaker Ids](#Creating-Unique-Speaker-Ids)
@@ -27,7 +27,7 @@ This file creates data frames for speakers, lines of text, and back channels. Se
 - [Adding Number of Utterances per Speaker to the Speaker Data Frame](#Adding-Number-of-Utterances-per-Speaker-to-the-Speaker-Data-Frame)
 - [Creating Separate Presenter, Caller, and Expert Data Frames](#Creating-Separate-Presenter,-Caller,-and-Expert-Data-Frames)
 - [Calculating Average Sentence and Word Lengths by Speaker Type](#Calculating-Average-Sentence-and-Word-Lengths-by-Speaker-Type)
-    - [Trial Run: Word and Sentence Tokeninzation](#Trial-Run:-Word-and-Sentence-Tokeninzation)
+    - [Trial Run Word and Sentence Tokeninzation](#Trial-Run-Word-and-Sentence-Tokeninzation)
     - [Word and Sentence Tokenization](#Word-and-Sentence-Tokenization)
     - [Expanding art_df to Include Word and Sentence Information](#Expanding-art_df-to-Include-Word-and-Sentence-Information)
 - [Back Channels](#Back-Channels)
@@ -1983,7 +1983,7 @@ for x in art_list:
 # print(carr)
 ```
 
-### Trial Run: Word and Sentence Tokeninzation
+### Trial Run Word and Sentence Tokeninzation
 
 
 ```python
