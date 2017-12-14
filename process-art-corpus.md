@@ -6,7 +6,7 @@ als333@pitt.edu
 11/19/2017
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
-This file creates data frames for speakers, lines of text, and back channels. See [analysis.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.ipynb) for my analysis.
+This file creates data frames for speakers, lines of text, and back channels. See [analysis.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md) for my analysis.
 
 ### Table of Contents
 - [About the Corpus](#About-the-Corpus)
