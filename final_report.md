@@ -265,11 +265,37 @@ This means that while Experts are not taking as many turns, they are having mono
 *include Languague Log Article*
 
 ## 8. Back Channels
+
+To see the source of the following graph, please visit [my code](https://render.githubusercontent.com/view/ipynb?commit=1ae1b04ad53d43bcfd3401b88e901b25a53066b2&enc_url=68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f446174612d536369656e63652d666f722d4c696e6775697374732f446973636f757273652d416e616c797369732d4152542d436f727075732f316165316230346164353364343362636664333430316238386539303162323561353330363662322f616e616c797369732e6970796e62&nwo=Data-Science-for-Linguists%2FDiscourse-Analysis-ART-Corpus&path=analysis.ipynb&repository_id=109528849&repository_type=Repository#What-are-the-Back-Channels?-Which-ones-are-most-common?)
 ![png](images/top_20_back_channels.png)
 
+Unfortunately, a lot of the back channels were inaudible, with 303 being inaudible. I do not expect that having the inaudible utterances would impact the results greatly. However, the top back channels (mm, yeah, laughter, yes, right, etc..) make sense as they are one syllable, common phrases to not agreement, and laughter is a common in conversations. 
+
+Laughter is marked as plural and singlular because when 2 speakers laughed at the same time, the format was <speaker1 and speaker2 laugh>.
+
 ### 8.1 Back Channel Distribution by Speaker Types
+
+To see the source of the following graph, please visit [my code]().
 ![png](images/back_channel_speaker_types.png)
+
+Experts have the fewest number of turns and sentences, and their biggest purpose is to explain a complicated topic. This means that the other speakers will be uttering more back channels for the complicated topics.
+
+As previously stated, Callers and Presenters' number of back channels is about equal, and greater than the Experts'.
+I believe Callers utter a lot of back channels, because there are many Callers with few lines each, so they're constantly hearing new information upon being introduced to the show.
+Differently, Presenters stay throughout the entire show, so they have plenty of opportunities to utter back channels while their guests are speaking.
+
+To see the source of the following graph, please visit [my code]().
 ![png](images/back_channel_line_speaker_types.png)
+
+Presenter Lines have the most number of Back Channels, closely followed by Expert Lines. There are over 1000 fewer Caller lines containing back channels. 
+
+I believe Experts and Presenters have more back channels uttered while they are talking, because:
+- Experts have the longest sentences and are giving detailed information for many of their lines, so Presenters and Callers would utter back channels to show they are listening (and maybe understanding).
+- Presenters are taking many turns and uttering more sentences, so there is more information coming from the Presenters.
+
+**Potential Conclusion:** More turns and sentences and longer sentences lead to more back channels.
+
+
 
 
 ### 8.2 Back Channel Distribution by Gender
