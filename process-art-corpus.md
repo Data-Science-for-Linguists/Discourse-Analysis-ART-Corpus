@@ -6,7 +6,7 @@ als333@pitt.edu
 11/19/2017
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
-This file creates data frames for speakers, lines of text, and back channels. See [analysis.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md) for my analysis.
+This file creates data frames for speakers, lines of text, and back channels. See [analysis.ipynb](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.ipynb) for my analysis.
 
 ### Table of Contents
 - [About the Corpus](#About-the-Corpus)
@@ -15,7 +15,6 @@ This file creates data frames for speakers, lines of text, and back channels. Se
 - [Getting the Texts](#Getting-the-Texts)
     - [Original Speaker Data Format in the Raw Text Files](#Original-Speaker-Data-Format-in-the-Raw-Text-Files)
     - [Splitting NAT4-raw.txt into 2 files](#Splitting-NAT4-raw.txt-into-2-files)
-    - [Trial Run Splitting Texts by Lines](#Trial-Run-Splitting-Texts-by-Lines)
 - [Data Cleaning](#Data-Cleaning)
 - [Speaker Information](#Speaker-Information)
     - [Creating Unique Speaker Ids](#Creating-Unique-Speaker-Ids)
@@ -27,11 +26,9 @@ This file creates data frames for speakers, lines of text, and back channels. Se
 - [Adding Number of Utterances per Speaker to the Speaker Data Frame](#Adding-Number-of-Utterances-per-Speaker-to-the-Speaker-Data-Frame)
 - [Creating Separate Presenter, Caller, and Expert Data Frames](#Creating-Separate-Presenter,-Caller,-and-Expert-Data-Frames)
 - [Calculating Average Sentence and Word Lengths by Speaker Type](#Calculating-Average-Sentence-and-Word-Lengths-by-Speaker-Type)
-    - [Trial Run Word and Sentence Tokeninzation](#Trial-Run-Word-and-Sentence-Tokeninzation)
     - [Word and Sentence Tokenization](#Word-and-Sentence-Tokenization)
     - [Expanding art_df to Include Word and Sentence Information](#Expanding-art_df-to-Include-Word-and-Sentence-Information)
 - [Back Channels](#Back-Channels)
-    - [Trial Run](#Trial-Run)
     - [Finding Back Channels](#Finding-Back-Channels)
     - [Back Channels Data Frame](#Back-Channels-Data-Frame)
 - [Writing Data Frames to CSV files](#Writing-Data-Frames-to-CSV-files)
@@ -70,6 +67,7 @@ import pandas as pd
 import nltk
 import numpy as np
 import glob
+import re
 ```
 
 
@@ -212,53 +210,6 @@ files = sorted(rawtext_dict.keys()) # creates an accurate file list (ART_fids is
 
 
 
-### Trial Run Splitting Texts by Lines
-
-
-```python
-# How to split lines using regular expressions 
-    # some lines appeared to contain \r while most contained \n
-import re
-foo = "Hello world\n\nhow are you\na new line\r\nanother newline\n"
-re.split(r'[\n\r]+', foo)
-re.split(r'[\n\r]+', foo.strip())
-```
-
-
-
-
-    ['Hello world', 'how are you', 'a new line', 'another newline', '']
-
-
-
-
-
-
-    ['Hello world', 'how are you', 'a new line', 'another newline']
-
-
-
-
-```python
-# Splitting the texts by line:
-    # Trial run on the first 3 files and their first 20 lines:
-
-for fid in files[:3]: # files includes  NAT5-raw.txt
-    rawtext = rawtext_dict[fid] # already includes NAT5-raw.txt
-    rawlines = re.split(r'[\n\r]+', rawtext.strip())[:20]
-#     print(fid)
-    for l in rawlines:
-        if ']' in l:
-            where = l.index(']')
-            speaker = l[:where+1]
-            utterance = l[where+2:]
-#             print(speaker+' '+utterance)
-        else: 
-#             print('***'+l+'******')    # {program advert}. What to do with these? 
-            pass
-#     print()
-```
-
 ## Data Cleaning
 **Fixing Formatting Errors**
 
@@ -266,25 +217,10 @@ for fid in files[:3]: # files includes  NAT5-raw.txt
 ```python
 # Data Cleaning:
 
+# There is no E2 in this segment, but E2 is erroneously mentioned. Replacing. 
 rawtext_dict['ABCE4-raw.txt'] = rawtext_dict['ABCE4-raw.txt'].replace('[E2]', '[E1]')
 
-# There is no E2 in this segment, but E2 is erroneously mentioned. Replacing. 
-
-# $ grep Expert  ABCE4-raw.txt 
-# [Expert 1: Ric Nattrass, M] Uh blue-tongues'd be {break} unlikely ...
-
-# $ grep E2  ABCE4-raw.txt 
-# [E2] Yeah.
-# [E2] Yeah okay so your yours up there is the spotted catbird if you're on <C3 mm> ...
-
-
 rawtext_dict['COME2-raw.txt'] = rawtext_dict['COME2-raw.txt'].replace('[C5: Jenny, F]', '[Caller 5: Jenny, F]')
-
-
-# $ grep "C5" COME2-raw.txt 
-# [C5: Jenny, F] Hello how are you.
-# [C5] That's good. Um I was just wondering for some information on my house at ...
-# [C5] Oh have I.
 
 rawtext_dict['ABCE3-raw.txt'] = rawtext_dict['ABCE3-raw.txt'].replace('[Caller 11, Robyn, F]', '[Caller 11: Robyn, F]')
 rawtext_dict['COME1-raw.txt'] = rawtext_dict['COME1-raw.txt'].replace('[Caller 23, Maureen, F]', '[Caller 23: Maureen, F]')
@@ -293,31 +229,13 @@ rawtext_dict['NAT8-raw.txt'] = rawtext_dict['NAT8-raw.txt'].replace('[Caller 10,
 
 rawtext_dict['NAT4-raw.txt'] = rawtext_dict['NAT4-raw.txt'].replace('[Caller 33b: Chris, male]', '[Caller 33b: Chris, M]')
 
-
-# $ grep -P 'Caller \d+,' *
-# ABCE3-raw.txt:[Caller 11, Robyn, F] Hi um I read the book quite a while ago and ...
-# COME1-raw.txt:[Caller 23, Maureen, F] Yes good morning.
-# NAT7-raw.txt:[Caller 12, Brian, M] Yeah.
-# NAT8-raw.txt:[Caller 10, Brett, M] How're you going.
-
-
 rawtext_dict['COME3-raw.txt'] = rawtext_dict['COME3-raw.txt'].replace('[Caller 9 Maureen, F]', '[Caller 9: Maureen, F]')
-
-# $ grep -P '\[\S+ \d+ ' *
-# COME3-raw.txt:[Caller 9 Maureen, F] Good morning Dr Graham.
-
 
 rawtext_dict['COME3-raw.txt'] = rawtext_dict['COME3-raw.txt'].replace('[CE1]', '[E1]')
 
-# $ grep CE1 *
-# COME3-raw.txt:[CE1] If it did become serious <,> 
-
-
+# COME6 presenter encoding scheme was generally messed up.
 rawtext_dict['COME6-raw.txt'] = rawtext_dict['COME6-raw.txt'].replace('P1a', 'P1')
 rawtext_dict['COME6-raw.txt'] = rawtext_dict['COME6-raw.txt'].replace('[P1b Paul Murray, M]', '[P1]').replace('P1b', 'P1')
-
-# COME6 presenter encoding scheme was generally messed up.
-
 
 rawtext_dict['COMNE4-raw.txt'] = rawtext_dict['COMNE4-raw.txt'].replace('[C14: Noelene, F]', '[Caller 14: Noelene, F]')
 
@@ -330,7 +248,6 @@ rawtext_dict['COME3-raw.txt'] = rawtext_dict['COME3-raw.txt'].replace('[C4 Nah <
 rawtext_dict['COME3-raw.txt'] = rawtext_dict['COME3-raw.txt'].replace('[E1 No no no <P1 we haven\'t had one> we','[E1] No no no <P1 we haven\'t had one> we')
 
 # This is Marianna's only line - her speach is untranscribed: therefore I will skip her as a speaker
-# print(rawtext_dict['NAT7-raw.txt'])
 # rawtext_dict['NAT7-raw.txt'] = rawtext_dict['NAT7-raw.txt'].replace('{Caller 2: Marianna, F untranscribed overseas caller 04:32-07:18}','[Caller 2: Marianna, F untranscribed overseas caller 04:32-07:18]')
 
 # print(rawtext_dict['COME3-raw.txt'])
@@ -1983,54 +1900,6 @@ for x in art_list:
 # print(carr)
 ```
 
-### Trial Run Word and Sentence Tokeninzation
-
-
-```python
-# Trial run on the first two lines:
-word_toks = []
-sents = []
-
-for x in art_list[:2]:
-    line = x[5]
-    print(line)
-    
-    line = re.sub(r' <.*?>','',line)
-    line = re.sub(r' {.*?}','',line) # for now, removing all spelling corrections
-    
-    print(line)
-    
-    speaker=x[0]
-    utt_num=x[1]
-    
-    # for now, including the speaker and utterance number of the file to make sure that word_toks and sents line up with art_df's indices
-    word_toks.append([speaker,utt_num,nltk.word_tokenize(line)]) 
-    sents.append([speaker,utt_num,nltk.sent_tokenize(line)])  
-    
-word_toks
-sents
-```
-
-    Thanks for that John Hall now John Hall will be listening for the next hour 'cos Angus Stewart is here to take your calls eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two something in the garden that's causing you problems give us a call right now and Angus can I mean y'know he is known in the trade as Mr popergation {propagation} Mr propagation. He's also known for his passion for natives and his love of o orchids am I right so far.
-    Thanks for that John Hall now John Hall will be listening for the next hour 'cos Angus Stewart is here to take your calls eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two something in the garden that's causing you problems give us a call right now and Angus can I mean y'know he is known in the trade as Mr popergation Mr propagation. He's also known for his passion for natives and his love of o orchids am I right so far.
-    I guess yeah yeah <laughs>.
-    I guess yeah yeah.
-    
-
-
-
-
-    [['ABCE1-P1', 1, ['Thanks', 'for', 'that', 'John', 'Hall', 'now', 'John', 'Hall', 'will', 'be', 'listening', 'for', 'the', 'next', 'hour', "'cos", 'Angus', 'Stewart', 'is', 'here', 'to', 'take', 'your', 'calls', 'eight-triple-three-one-thousand', 'one-eight-hundred-eight-hundred-seven-oh-two', 'something', 'in', 'the', 'garden', 'that', "'s", 'causing', 'you', 'problems', 'give', 'us', 'a', 'call', 'right', 'now', 'and', 'Angus', 'can', 'I', 'mean', "y'know", 'he', 'is', 'known', 'in', 'the', 'trade', 'as', 'Mr', 'popergation', 'Mr', 'propagation', '.', 'He', "'s", 'also', 'known', 'for', 'his', 'passion', 'for', 'natives', 'and', 'his', 'love', 'of', 'o', 'orchids', 'am', 'I', 'right', 'so', 'far', '.']], ['ABCE1-E1', 2, ['I', 'guess', 'yeah', 'yeah', '.']]]
-
-
-
-
-
-
-    [['ABCE1-P1', 1, ["Thanks for that John Hall now John Hall will be listening for the next hour 'cos Angus Stewart is here to take your calls eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two something in the garden that's causing you problems give us a call right now and Angus can I mean y'know he is known in the trade as Mr popergation Mr propagation.", "He's also known for his passion for natives and his love of o orchids am I right so far."]], ['ABCE1-E1', 2, ['I guess yeah yeah.']]]
-
-
-
 ### Word and Sentence Tokenization
 
 
@@ -2572,463 +2441,8 @@ speaker_df["Gender"].value_counts().reindex(["M","F"])
 
 
 ## Back Channels 
-### Trial Run
-
-
-```python
-# # Regular Expressions - Trial run with back channels: 
-
-bk_chnl_list = []
-bk_chnls = []
-
-foo=art_list[:20]
-# foo[:3]
-
-for x in foo:
-    
-    speaker=x[0]
-    utt=x[1]
-    segment=x[2]
-    role=x[3]
-    gender=x[4]
-    line=x[5]
-    
-    print(speaker)
-    print(utt)
-    print(segment)
-    print(gender)
-    print(line)
-    
-#     re.findall(r'<.*?>',line)) # includes <,>, <inaudible>, <laughs>, etc... but these are not back channels
-    re.findall(r'<[PCE]+[0-9]+.*?>',line)
-
-    bk_chnl_list.append(re.findall(r'<[PCE]+[0-9]+.*?>',line)) # every instance of a < > containing a different speaker
-    
-#     print("speaker:")
-#     found = re.findall(r'<[PCE]+[0-9]+',line) # includes < 
-
-    for b in bk_chnl_list[-1]:
-    # a for loop to remove '<' from the other speakers list and replace with the segment (creating unique speaker ID):
-    
-        b=str(b) # CONVERT TO STRING FOR NEXT FOR LOOP
-#         print("STRINGY",b)
-#         print("BKchan",str(bk_chnl_list[-1]))
-        b_index=bk_chnl_list[-1].index(b)
-#         bk_chnl_list[-1]
-        
-#         print(b_index)
-        space=b.index(" ")
-#             bk_chnl_list[-1][b_index]=b.replace('<',segment+"-")
-        channel = b[space+1:-1]
-        channel_speaker = segment+"-"+b[1:space]
-        channel_role = b[1]
-        channel_gen = speaker_df.loc[channel_speaker]["Gender"]
-#             bk_chnl_list[-1][b_index].replace(b,[speaker,utt,segment,channel_speaker,channel])
-
-        bk_chnls.append([channel_speaker,channel_role,channel_gen,channel,speaker,utt,segment,role,gender])
-#         bk_chnls[-1]
-        
-bk_chnl_list
-bk_chnls
-```
-
-    ABCE1-P1
-    1
-    ABCE1
-    M
-    Thanks for that John Hall now John Hall will be listening for the next hour 'cos Angus Stewart is here to take your calls eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two something in the garden that's causing you problems give us a call right now and Angus can I mean y'know he is known in the trade as Mr popergation {propagation} Mr propagation. He's also known for his passion for natives and his love of o orchids am I right so far.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-E1
-    2
-    ABCE1
-    M
-    I guess yeah yeah <laughs>.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-P1
-    3
-    ABCE1
-    M
-    He's also known <E1 sounds reasonable> for his ability to open cosposting {composting} toilets so he can tell you anything worm farm problems certainly helped us and although I'm still confused about dry ingredients we might talk about that as well but eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two fine sunny day today top temperatures on the coast of twenty-seven inland thirty degrees Bowral enjoying twenty-seven and Katoomba twenty-five degrees currently around town on the coast it's seventeen that's four below <,> r Richmond and Bankstown are fifteen degrees Penrith sixteen Katoomba thirteen and Gosford twelve. One of the jewels in the open garden scheme crown is opening today and this is just a garden to envy how would you like <,> to have <,> a beautiful sandstone cottage nestled underneath a waterfall with a little pond and then a creek that runs through with thousands of water dragons so tame they come up and just <,> kiss you. Would you like to live there.
-    
-
-
-
-
-    ['<E1 sounds reasonable>']
-
-
-
-    ABCE1-E1
-    4
-    ABCE1
-    M
-    Okay.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-P1
-    5
-    ABCE1
-    M
-    Jeanne Villani does and we'll find out the secret of her open garden and give you the address so that you can go along today and tomorrow to see Waterfall Cottage which is a part of the open garden scheme all this and more because it is Saturday.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-P1
-    6
-    ABCE1
-    M
-    Eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two Suzanne's on the line in McMahon's Point and.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-C1
-    7
-    ABCE1
-    F
-    Hello.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-P1
-    8
-    ABCE1
-    M
-    How are you.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-C1
-    9
-    ABCE1
-    F
-    I'm good thank you.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-P1
-    10
-    ABCE1
-    M
-    You've got a big fat <C1 laughs> Morton Bay fig.
-    
-
-
-
-
-    ['<C1 laughs>']
-
-
-
-    ABCE1-C1
-    11
-    ABCE1
-    F
-    Well it's not that bit it's um it's about three feet 'cos I only know feet <P1 yes>. About three feet high and um it's been doing so well my partner actually grew it from a seed we picked it up in a church garden <E1 mm> and our intention was to buy a house and plant it but we haven't got the house yet. So we've still got the fig and it's doing so well until recently. My um I think it's under stress God knows why <E1 mm> it's only on a balcony in a pot but it's getting a sort first of all I thought it was sunburn but the the leaves are getting oh um a pale ring and then after a while they crack <E1 mm>. And <,> and then they break off first of all I thought oh golly it's a bug or something eating it. But no it seems to be happening as they're growing they're perfectly fine and then intermittently they get this it's it's as if somebody has um um put some hydrogen peroxide on them or something and then.
-    
-
-
-
-
-    ['<P1 yes>', '<E1 mm>', '<E1 mm>', '<E1 mm>']
-
-
-
-    ABCE1-P1
-    12
-    ABCE1
-    M
-    Is there plenty of drainage in the pot.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-C1
-    13
-    ABCE1
-    F
-    Yes uhuh um plenty I'm just wondering well obviously it's gotta come out of the pot and be planted in <,> <P1 mm> a proper place but.
-    
-
-
-
-
-    ['<P1 mm>']
-
-
-
-    ABCE1-P1
-    14
-    ABCE1
-    M
-    You think it's a case of Free Willy it wants to just go into the <C1 mhm> into the open.
-    
-
-
-
-
-    ['<C1 mhm>']
-
-
-
-    ABCE1-C1
-    15
-    ABCE1
-    F
-    It does 'cos it's meant.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-P1
-    16
-    ABCE1
-    M
-    I don't know Angus is that the case.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-E1
-    17
-    ABCE1
-    M
-    Well the symptoms you describe um it it sounds could it possibly be water stress. Do you think the plant could be drying out from time to time.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-C1
-    18
-    ABCE1
-    F
-    Yeah well it could be maybe I'm not giving it enough.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-E1
-    19
-    ABCE1
-    M
-    Yeah they uh I mean they are a a rainforest tree that that's used to fairly constant moisture and and mulch y'know plenty of leaf mulch uh froh in the natural sort of environment um.
-    
-
-
-
-
-    []
-
-
-
-    ABCE1-C1
-    20
-    ABCE1
-    F
-    Should I feed it some more. Ih feed it <inaudible>.
-    
-
-
-
-
-    []
-
-
-
-
-
-
-    [[], [], ['<E1 sounds reasonable>'], [], [], [], [], [], [], ['<C1 laughs>'], ['<P1 yes>', '<E1 mm>', '<E1 mm>', '<E1 mm>'], [], ['<P1 mm>'], ['<C1 mhm>'], [], [], [], [], [], []]
-
-
-
-
-
-
-    [['ABCE1-E1', 'E', 'M', 'sounds reasonable', 'ABCE1-P1', 3, 'ABCE1', 'P', 'M'], ['ABCE1-C1', 'C', 'F', 'laughs', 'ABCE1-P1', 10, 'ABCE1', 'P', 'M'], ['ABCE1-P1', 'P', 'M', 'yes', 'ABCE1-C1', 11, 'ABCE1', 'C', 'F'], ['ABCE1-E1', 'E', 'M', 'mm', 'ABCE1-C1', 11, 'ABCE1', 'C', 'F'], ['ABCE1-E1', 'E', 'M', 'mm', 'ABCE1-C1', 11, 'ABCE1', 'C', 'F'], ['ABCE1-E1', 'E', 'M', 'mm', 'ABCE1-C1', 11, 'ABCE1', 'C', 'F'], ['ABCE1-P1', 'P', 'M', 'mm', 'ABCE1-C1', 13, 'ABCE1', 'C', 'F'], ['ABCE1-C1', 'C', 'F', 'mhm', 'ABCE1-P1', 14, 'ABCE1', 'P', 'M']]
-
-
 
 ### Finding Back Channels
-
-
-```python
-# How to locate specific items in a data frame:
-    # I will use this to find the gender of the back channel speaker
-speaker_df.head()
-speaker_df.loc["ABCE1-C1","Gender"]
-```
-
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Segment</th>
-      <th>Speaker_Type</th>
-      <th>Gender</th>
-      <th>Name</th>
-      <th>Number_of_Utterances</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>ABCE1-C1</th>
-      <td>ABCE1</td>
-      <td>C</td>
-      <td>F</td>
-      <td>Suzanne</td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <th>ABCE1-C10</th>
-      <td>ABCE1</td>
-      <td>C</td>
-      <td>F</td>
-      <td>Beth</td>
-      <td>17</td>
-    </tr>
-    <tr>
-      <th>ABCE1-C11</th>
-      <td>ABCE1</td>
-      <td>C</td>
-      <td>F</td>
-      <td>Lynne</td>
-      <td>10</td>
-    </tr>
-    <tr>
-      <th>ABCE1-C12</th>
-      <td>ABCE1</td>
-      <td>C</td>
-      <td>M</td>
-      <td>Jack</td>
-      <td>12</td>
-    </tr>
-    <tr>
-      <th>ABCE1-C2</th>
-      <td>ABCE1</td>
-      <td>C</td>
-      <td>F</td>
-      <td>Lisa</td>
-      <td>13</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-
-
-
-    'F'
-
-
-
-
-```python
-art_list[:5]
-```
-
-
-
-
-    [('ABCE1-P1', 1, 'ABCE1', 'P', 'M', "Thanks for that John Hall now John Hall will be listening for the next hour 'cos Angus Stewart is here to take your calls eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two something in the garden that's causing you problems give us a call right now and Angus can I mean y'know he is known in the trade as Mr popergation {propagation} Mr propagation. He's also known for his passion for natives and his love of o orchids am I right so far."), ('ABCE1-E1', 2, 'ABCE1', 'E', 'M', 'I guess yeah yeah <laughs>.'), ('ABCE1-P1', 3, 'ABCE1', 'P', 'M', "He's also known <E1 sounds reasonable> for his ability to open cosposting {composting} toilets so he can tell you anything worm farm problems certainly helped us and although I'm still confused about dry ingredients we might talk about that as well but eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two fine sunny day today top temperatures on the coast of twenty-seven inland thirty degrees Bowral enjoying twenty-seven and Katoomba twenty-five degrees currently around town on the coast it's seventeen that's four below <,> r Richmond and Bankstown are fifteen degrees Penrith sixteen Katoomba thirteen and Gosford twelve. One of the jewels in the open garden scheme crown is opening today and this is just a garden to envy how would you like <,> to have <,> a beautiful sandstone cottage nestled underneath a waterfall with a little pond and then a creek that runs through with thousands of water dragons so tame they come up and just <,> kiss you. Would you like to live there."), ('ABCE1-E1', 4, 'ABCE1', 'E', 'M', 'Okay.'), ('ABCE1-P1', 5, 'ABCE1', 'P', 'M', "Jeanne Villani does and we'll find out the secret of her open garden and give you the address so that you can go along today and tomorrow to see Waterfall Cottage which is a part of the open garden scheme all this and more because it is Saturday.")]
-
-
 
 
 ```python
