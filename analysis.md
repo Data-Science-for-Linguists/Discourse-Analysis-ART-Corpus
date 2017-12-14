@@ -48,14 +48,6 @@ This file starts where [process-art-corpus.md](https://github.com/Data-Science-f
 - Closed Data
 
 
-## Plan 
-- Original Format
-- Formatting
-- Speaker Analyses
-- Gender Analyses 
-- Back Channel Analyses
-
-
 ```python
 %pprint
 ```
