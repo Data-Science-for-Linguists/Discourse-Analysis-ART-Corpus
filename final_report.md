@@ -269,7 +269,7 @@ Presenters, who are hired by the show, and Experts, who are professionals talkin
 males as females. Callers on the other hand are more evenly distributed with slightly more females. 
 
 I specifically delved into [Presenters](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#presenter-gender-analysis),
- because they are the people hired by the program. Of the 21 unique male IDs, only 15 are truly distinct people. However, of the 10 females unique IDs, there are no duplicate speakers. Thus, **more males were hired, and only males spoke in more than one show.** 
+ because they are the people hired by the program. Of the 21 unique male IDs, only 15 are truly distinct people. However, of the 10 females unique IDs, there are no duplicate speakers. **More males were hired, and only males spoke in more than one show.** 
 
 Thus it seems that **men are in more positions of power** in the Australian Radio Talkback Corpus. 
 
@@ -278,19 +278,20 @@ Thus it seems that **men are in more positions of power** in the Australian Radi
 
 When I did my [speaker type analysis](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#comparison-by-speaker-type), 
 I found that Presenters overall had more turns and sentences than Callers and Experts, with Experts having the least number of total turns and sentences. 
-Word length was insignificant, with each speaker having between 3 and 4 characters per word. This calculation includes punctuation, and I expect their average would be higher but still relatively equal. 
+Word length was insignificant, with each speaker having between 3 and 4 characters per word. This calculation includes punctuation, and I expect their average would be higher but still relatively equal 
+if punctuation were removed.
 
 The findings for total number of words differ from the above findings, with Experts leading, followed by Presenters and then Callers. With the most words and the least number of sentences, **Experts had the longest sentences.** Presenters have on average about 17 words per sentence, and Callers have about 18 words per sentence, while Experts have an average of about 23 words per sentence. 
 This means that while Experts are not taking as many turns, they are having monologues throughout the corpus and expounding on their topics with longer sentences.
 
-**Average number of turns** appeared to be significant as well. On average, Presenters took 114 turns, Experts took 64 turns, and Callers only took about 9 turns. In talk shows, Presenters lead the conversation and introduce new members to the conversation, so it makes sense that they would have more turns than the other speaker types. Also, because there are many callers coming and going throughout the radio show, they would not have many turns.
+**Average number of turns** appeared to be significant as well. On average, Presenters took 114 turns, Experts took 64 turns, and Callers only took about 9 turns. In talk shows, Presenters lead the conversation and introduce new members to the conversation, so it makes sense that they would have more turns than the other speaker types. Also, because there are many Callers coming and going throughout the radio show, they would not have many turns.
 
 ## 7. Gender Analysis 
 
 ### 7.1 Gender in the Australian Radio Talkback Corpus
 When I did my [gender analysis](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#comparison-by-gender), I found that men spoke more (in terms of turns, sentences, sentence length, etc.) than women. Men in the Australian Radio Talkback Corpus then spoke more overall than females.
 
-I expect this is because of the unequal distribution of genders across roles; Presenters and Experts are predominantly Presenters and Experts, and there are about 20 more female Callers than male Callers. Thus, men in the corpus are in the position to talk more than females because of their speaker role.
+I expect this is because of the unequal distribution of genders across roles; Presenters and Experts are predominantly Male, and there are only about 20 more female Callers than male Callers. Thus, men in the corpus are in the position to talk more than females because of their speaker role.
 
 ### 7.2 Kieran Snyder, "Men Interrupt More Than Women"
 As part of my Gender Analysis, I read the following Language Log article by Kieran Snyder called [*Men Interrupt More Than Women*](http://languagelog.ldc.upenn.edu/nll/?p=13422). 
