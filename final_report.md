@@ -289,7 +289,7 @@ Here findings for gender are as follows:
 ### 7.3 Interruptions vs. Back Channels 
 Snyder's work is similar to mine in that she is analyzing discourse, but where she is focusing on dominance with interruptions, I am focuing on collaboration with back channels. 
 
-As I move forward the [back channel analysis by gender](#8.2-Back-Channel-Distribution-by-Gender), I expect women to collaborate about equally with men and women, and for men to be more collaborative with other men.
+As I move forward with the [back channel analysis by gender](#8.2-Back-Channel-Distribution-by-Gender), I expect women to collaborate about equally with men and women, and for men to be more collaborative with other men.
 
 
 ## 8. Back Channels
@@ -331,7 +331,7 @@ To see the source of the following graphs, please visit [my code]().
 
 ![png](images/back_channel_line_speaker_genders.png)
 
-Overall, men produced more back channels and more back channels were produced while they were speaking.
+Overall, men produced more back channels and more back channels were produced while they were speaking. Men are participating more in collaboration. However, this may be because there are more male lines than female lines.
 
 **Does the gender of the line speaker affect men and women's likelihood to produce a back channel?**
 
@@ -342,7 +342,7 @@ To see the source of the following graphs, please visit [my code]().
 ![png](images/male_back_channel_line_speaker_genders.png)
 ![png](images/female_back_channel_line_speaker_genders.png)
 
-**Conclusion:** *Men* are much more likely to produce back channels when *other men* are talking, and *Women* produce slightly more back channels when *other women* are talking.
+**Conclusion:** *Men* are much more likely to produce back channels when *other men* are talking, and *Women* produce slightly more back channels when *other women* are talking. Thus, men are more likely to collaborate with other men, and women collaborate with both genders, but are more likely to collaborate with other females.
 
 **Are men and women producing different back channels?**
 
@@ -357,7 +357,14 @@ The top back channels for each gender appear to be about the same.
 
 ## 9. Caller Back Channel Analysis
 
-To see how 
+I decided to look specifically at Callers by Gender for a Back Channel Analysis, because Callers have about equal numbers of males and females.
+
+To see the source of the following graphs, please visit [my code]().
+
+![png](images/male_caller_back_channel_line_speaker_genders.png)
+![png](images/female_caller_back_channel_line_speaker_genders.png)
+
+Overall, Females are more likely to collaborate with other females, and males are more likely to collaborate with other males.
 
 ## Future Work
 
