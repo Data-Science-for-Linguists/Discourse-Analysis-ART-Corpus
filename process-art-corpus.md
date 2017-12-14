@@ -43,7 +43,7 @@ This file creates data frames for speakers, lines of text, and back channels. Se
 - commparing speakers by role and gender
 - aspects to consider:
     - back channels (yeah, uhhu, that's great!)
-    - vocabulary size (avg word length)
+    - average word length and sentence length
     - number of turns, sentences, and words
 
 
