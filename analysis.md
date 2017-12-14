@@ -811,7 +811,7 @@ figure.figure.savefig("images/role_totals.png")
 
 
 
-![png](images/analysis_markdown/output_15_4.png)
+![png](images/role_totals.png)
 
 
 There are a lot of Callers, but very few presenters and experts in the corpus. This is because many callers call in during the show, while Presenters and Experts have a more steady position in each show.
@@ -866,7 +866,7 @@ figure.figure.savefig("images/gender_totals.png")
 
 
 
-![png](images/analysis_markdown/output_18_4.png)
+![png](images/gender_totals.png)
 
 
 ### How are Males and Females distributed across Roles?
@@ -938,7 +938,7 @@ fig3.figure.savefig("images/expert_genders.png")
 
 
 
-![png](images/analysis_markdown/output_20_4.png)
+![png](images/presenter_genders.png)
 
 
 
@@ -972,7 +972,7 @@ fig3.figure.savefig("images/expert_genders.png")
 
 
 
-![png](images/analysis_markdown/output_20_9.png)
+![png](images/caller_genders.png)
 
 
 
@@ -1006,7 +1006,7 @@ fig3.figure.savefig("images/expert_genders.png")
 
 
 
-![png](images/analysis_markdown/output_20_14.png)
+![png](images/expert_genders.png)
 
 
 ### Gender Equality
@@ -1735,7 +1735,7 @@ figure.figure.savefig("images/top_20_back_channels.png")
 
 
 
-![png](images/analysis_markdown/output_33_3.png)
+![png](images/top_20_back_channels.png)
 
 
 Unfortunately, a lot of the back channels were inaudible, with 303 being inaudible. However, the top back channels make sense and I do not expect that having the inaudible utterances would impact the results greatly.
@@ -1827,7 +1827,7 @@ figure.figure.savefig("images/back_channel_speaker_types.png")
 
 
 
-![png](images/analysis_markdown/output_38_3.png)
+![png](images/back_channel_speaker_types.png)
 
 
 Callers (closely followed by Presenters) utter the most Back Channels.
@@ -1888,7 +1888,7 @@ figure.figure.savefig("images/back_channel_line_speaker_types.png")
 
 
 
-![png](images/analysis_markdown/output_42_3.png)
+![png](images/back_channel_line_speaker_types.png)
 
 
 Presenter Lines have the most number of Back Channels, closely followed by Expert Lines. There are over 1000 fewer Caller lines containing back channels. 
@@ -1949,7 +1949,7 @@ figure.figure.savefig("images/back_channel_speaker_genders.png")
 
 
 
-![png](images/analysis_markdown/output_45_4.png)
+![png](images/back_channel_speaker_genders.png)
 
 
 ### What Gender has the most Back Channels uttered while they are speaking?
@@ -2000,7 +2000,7 @@ figure.figure.savefig("images/back_channel_line_speaker_genders.png")
 
 
 
-![png](images/analysis_markdown/output_47_4.png)
+![png](images/back_channel_line_speaker_genders.png)
 
 
 **Conclusion:** Men produced more back channels, and more back channels were uttered while they were talking.
@@ -2314,7 +2314,7 @@ fig2.figure.savefig("images/female_back_channel_line_speaker_genders.png")
 
 
 
-![png](images/analysis_markdown/output_51_7.png)
+![png](images/male_back_channel_line_speaker_genders.png)
 
 
 
@@ -2339,7 +2339,7 @@ fig2.figure.savefig("images/female_back_channel_line_speaker_genders.png")
 
 
 
-![png](images/analysis_markdown/output_51_11.png)
+![png](images/female_back_channel_line_speaker_genders.png)
 
 
 **Conclusion:** *Men* produce more Back Channels when *other men* are talking, and *Women* produce slightly more back channels when *other women* are talking.
@@ -2454,7 +2454,7 @@ fig2.figure.savefig("images/top_10_female_back_channels.png")
 
 
 
-![png](images/analysis_markdown/output_53_7.png)
+![png](images/top_10_male_back_channels.png)
 
 
 
@@ -2479,7 +2479,7 @@ fig2.figure.savefig("images/top_10_female_back_channels.png")
 
 
 
-![png](images/analysis_markdown/output_53_11.png)
+![png](images/top_10_female_back_channels.png)
 
 
 Female and Male Back Channels appear to be about the same
@@ -4001,7 +4001,7 @@ fig2.figure.savefig("images/female_caller_back_channel_line_speaker_genders.png"
 
 
 
-![png](images/analysis_markdown/output_73_7.png)
+![png](images/male_caller_back_channel_line_speaker_genders.png)
 
 
 
@@ -4026,7 +4026,7 @@ fig2.figure.savefig("images/female_caller_back_channel_line_speaker_genders.png"
 
 
 
-![png](images/analysis_markdown/output_73_11.png)
+![png](images/female_caller_back_channel_line_speaker_genders.png)
 
 
 **Conclusions:**
