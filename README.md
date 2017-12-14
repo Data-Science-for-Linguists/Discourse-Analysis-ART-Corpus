@@ -10,7 +10,7 @@ The Australian Radio Talkback Corpus is owned by Macquarie University and can be
 
 ## Project Summary: 
 
-This project is a discourse analysis of the raw text files in the Australian Radio Talkback Corpus.
+This project is a discourse analysis of the 27 raw text files in the Australian Radio Talkback Corpus.
 These files include speaker information within [], such as the speaker's role (presenter, caller, or expert), their name, and their gender.
 They also include back channels and laughter, indicated by <> and spelling corrections and program breaks, indicated by {}.
 
