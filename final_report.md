@@ -9,42 +9,42 @@ als333@pitt.edu
 ### Table of Contents
 
 - [1. Overview of the Discourse Analysis Project](#1-overview-of-the-discourse-analysis-project) 
-	- [1.1 Choosing a Topic and Finding Data](#1.1-Choosing-a-Topic-and-Finding-Data)
-	- [1.2 The Australian Radio Talkback Corpus](#1.2-The-Australian-Radio-Talkback-Corpus)
-		- [1.2.1 Format of the Australian Radio Talkback Corpus Raw Files](#1.2.1-Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files)
-	- [1.3 Discourse Analysis-Plan](#1.3-Discourse-Analysis-Plan)
-	- [1.4 Presentation](#1.4-Presentation)
-		- [1.4.1 Data Frames Overview](#1.4.1-Data-Frames-Overview)
-		- [1.4.2 Bar Graphs](#1.4.2-Bar-Graphs)
-- [2. Choosing a License](#2.-Choosing-a-License)
-	- [2.1 The MIT License](#2.1-The-MIT-License)
-	- [2.2 Why an Open License?](#2.2-Why-an-Open-License?)
-- [3. Reformatting Data](#3.-Reformatting-Data)
-	- [3.1 Reading in the Texts](#Reading-in-the-Texts)
-		- [3.1.1 Method 1 (Lists)](#3.1-Method-1-(Lists))
-		- [3.1.2 Method 2 (Dictionary)](#3.2-Method-2-(Dictionary))
-	- [3.2 Unique Speaker IDs](#3.2-Unique-Speaker-IDs)
-	- [3.3 Data Frames](#3.3-Data-Frames)
-		- [3.3.1 Speaker Data Frame](#3.3.1-Speaker-Data-Frame)
-		- [3.3.2 Text Data Frame](#3.3.2-Text-Data-Frame)
-		- [3.3.3 Back Channel Data Frame](#3.3.3-Back-Channel-Data-Frame)
-- [4. Data Formatting Errors](#4.-Data-Formatting-Errors)
-- [5. Distribution of Speakers by Type and Gender](#Distribution-of-Speakers-by-Type-and-Gender)
-	- [5.1 Speakers per Role](#5.1-Speakers-per-Role)
-	- [5.2 Speakers per Gender](#5.2-Speakers-per-Gender)
-	- [5.3 Males and Females per Role](#5.3-Males-and-Females-per-Role)
-- [6. Speaker Type Analysis](#6.-Speaker-Type-Analysis) 
-- [7. Gender Analysis](#7.-Gender-Analysis)
-    - [7.1 Gender in the Australian Radio Talkback Corpus](#7.1-Gender-in-the-Australian-Radio-Talkback-Corpus)
-    - [7.2 Kieran Snyder, "Men Interrupt More Than Women"](#7.2-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women")
-    - [7.3 Interruptions vs. Back Channels](#7.3-Interruptions-vs.-Back-Channels])
-- [8. Back Channels](#8.-Back-Channels)
-    - [8.1 Back Channel Distribution by Speaker Type](#8.1-Back-Channel-Distribution-by-Speaker-Type)
-    - [8.2 Back Channel Distribution by Gender](#8.2-Back-Channel-Distribution-by-Gender)
-        - [8.2.1 How Gender Affects Back Channel Production](#8.2.1-How-Gender-Affects-Back-Channel-Production)
-- [9. Caller Back Channel Analysis](#9.-Caller-Back-Channel-Analysis)
-    [9.1 Gender Analysis Conclusion](#9.1-Gender-Analysis-Conclusion)
-- [10. Future Work](#10.-Future-Work)
+	- [1.1 Choosing a Topic and Finding Data](#11-choosing-a-topic-and-finding-data)
+	- [1.2 The Australian Radio Talkback Corpus](#12-the-australian-radio-talkback-corpus)
+		- [1.2.1 Format of the Australian Radio Talkback Corpus Raw Files](#121-format-of-the-australian-radio-talkback-corpus-raw-files)
+	- [1.3 Discourse Analysis-Plan](#13-discourse-analysis-plan)
+	- [1.4 Presentation](#14-presentation)
+		- [1.4.1 Data Frames Overview](#141-data-frames-overview)
+		- [1.4.2 Bar Graphs](#142-bar-graphs)
+- [2. Choosing a License](#2-choosing-a-license)
+	- [2.1 The MIT License](#21-the-mit-license)
+	- [2.2 Why an Open License?](#22-why-an-open-license?)
+- [3. Reformatting Data](#3-reformatting-data)
+	- [3.1 Reading in the Texts](#31-reading-in-the-texts)
+		- [3.1.1 Method 1 (Lists)](#311-method-1-lists)
+		- [3.1.2 Method 2 (Dictionary)](#312-method-2-dictionary)
+	- [3.2 Unique Speaker IDs](#32-unique-speaker-ids)
+	- [3.3 Data Frames](#33-data-frames)
+		- [3.3.1 Speaker Data Frame](#331-speaker-data-frame)
+		- [3.3.2 Text Data Frame](#332-text-data-frame)
+		- [3.3.3 Back Channel Data Frame](#333-back-channel-data-frame)
+- [4. Data Formatting Errors](#4-data-formatting-errors)
+- [5. Distribution of Speakers by Type and Gender](#5-distribution-of-speakers-by-type-and-gender)
+	- [5.1 Speakers per Role](#51-speakers-per-role)
+	- [5.2 Speakers per Gender](#52-speakers-per-gender)
+	- [5.3 Males and Females per Role](#53-males-and-females-per-role)
+- [6. Speaker Type Analysis](#6-speaker-type-analysis) 
+- [7. Gender Analysis](#7-gender-analysis)
+    - [7.1 Gender in the Australian Radio Talkback Corpus](#71-gender-in-the-australian-radio-talkback-corpus)
+    - [7.2 Kieran Snyder, "Men Interrupt More Than Women"](#72-kieran-snyder-men-interrupt-more-than-women)
+    - [7.3 Interruptions vs. Back Channels](#73-interruptions-vs-back-channels])
+- [8. Back Channels](#8-back-channels)
+    - [8.1 Back Channel Distribution by Speaker Type](#81-back-channel-distribution-by-speaker-type)
+    - [8.2 Back Channel Distribution by Gender](#82-back-channel-distribution-by-gender)
+        - [8.2.1 How Gender Affects Back Channel Production](#821-how-gender-affects-back-channel-production)
+- [9. Caller Back Channel Analysis](#9-caller-back-channel-analysis)
+    [9.1 Gender Analysis Conclusion](#91-gender-analysis-conclusion)
+- [10. Future Work](#10-future-work)
 
 ## 1. Overview of the Discourse Analysis Project
 
@@ -69,7 +69,7 @@ Australian Radio Talkback Corpus, because it gave speaker information and it see
 ### 1.2 The Australian Radio Talkback Corpus
 The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. I will 
 discuss licensing later in this report, but you may move to 
-[Section 1.5](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
+[Section 2](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#2-choosing-a-license) 
 of the report to learn more about the license for the corpus and how I chose the license for my code.
  
 The corpus contains 27 raw and text files of transcribed recordings of national, regional, and commercial Australian
@@ -93,7 +93,7 @@ For the purpose of this project, I ignored the items within curly brackets. I th
 items within angle brackets that were uttered by speakers other than the speaker of the line. I considered all overlapping speech to be a backchannel, though 
 some of these "back channels" are really interruptions and should be analyzed separately. For recommendations on future research with information in the 
 curly brackets and angle brackets, please 
-visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section. 
+visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#10-future-work) section. 
 
 ### 1.3 Discourse Analysis Plan
 I analyzed aspects of speech like sentence and word length, number of turns, and average number of turns to get an idea of how much the speakers were talking. 
@@ -109,7 +109,7 @@ In order to be able to do an analysis, I organized the data into 3 main pandas d
 - art_df: a data frame of all lines of text in the corpus
 - bk_df: a data frame of all back channels in the corpus
 
-More information about the data frames' contents, organization, and purpose can be found in [Section 3.3](#Data-Frames).
+More information about the data frames' contents, organization, and purpose can be found in [Section 3.3](#33-data-frames).
 
 Click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#data-frames-summary) 
 to see the completed data frames.
@@ -160,7 +160,7 @@ where the keys were the filenames and the values were the texts. This allowed me
 of fragmented data.
 
 ### 3.2 Unique Speaker IDs
-As previously discussed in the [Section 1.2.1](#Format-of-the-Australian-Radio-Talkback-Corpus-Raw-Files), each speaker is given a unique ID for within their file.
+As previously discussed in the [Section 1.2.1](#121-format-of-the-australian-radio-talkback-corpus-raw-files), each speaker is given a unique ID for within their file.
 However, these identifiers do not allow for cross-file analyses. 
 For example, Presenter 1 [P1] in ABCE1-raw.txt is Simon Marnie, but Presenter 1 [P1] in COME1-raw.txt is Luke Bona. My code creates a
 [Unique Speaker ID ](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/process-art-corpus.md#creating-unique-speaker-ids)
@@ -308,7 +308,7 @@ Her findings for gender are as follows:
 ### 7.3 Interruptions vs. Back Channels 
 Snyder's work is similar to mine in that she is analyzing discourse, but where she is focusing on dominance with interruptions, I am focuing on collaboration with back channels. 
 
-As I move forward with the [back channel analysis by gender](#8.2-Back-Channel-Distribution-by-Gender), I expect women to collaborate about equally with men and women, and for men to be more collaborative with other men.
+As I move forward with the [back channel analysis by gender](#82-back-channel-distribution-by-gender), I expect women to collaborate about equally with men and women, and for men to be more collaborative with other men.
 
 
 ## 8. Back Channels
@@ -389,7 +389,7 @@ Comparing these graphs, I noted that female callers uttered more back channels t
 
 Overall, Females collaborate more than males, and females are more likely to collaborate with other females, while males are more likely to collaborate with other males. 
 
-This is adds to [Snyder's research](#7.2-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women") on interruption by showing how males and females collaborate in a conversation. **While men interrupt people in general more than women do, women collaborate more than men.**
+This is adds to [Snyder's research](#72-kieran-snyder-men-interrupt-more-than-women) on interruption by showing how males and females collaborate in a conversation. **While men interrupt people in general more than women do, women collaborate more than men.**
 
 ## 10. Future Work
 
