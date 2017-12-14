@@ -271,7 +271,7 @@ To see the source of the following graph, please visit [my code](https://render.
 
 Unfortunately, a lot of the back channels were inaudible, with 303 being inaudible. I do not expect that having the inaudible utterances would impact the results greatly. However, the top back channels (mm, yeah, laughter, yes, right, etc..) make sense as they are one syllable, common phrases to not agreement, and laughter is a common in conversations. 
 
-Laughter is marked as plural and singlular because when 2 speakers laughed at the same time, the format was /<speaker1 and speaker2 laugh/>.
+Laughter is marked as plural and singlular because when 2 speakers laughed at the same time, the format was \<speaker1 and speaker2 laugh\>.
 
 ### 8.1 Back Channel Distribution by Speaker Types
 
