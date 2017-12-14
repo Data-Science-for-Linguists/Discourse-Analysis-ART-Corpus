@@ -4,6 +4,12 @@ als333@pitt.edu
 
 # Discourse Analysis of the Australian Radio Talkback Corpus
 
+## 12/14/17
+I have reread my files for typos and organzation, and I believe my project is done for now, but there are many more paths for research with this corpus.
+I have a couple of ideas listed in my final report under Section 10, 
+[Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#10-future-work). 
+
+
 ## 12/13/17 
 Today I created markdown versions of all of my code files. I also wrote my [Final Report](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md).
 This file contains all of my analyses and summarizes the process of my project. The project is essentially completed. I am struggling to get the TOC links 
