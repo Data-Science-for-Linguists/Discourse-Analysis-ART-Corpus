@@ -291,13 +291,13 @@ This means that while Experts are not taking as many turns, they are having mono
 ### 7.1 Gender in the Australian Radio Talkback Corpus
 When I did my [gender analysis](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#comparison-by-gender), I found that men spoke more (in terms of turns, sentences, sentence length, etc.) than women. Men in the Australian Radio Talkback Corpus then spoke more overall than females.
 
-I expect this is because of the unequal distribution of genders across roles; Presenters and Experts are predominantly Male, and there are only about 20 more female Callers than male Callers. Thus, men in the corpus are in the position to talk more than females because of their speaker role.
+I expect this is because of the unequal distribution of genders across roles; Presenters and Experts are predominantly male, and there are only about 20 more female Callers than male Callers. Thus, men in the corpus are in the position to talk more than females because of their speaker role.
 
 ### 7.2 Kieran Snyder, "Men Interrupt More Than Women"
 As part of my Gender Analysis, I read the following Language Log article by Kieran Snyder called [*Men Interrupt More Than Women*](http://languagelog.ldc.upenn.edu/nll/?p=13422). 
 Snyder conducted an informal study where she listened to 15 hours worth of conversations of 4-15 people. She found that more people meant more interruptions, until the amount plateaued. 
 
-Here findings for gender are as follows:
+Her findings for gender are as follows:
 - men in general interrupt others more frequently than women do
 - men are about 3 times more likely to interrupt women over men
 - women interrupt each other but not men
@@ -313,7 +313,7 @@ As I move forward with the [back channel analysis by gender](#8.2-Back-Channel-D
 To see the source of the following graph, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#back-channels).
 ![png](images/top_20_back_channels.png)
 
-Unfortunately, a lot of the back channels were inaudible, with 303 being inaudible. I do not expect that having the inaudible utterances would impact the results greatly. However, the top back channels (mm, yeah, laughter, yes, right, etc..) make sense as they are one syllable, common phrases to not agreement, and laughter is a common in conversations. 
+Unfortunately, a lot of the back channels were inaudible, with 303 being inaudible. I do not expect that having the inaudible utterances would impact the results greatly. However, the top back channels (mm, yeah, laughter, yes, right, etc..) make sense as they are one syllable, common phrases to note agreement, and laughter is a common in conversations. 
 
 Laughter is marked as plural and singlular because when 2 speakers laughed at the same time, the format was \<speaker1 and speaker2 laugh\>.
 
@@ -331,13 +331,13 @@ Differently, Presenters stay throughout the entire show, so they have plenty of 
 To see the source of the following graph, please visit [my code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#what-speaker-type-has-the-most-number-of-back-channels-uttered-during-their-lines).
 ![png](images/back_channel_line_speaker_types.png)
 
-Presenter Lines have the most number of Back Channels, closely followed by Expert Lines. There are over 1000 fewer Caller lines containing back channels. 
+Presenter Lines have the most number of Back Channels, closely followed by Expert Lines. There are over 1000 fewer Caller Lines containing back channels. 
 
 I believe Experts and Presenters have more back channels uttered while they are talking because:
 - Experts have the longest sentences and are giving detailed information for many of their lines, so Presenters and Callers would utter back channels to show they are listening (and maybe understanding).
 - Presenters are taking many turns and uttering more sentences, so there is more information coming from the Presenters.
 
-**Tentative Conclusion:** More turns and sentences and longer sentences lead to more back channels.
+**Tentative Conclusion:** More turns and sentences and/or longer sentences lead to more back channels in a conversation.
 
 
 ### 8.2 Back Channel Distribution by Gender
