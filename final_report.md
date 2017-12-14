@@ -68,8 +68,9 @@ Australian Radio Talkback Corpus, because it gave speaker information and it see
 
 ### 1.2 The Australian Radio Talkback Corpus
 The [Australian Radio Talkback Corpus](https://www.ausnc.org.au/corpora/art) is freely downloadable for fair use, but is a relatively closed data set. I will 
-discuss licensing later in this report, but you may click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
-to move to Section 1.5 of the report to learn more about the license for the corpus and how I chose the license for my code.
+discuss licensing later in this report, but you may move to 
+[Section 1.5](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#choosing-a-license) 
+of the report to learn more about the license for the corpus and how I chose the license for my code.
  
 The corpus contains 27 raw and text files of transcribed recordings of national, regional, and commercial Australian
 Talkback Radio. For this project, I will be using the *raw files,* because the text files do not contain speaker information. 
@@ -94,10 +95,11 @@ some of these "back channels" are really interruptions and should be analyzed se
 curly brackets and angle brackets, please 
 visit my [Future Work](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#future-work) section. 
 
-### 1.3 Discourse Analysis
+### 1.3 Discourse Analysis Plan
 I analyzed aspects of speech like sentence and word length, number of turns, and average number of turns to get an idea of how much the speakers were talking. 
-For my main discourse analysis I decided to focus on back channels. Who is uttering back channels, and when are they uttering them? Part of each speaker's identity 
-is their role in the talkback radio show and their gender. How do these factors affect the conversation? 
+For my main discourse analysis I decided to focus on back channels. Back channels indicate attention, agreement, and collaboration. Who is uttering back channels, 
+and when are they uttering them? Part of each speaker's identity is their role in the talkback radio show and their gender. 
+How do these factors affect the conversation? 
 
 ### 1.4 Presentation
 
