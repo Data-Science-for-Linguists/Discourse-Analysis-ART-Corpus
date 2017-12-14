@@ -814,7 +814,7 @@ figure.figure.savefig("images/role_totals.png")
 ![png](images/role_totals.png)
 
 
-There are a lot of Callers, but very few presenters and experts in the corpus. This is because many callers call in during the show, while Presenters and Experts have a more steady position in each show.
+There are a lot of Callers, but very few Presenters and Experts in the corpus. This is because many Callers call in during the show, while Presenters and Experts have a more steady position in each show.
 
 ### How many Males vs. Females?
 - 218 Males
