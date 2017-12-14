@@ -35,6 +35,7 @@ als333@pitt.edu
 	- [5.3 Males and Females per Role](#5.3-Males-and-Females-per-Role)
 - [6. Speaker Type Analysis](#6.-Speaker-Type-Analysis) 
 - [7. Gender Analysis](#7.-Gender-Analysis)
+    - [7.1 Kieran Snyder, "Men Interrupt More Than Women"](#7.1-Kieran-Snyder,-\"Men-Interrupt-More-Than-Women")
 - [8. Back Channels](#8.-Back-Channels)
     - [8.1 Back Channel Distribution by Speaker Type](#8.1-Back-Channel-Distribution-by-Speaker-Type)
     - [8.2 Back Channel Distribution by Gender](#8.2-Back-Channel-Distribution-by-Gender)
@@ -269,7 +270,16 @@ This means that while Experts are not taking as many turns, they are having mono
 
 ## 7. Gender Analysis 
 
-*include Languague Log Article*
+### 7.1 Kieran Snyder, "Men Interrupt More Than Women"
+As part of my Gender Analysis, I read the following Language Log article by Kieran Snyder called [*Men Interrupt More Than Women*](http://languagelog.ldc.upenn.edu/nll/?p=13422). 
+Snyder conducted an informal study where she listened to 15 hours worth of conversations of 4-15 people. She found that more people meant more interruptions, until the amount plateaued. 
+
+Here findings for gender are as follows:
+- men in general interrupt others more frequently than women do
+- men are about 3 times more likely to interrupt women over men
+- women interrupt each other but not men
+
+This 
 
 
 ## 8. Back Channels
