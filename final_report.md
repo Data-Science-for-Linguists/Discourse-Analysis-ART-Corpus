@@ -248,9 +248,15 @@ There are 171 male callers and 191 female callers.
 
 There are 26 male experts and 11 female experts.
 
+**Conclusions:** 
+
 Presenters, who are hired by the show, and Experts, who are professionals talking about their work, include about twice as many
 males as females. Callers on the other hand are more evenly distributed with slightly more females. 
-Thus it seems that men are in more positions of power in the Australian Radio Talkback Corpus. 
+
+I specifically delved into [Presenters](http://localhost:8888/notebooks/analysis.ipynb#Presenter-Distribution), because they are the people hired by the program. Of the 21 unique male IDs, only 15 are truly distinct people. However, of the 10 females unique IDs, there are no duplicate speakers. Thus, **more males were hired, and only males spoke in more than one show.** 
+
+Thus it seems that **men are in more positions of power** in the Australian Radio Talkback Corpus. 
+
 
 ## 6. Speaker Type Analysis
 
@@ -264,6 +270,7 @@ This means that while Experts are not taking as many turns, they are having mono
 ## 7. Gender Analysis 
 
 *include Languague Log Article*
+
 
 ## 8. Back Channels
 
@@ -328,9 +335,13 @@ The top back channels for each gender appear to be about the same.
 
 **How does Speaker type affect back channel production?**
 
-## Caller Back Channel Analysis
+## 9. Caller Back Channel Analysis
+
+To see how 
 
 ## Future Work
+
+This code is only beginning and could use expansion. Some recommendations I have are as follows:
 
 1. It would be good to keep curly bracket information so that turns can be analyzed for topic boundaries.
 2. Overlapping speech in angle brackets should be sepearted into back channels, laughter, inaudible, and interruptions for analyses.
