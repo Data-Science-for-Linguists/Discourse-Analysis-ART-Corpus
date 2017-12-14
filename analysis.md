@@ -11,7 +11,6 @@ This file starts where [process-art-corpus.md](https://github.com/Data-Science-f
 
 ### Table of Contents
 - [About the Data](#about-the-data)
-- [Plan](#plan)
 - [Reading in Data Frames](#reading-in-data-frames)
     - [Data Frames Summary](#data-frames-summary)
     - [Splitting Speakers by Role](#splitting-speakers-by-role)
