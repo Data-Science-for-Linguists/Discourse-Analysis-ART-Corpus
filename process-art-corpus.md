@@ -212,7 +212,7 @@ files = sorted(rawtext_dict.keys()) # creates an accurate file list (ART_fids is
 
 
 
-### Trial Run: Splitting Texts by Lines
+### Trial Run Splitting Texts by Lines
 
 
 ```python
