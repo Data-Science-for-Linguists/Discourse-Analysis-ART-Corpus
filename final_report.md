@@ -317,6 +317,15 @@ To see the source of the following graphs, please visit [my code]().
 
 **Conclusion:** *Men* are much more likely to produce Back Channels when *other men* are talking, and *Women* produce slightly more back channels when *other women* are talking.
 
+Are men and women producing different back channels?
+
+To see the source of the following graphs, please visit [my code]().
+
+![png](images/top_10_male_back_channels.png)
+![png](images/top_10_female_back_channels.png)
+
+The top back channels for each gender appear to be about the same.
+
 How does Speaker type affect back channel production?
 
 ## Caller Back Channel Analysis
