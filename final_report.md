@@ -109,14 +109,15 @@ In order to be able to do an analysis, I organized the data into 3 main pandas d
 - art_df: a data frame of all lines of text in the corpus
 - bk_df: a data frame of all back channels in the corpus
 
+More information about the data frames' contents, organization, and purpose can be found in [Section 3.3](#Data-Frames).
+
 Click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#data-frames-summary) 
 to see the completed data frames.
 
-More information about the data frames' contents, organization, and purpose can be found in [Section 3.3](#Data-Frames).
-
 #### 1.4.2 Bar Graphs
 I used bar graphs to create visualizations of speaker distributions across speaker types and speaker genders. I also created bar graphs to show the most common back channels, 
-and how back channels differed between men and women. These graphs can be found in the Analysis portions of my report.
+and how back channels differed between men and women. These graphs can be found in the analysis portions of my report, beginning in
+[Section 5](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/final_report.md#5-distribution-of-speakers-by-type-and-gender).
 
 ## 2. Choosing a License
 The Australian Radio Talkback Corpus is a relatively closed corpus with a [limited license](https://www.ausnc.org.au/about-1/terms-of-use), 
