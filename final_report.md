@@ -38,6 +38,7 @@ als333@pitt.edu
 - [8. Back Channels](#8.-Back-Channels)
     - [8.1 Back Channel Distribution by Speaker Type](#8.1-Back-Channel-Distribution-by-Speaker-Type)
     - [8.2 Back Channel Distribution by Gender](#8.2-Back-Channel-Distribution-by-Gender)
+        - [8.2.1 How Gender Affects Back Channel Production](#8.2.1-How-Gender-Affects-Back-Channel-Production)
 - [Caller Back Channel Analysis](#Caller-Back-Channel-Analysis)
 - [Future Work](#Future-Work)
 
@@ -297,10 +298,26 @@ I believe Experts and Presenters have more back channels uttered while they are 
 
 
 ### 8.2 Back Channel Distribution by Gender
+
+To see the source of the following graphs, please visit [my code]().
 ![png](images/back_channel_speaker_genders.png)
+
 ![png](images/back_channel_line_speaker_genders.png)
 
+Overall, men produced more back channels and more back channels were produced while they were speaking.
 
+**Does the gender of the line speaker affect men and women's likelihood to produce a back channel?**
+
+#### 8.2.1 How Gender Affects Back Channel Production
+
+To see the source of the following graphs, please visit [my code]().
+
+![png](images/male_back_channel_line_speaker_genders.png)
+![png](images/female_back_channel_line_speaker_genders.png)
+
+**Conclusion:** *Men* are much more likely to produce Back Channels when *other men* are talking, and *Women* produce slightly more back channels when *other women* are talking.
+
+How does Speaker type affect back channel production?
 
 ## Caller Back Channel Analysis
 
