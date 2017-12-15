@@ -178,12 +178,6 @@ Each first instance of a speaker is in the following order:
 For every other instance of a speaker's line, the speaker is indicated by P, C, or E followed by their number.
     - Ex: [Presenter 1: Simon Marnie, M] == [P1]
 
-
-```python
-# print(rawtext_dict['NAT4-raw.txt']) # both NAT4-raw.txt and NAT5-raw.txt are contained within this file
-# also, Caller 33b: Chris, male <-- fix gender
-```
-
 ### Splitting NAT4-raw.txt into 2 files
 
 **NAT4-raw.txt and NAT5-raw.txt**
@@ -312,7 +306,7 @@ for fid in files:
             utterance = l[where+2:]
 #             print(speaker+' '+utterance)
         else: 
-#             print('***'+l+'*****')    # {program advert}. What to do with these? 
+#             print('***'+l+'*****')    # {program advert}. remove for now. 
             pass
 #     print()
 ```
@@ -399,19 +393,21 @@ for fid in files: # includes NAT5-raw.txt
 #                 print(uniq_id, seg, role, gender, name)
                 speaker_dict[uniq_id] = (seg, role, gender, name)
         else: 
-            #print('***'+l)    # {program advert}. What to do with these? 
+#             print('***'+l)    # {program advert}. remove for now.
             pass
 #     print()
 ```
 
 
 ```python
-# looking at each item in speaker_dict:
-
-# for s in sorted(speaker_dict):
-#     print (s, speaker_dict[s]) 
+# looking at the items in speaker_dict:
+for s in sorted(speaker_dict)[:1]:
+    print(s, speaker_dict[s]) 
 len(sorted(speaker_dict))
 ```
+
+    ABCE1-C1 ('ABCE1', 'C', 'F', 'Suzanne')
+    
 
 
 
@@ -842,7 +838,7 @@ for fid in files:
             utterance_num += 1
             art_list.append((uniq_id, utterance_num, seg, role, gender, utterance))
         else: 
-#             print('***'+l)    # {program advert}. What to do with these? 
+#             print('***'+l)    # {program advert}. removed for now
             pass
 ```
 
@@ -852,8 +848,6 @@ for fid in files:
 
 art_list[0] # starts with ABCE1-raw.txt
 art_list[1]
-art_list[2]
-art_list[3]
 art_list[-1] # ends with NAT8-raw.txt
 ```
 
@@ -868,20 +862,6 @@ art_list[-1] # ends with NAT8-raw.txt
 
 
     ('ABCE1-E1', 2, 'ABCE1', 'E', 'M', 'I guess yeah yeah <laughs>.')
-
-
-
-
-
-
-    ('ABCE1-P1', 3, 'ABCE1', 'P', 'M', "He's also known <E1 sounds reasonable> for his ability to open cosposting {composting} toilets so he can tell you anything worm farm problems certainly helped us and although I'm still confused about dry ingredients we might talk about that as well but eight-triple-three-one-thousand one-eight-hundred-eight-hundred-seven-oh-two fine sunny day today top temperatures on the coast of twenty-seven inland thirty degrees Bowral enjoying twenty-seven and Katoomba twenty-five degrees currently around town on the coast it's seventeen that's four below <,> r Richmond and Bankstown are fifteen degrees Penrith sixteen Katoomba thirteen and Gosford twelve. One of the jewels in the open garden scheme crown is opening today and this is just a garden to envy how would you like <,> to have <,> a beautiful sandstone cottage nestled underneath a waterfall with a little pond and then a creek that runs through with thousands of water dragons so tame they come up and just <,> kiss you. Would you like to live there.")
-
-
-
-
-
-
-    ('ABCE1-E1', 4, 'ABCE1', 'E', 'M', 'Okay.')
 
 
 
@@ -907,7 +887,6 @@ Content reminder:
 
 
 ```python
-# art_df = pd.DataFrame(columns=['Speaker', 'Utterance_Number', 'Segment', 'Speaker_Type', 'Gender', 'Text'], data=art1+art2+art3+art4+art5+art6+art7+art8+art9+art10)
 art_df = pd.DataFrame(columns=['Speaker', 'Utterance_Number', 'Segment', 'Speaker_Type', 'Gender', 'Text'], data=art_list)
 art_df.head()
 art_df.tail()
@@ -1256,8 +1235,6 @@ art_df.tail()
 ```python
 # utterance dictionary
 utt_dict=dict(art_df.groupby("Speaker").size())
-# for s in sorted(utt_dict):
-#     print (s, utt_dict[s]) 
 (len(sorted(utt_dict)))
 ```
 
@@ -1845,47 +1822,6 @@ for x in art_list[:2]:
 
 
 ```python
-# How to replace part of a string using regular expressions (re.sub):
-
-# help(re)
-help(re.sub)
-
-foo = "mary {had} a <little> lamb"
-
-re.sub(r' <.*?>','',foo)
-re.sub(r' {.*?}','',foo)
-# re.findall(r'<.*?>',foo)
-# re.findall(r'{.*?}',foo)
-```
-
-    Help on function sub in module re:
-    
-    sub(pattern, repl, string, count=0, flags=0)
-        Return the string obtained by replacing the leftmost
-        non-overlapping occurrences of the pattern in string by the
-        replacement repl.  repl can be either a string or a callable;
-        if a string, backslash escapes in it are processed.  If it is
-        a callable, it's passed the match object and must return
-        a replacement string to be used.
-    
-    
-
-
-
-
-    'mary {had} a lamb'
-
-
-
-
-
-
-    'mary a <little> lamb'
-
-
-
-
-```python
 # Checking the contents of { } and < > before ignoring them
 squir = []
 for x in art_list:
@@ -1944,10 +1880,8 @@ for x in art_list:
     num_sents_1 = len(sents_1)
 
     # COME6-C7 Ruben's first line is <inaudible>, but all items within < > were removed, resulting in a length of 0
-        # this loop sets all 0 values to "NaN" <- This only occurs in Ruben's line.
+        # this loop sets all 0 values to 1 <- This only occurs in Ruben's line.
     if num_words_1==0 or num_sents_1==0:
-#         num_words_1 = "NaN"
-#         num_sents_1 = "NaN"
         num_words_1 = 1
         num_sents_1 = 1
    
@@ -1955,13 +1889,6 @@ for x in art_list:
     for word in word_toks_1:
         word_len+=len(word)
     
-    # average word length for the line
-        # skips Ruben
-#     if num_words_1 != "NaN":
-#         avg_word_len.append(word_len/num_words_1)
-#     else: 
-#         avg_word_len.append("NaN")
-
     avg_word_len.append(word_len/num_words_1)
 
     # appending to the lists of word tokens, sentences, and number of words
@@ -2471,7 +2398,6 @@ for x in art_list:
         
         # finding all back channels with multiple speakers
         if re.findall(r'and [PCE]+[0-9]+',b):
-#             print(b)
             
             # NOTE: the 2-speaker back channels are all only one word (laugh or yes)
             # so the right space separates the speakers from the back channels
@@ -2493,15 +2419,6 @@ for x in art_list:
             # the 2 channel speakers' genders
             speaker1_gen = speaker_df.loc[speaker1]["Gender"]
             speaker2_gen = speaker_df.loc[speaker2]["Gender"]
-            
-            # Self-Check
-#             print(channel)
-#             print(speaker1)
-#             print(speaker1_role)
-#             print(speaker1_gen)
-#             print(speaker2)
-#             print(speaker2_role)
-#             print(speaker2_gen)
             
             # appending the separate back channels to the overall list
             bk_chnls.append([speaker1,speaker1_role,speaker1_gen,channel,speaker,utt,segment,role,gender])
