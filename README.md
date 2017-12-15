@@ -12,7 +12,7 @@ The Australian Radio Talkback Corpus is owned by Macquarie University and can be
 
 This project is a discourse analysis of the 27 raw text files in the Australian Radio Talkback Corpus.
 These files include speaker information within [], such as the speaker's role (presenter, caller, or expert), their name, and their gender.
-They also include back channels and laughter, indicated by <> and spelling corrections and program breaks, indicated by {}.
+They also include back channels and laughter, indicated by <>, and spelling corrections and program breaks, indicated by {}.
 
 For this project, I analyzed the texts by speaker type and gender. I looked at the number of turns, number of sentences and words, 
 and sentence and word lengths. I also looked at backchannels to see how the speaker's role and gender affect collaboration in conversations.
