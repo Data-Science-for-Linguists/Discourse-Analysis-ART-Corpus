@@ -49,7 +49,8 @@ and sentence and word lengths. I also looked at backchannels to see how the spea
 - [project_plan.md](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/project_plan.md): The plan for the Discourse Analysis.
 - [images](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/images): A folder of all plots used for analysis.
 - [previous_code](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/tree/master/previous_code): A folder of code and a csv file that were discarded from this project.
-- data_files: This folder contains the data for this project but is hidden due to the terms of use of the Australian Radio Talkback Corpus.
+- data_files: This folder contains the data for this project but is hidden due to the [terms of use](https://www.ausnc.org.au/about-1/terms-of-use) 
+of the Australian Radio Talkback Corpus.
 
 Please visit my [visitor's log](https://github.com/Data-Science-for-Linguists/Shared-Repo/blob/master/todo10_visitors_log/visitors_log_Alicia.md)
 to see others' comments on my project.
