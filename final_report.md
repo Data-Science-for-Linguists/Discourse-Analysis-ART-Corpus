@@ -169,6 +169,9 @@ This transforms the previous two Presenter 1s from [P1] to [ABCE1-P1] and [COME1
 
 ### 3.3 Data Frames
 
+The data frames listed below are the full versions containing all of their specified information. 
+For each analysis, I looked at smaller subsets of these data frames to isolate specific speaker types and genders.
+
 Click [here](https://github.com/Data-Science-for-Linguists/Discourse-Analysis-ART-Corpus/blob/master/analysis.md#data-frames-summary) 
 to see the completed data frames.
 
