@@ -12,7 +12,7 @@ als333@pitt.edu
 	- [1.1 Choosing a Topic and Finding Data](#11-choosing-a-topic-and-finding-data)
 	- [1.2 The Australian Radio Talkback Corpus](#12-the-australian-radio-talkback-corpus)
 		- [1.2.1 Format of the Australian Radio Talkback Corpus Raw Files](#121-format-of-the-australian-radio-talkback-corpus-raw-files)
-	- [1.3 Discourse Analysis-Plan](#13-discourse-analysis-plan)
+	- [1.3 Discourse Analysis Plan](#13-discourse-analysis-plan)
 	- [1.4 Presentation](#14-presentation)
 		- [1.4.1 Data Frames Overview](#141-data-frames-overview)
 		- [1.4.2 Bar Graphs](#142-bar-graphs)
