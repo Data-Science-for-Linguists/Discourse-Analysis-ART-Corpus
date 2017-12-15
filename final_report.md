@@ -43,7 +43,7 @@ als333@pitt.edu
     - [8.2 Back Channel Distribution by Gender](#82-back-channel-distribution-by-gender)
         - [8.2.1 How Gender Affects Back Channel Production](#821-how-gender-affects-back-channel-production)
 - [9. Caller Back Channel Analysis](#9-caller-back-channel-analysis)
-    [9.1 Gender Analysis Conclusion](#91-gender-analysis-conclusion)
+    - [9.1 Gender Analysis Conclusion](#91-gender-analysis-conclusion)
 - [10. Future Work](#10-future-work)
 
 ## 1. Overview of the Discourse Analysis Project
